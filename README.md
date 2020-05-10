@@ -5,10 +5,9 @@ This repository is subdivided in the following subdirectories:
 ## 1. Suplementary material for the article
 [**directory "SupMat"**](https://github.com/Zecao/2020Dijkstra/tree/master/SupMat)
 
-## 2. Initial Population for Evolutionary Metaheuristics
+## 2. Initial population of evolutionary metaheuristics for the Distribution Network Reconfiguration problem
 [**directory "MSTInitialPopulation"**](https://github.com/Zecao/2020Dijkstra/tree/master/MSTInitalPopulation)
-Directory with the initial populations for the Distribution Network Reconfiguration - DNR used to achieve the results in the article.
-The files are in Matlab (.mat) format and uses the binary codification, i.e. they represent the normally closed (NC) switches by 1s and the normally opened (NO) switches by 0s for the following test cases:  
+Directory with the initial populations used in the article for the Distribution Network Reconfiguration - DNR problem. The files are in Matlab (.mat) format and uses the binary codification, i.e. they represent the normally closed (NC) switches by 1s and the normally opened (NO) switches by 0s for the following test cases:  
 * (Zhu, 2002) 33 buses system
 * (Huang, 2002) 69 (or 70) buses system
 * (Su & Lee, 2003) 84 buses system
@@ -17,10 +16,13 @@ The files are in Matlab (.mat) format and uses the binary codification, i.e. the
 
 ## 3. Article Matlab code
 [**directory "DijkstraBEMatlabCode"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBEMatlabCode)
-Directory with the Matlab code for. The main script is the file. The code is mainly with portuguese comments, so I apologize for the non-portugues speaking.   
+Directory with the Matlab code for replication of all the results from article. 
+The main script is the file "" 
+The code is mainly with portuguese comments, so I apologize for the non-portugues speaking.   
  
-## 4. OpenDSS Customization 
+## 4. OpenDSS customization 
 [**directory "DijkstraBranchExchangeOpenDSS"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBranchExchangeOpenDSS)
-Directory with the C# OpenDSS customization project. I think that one must be familiar with GeoPerdas/BDGD openDSS format files. For more information see my project 
+Directory with the Visual Studio C# OpenDSS customization project. 
+The project also uses 2 dll files: EEPlus.dll (that allows Excel files to be read in the C#) and Auxiliares.dll (the co author Daniel Rocha routines) already included in the project.
 
 Ezequiel C. Pereira
