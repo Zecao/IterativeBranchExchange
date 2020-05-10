@@ -16,7 +16,7 @@ The files are in Matlab (.mat) format and uses the binary codification, i.e. the
 * (Ramirez-rosado & Bernal-Agustín, 1998) 417 (or 415) buses system. 
 
 ## 3. Article Matlab code
-[**directory "DijkstraMatlabCode"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraMatlabCode)
+[**directory "DijkstraBEMatlabCode"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBEMatlabCode)
 Directory with the Matlab code for. The main script is the file. The code is mainly with portuguese comments, so I apologize for the non-portugues speaking.   
  
 ## 4. OpenDSS Customization 
