@@ -17,10 +17,12 @@ Directory with the initial populations used in the article for the Distribution 
 
 ## 3. Article Matlab code
 [**"DijkstraBEMatlabCode"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBE_MatlabCode)
-Directory with the Matlab code for replication of all the results from article. 
-The main script is the file "" 
-The code is mainly with portuguese comments, so I apologize for the non-portugues speaking.   
- 
+Directory with the Matlab code for replication of all the results from article.
+Things to note:
+1. The main scripts files are named "run_XXbuses.m" which XX is the system buses number. 
+2. The codes uses the [Matpower](https://matpower.org/) Power Flow routines and the [Matlab-BGL](https://github.com/dgleich/matlab-bgl) graph library. So remember to edit the function "setPath.m" properly.
+3. The code is mainly with portuguese comments, so I apologize for the non-portugues speaking.  
+
 ## 4. Article OpenDSS customization code
 [**"DijkstraBranchExchangeOpenDSS"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBE_OpenDSSCustomization)
 Directory with the Visual Studio C# OpenDSS customization project. 
