@@ -7,7 +7,7 @@ This repository is subdivided in the following subdirectories:
 Directory with the article and suplementary material pdfs files.
 
 ## 2. Initial population of evolutionary metaheuristics for the Distribution Network Reconfiguration problem
-[**"MSTInitialPopulation"**](https://github.com/Zecao/2020Dijkstra/tree/master/MSTInitalPopulation)
+[**"MSTInitialPopulation"**](https://github.com/Zecao/2020Dijkstra/tree/master/MSTInitialPopulation)
 Directory with the initial populations used in the article for the Distribution Network Reconfiguration - DNR problem. The files are in Matlab (.mat) format and uses the binary codification, i.e. they represent the normally closed (NC) switches by 1s and the normally opened (NO) switches by 0s for the following test cases:  
 * (Zhu, 2002) 33 buses system
 * (Huang, 2002) 69 (or 70) buses system
