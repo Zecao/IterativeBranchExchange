@@ -1,4 +1,4 @@
-# 2020Dijkstra
+# DijkstraBranchExchange
 Repository for the article "Applying Dijkstra’s Algorithm to the Distribution Network Reconfiguration Problem for Energy Losses Minimization".
 This repository is subdivided in the following subdirectories: 
 
