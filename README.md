@@ -1,5 +1,5 @@
 # 2020Dijkstra
-Repository for the article "Applying the Dijkstra’s Algorithm in Distribution Networks Reconfiguration for Energy Losses Optimization".
+Repository for the article "Applying Dijkstra’s Algorithm to the Distribution Network Reconfiguration Problem for Energy Losses Minimization".
 This repository is subdivided in the following subdirectories: 
 
 ## 1. Suplementary material for the article
