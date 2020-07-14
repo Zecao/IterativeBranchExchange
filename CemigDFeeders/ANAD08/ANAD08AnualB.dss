@@ -1,0 +1,9 @@
+
+new energymeter.carga element=line.TR7177911,terminal=1
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+! Solve mode=daily,hour=0,number=24,stepsize=1h
+
+! BusCoords ANAD08CoordMT.csv
