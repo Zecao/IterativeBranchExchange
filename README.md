@@ -27,6 +27,10 @@ Things to note:
 ## 4. Article OpenDSS customization code
 [**"DijkstraBranchExchangeOpenDSS"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBE_OpenDSSCustomization)
 Directory with the Visual Studio C# OpenDSS customization project. 
-The project also uses 2 dll files: EEPlus.dll (that allows Excel files to be read in the C#) and Auxiliares.dll (the co author Daniel Rocha routines) already included in the project. Essencially its a newer version from the project https://github.com/Zecao/ExecutorOpenDssBr  
+The project also uses 2 dll files: EEPlus.dll (that allows Excel files to be read in the C#) and Auxiliares.dll (the co author Daniel Rocha routines) already included in the project. Essencially its a newer version from the project https://github.com/Zecao/ExecutorOpenDssBr
+
+## 5. Cemig-D Distribution feeders
+[**"CemigFeeders"**](https://github.com/Zecao/2020Dijkstra/tree/master/CemigFeeders)
+Directory with the OpenDSS files from 10 Cemig distribution feeders. These files are public as they were generated from geographic gistribution data base BDGD from Brazilian Regulatory Agency ANEEL.
 
 Ezequiel C. Pereira
