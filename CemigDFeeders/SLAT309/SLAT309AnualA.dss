@@ -1,0 +1,22 @@
+clear
+new circuit.alimSLAT309 bus1=BMT102962463.1.2.3,basekv=13.800000000,pu=1.040000000
+
+Redirect ..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
+Redirect ..\0PermRes\Condutores.dss
+Redirect SLAT309SegmentosMT.dss
+Redirect SLAT309ChavesMT.dss
+Redirect SLAT309Reguladores.dss
+Redirect SLAT309Transformadores.dss
+Redirect SLAT309SegmentosBT.dss
+Redirect SLAT309Ramais.dss
+Redirect SLAT309CargaMT_Dez.dss
+Redirect SLAT309CargaBT_Dez.dss
+
+new energymeter.carga element=line.TR5329290,terminal=1
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+! Solve mode=daily,hour=0,number=24,stepsize=1h
+
+! BusCoords SLAT309CoordMT.csv

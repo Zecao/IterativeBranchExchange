@@ -1,0 +1,3 @@
+! manter este comentario para compatibilidade do C#
+new circuit.alimSSP06 bus1=BMT103181528.1.2.3,basekv=13.800000000,pu=1.040000000
+

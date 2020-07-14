@@ -1,0 +1,22 @@
+clear
+new circuit.alimSFIQ410 bus1=BMT125208640.1.2.3,basekv=13.800000000,pu=1.040000000
+
+Redirect ..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
+Redirect ..\0PermRes\Condutores.dss
+Redirect SFIQ410SegmentosMT.dss
+Redirect SFIQ410ChavesMT.dss
+Redirect SFIQ410Reguladores.dss
+Redirect SFIQ410Transformadores.dss
+Redirect SFIQ410SegmentosBT.dss
+Redirect SFIQ410Ramais.dss
+Redirect SFIQ410CargaMT_Dez.dss
+Redirect SFIQ410CargaBT_Dez.dss
+
+new energymeter.carga element=line.TR3950869,terminal=1
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+! Solve mode=daily,hour=0,number=24,stepsize=1h
+
+! BusCoords SFIQ410CoordMT.csv

@@ -1,0 +1,23 @@
+clear
+new circuit.alimPSAU13 bus1=BMT124405859.1.2.3,basekv=13.800000000,pu=1.040000000,r1=0,x1=0.0001
+
+Redirect ..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
+Redirect ..\0PermRes\Condutores.dss
+Redirect PSAU13SegmentosMT.dss
+Redirect PSAU13ChavesMT.dss
+Redirect PSAU13Transformadores.dss
+Redirect PSAU13SegmentosBT.dss
+Redirect PSAU13Ramais.dss
+Redirect PSAU13CargaMT_Dez.dss
+Redirect PSAU13CargaBT_Dez.dss
+
+new energymeter.carga element=line.TR6641928,terminal=1
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+BatchEdit load..* pf=0.87
+
+Solve mode=daily,hour=18,number=1,stepsize=1h
+
+! BusCoords PSAU13CoordMT.csv

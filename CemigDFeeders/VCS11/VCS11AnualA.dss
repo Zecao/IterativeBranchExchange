@@ -1,0 +1,21 @@
+clear
+new circuit.alimVCS11 bus1=BMT126745672.1.2.3,basekv=13.800000000,pu=1.040000000
+
+Redirect ..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
+Redirect ..\0PermRes\Condutores.dss
+Redirect VCS11SegmentosMT.dss
+Redirect VCS11ChavesMT.dss
+Redirect VCS11Transformadores.dss
+Redirect VCS11SegmentosBT.dss
+Redirect VCS11Ramais.dss
+Redirect VCS11CargaMT_Dez.dss
+Redirect VCS11CargaBT_Dez.dss
+
+new energymeter.carga element=line.TR1080749,terminal=1
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+! Solve mode=daily,hour=0,number=24,stepsize=1h
+
+! BusCoords VCS11CoordMT.csv

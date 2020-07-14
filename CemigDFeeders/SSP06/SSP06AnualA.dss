@@ -1,0 +1,21 @@
+clear
+new circuit.alimSSP06 bus1=BMT103181528.1.2.3,basekv=13.800000000,pu=1.040000000
+
+Redirect ..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
+Redirect ..\0PermRes\Condutores.dss
+Redirect SSP06SegmentosMT.dss
+Redirect SSP06ChavesMT.dss
+Redirect SSP06Transformadores.dss
+Redirect SSP06SegmentosBT.dss
+Redirect SSP06Ramais.dss
+Redirect SSP06CargaMT_Dez.dss
+Redirect SSP06CargaBT_Dez.dss
+
+new energymeter.carga element=line.TR3408987,terminal=1
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+! Solve mode=daily,hour=0,number=24,stepsize=1h
+
+! BusCoords SSP06CoordMT.csv
