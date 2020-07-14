@@ -1,0 +1,2 @@
+new capacitor.CAP74537 bus1=BMT163874541.1.2.3.0,Phases=3,Conn=wye,Kvar=600,Kv=15.0
+new capacitor.CAP266783 bus1=BMT166484353.1.2.3.0,Phases=3,Conn=wye,Kvar=300,Kv=15.0

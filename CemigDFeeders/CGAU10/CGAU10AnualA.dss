@@ -1,0 +1,21 @@
+clear
+new circuit.alimCGAU10 bus1=BMT156474288.1.2.3,basekv=13.800000000,pu=1.040000000
+
+Redirect ..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
+Redirect ..\0PermRes\Condutores.dss
+Redirect CGAU10SegmentosMT.dss
+Redirect CGAU10ChavesMT.dss
+Redirect CGAU10Transformadores.dss
+Redirect CGAU10SegmentosBT.dss
+Redirect CGAU10Ramais.dss
+Redirect CGAU10CargaMT_Dez.dss
+Redirect CGAU10CargaBT_Dez.dss
+
+new energymeter.carga element=line.TR12346398,terminal=1
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+! Solve mode=daily,hour=0,number=24,stepsize=1h
+
+! BusCoords CGAU10CoordMT.csv

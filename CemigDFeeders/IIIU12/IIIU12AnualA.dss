@@ -1,0 +1,22 @@
+clear
+new circuit.alimIIIU12 bus1=BMT163873522.1.2.3,basekv=13.800000000,pu=1.040000000,r1=0,x1=0.0001
+
+Redirect ..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
+Redirect ..\0PermRes\Condutores.dss
+Redirect IIIU12SegmentosMT.dss
+Redirect IIIU12ChavesMT.dss
+Redirect IIIU12Reguladores.dss
+Redirect IIIU12Transformadores.dss
+Redirect IIIU12SegmentosBT.dss
+Redirect IIIU12Ramais.dss
+Redirect IIIU12CargaMT_Nov.dss
+Redirect IIIU12CargaBT_Nov.dss
+
+new energymeter.carga element=line.TR12424244,terminal=1
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+Solve mode=daily,hour=18,number=1,stepsize=1h
+
+BusCoords IIIU12CoordMT.csv
