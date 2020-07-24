@@ -2,9 +2,9 @@
 Repository for the article "Applying Dijkstra’s Algorithm to the Distribution Network Reconfiguration Problem for Energy Losses Minimization".
 This repository is subdivided in the following subdirectories: 
 
-## 1. Suplementary material for the article
-[**"PDFfiles"**](https://github.com/Zecao/2020Dijkstra/tree/master/pdfFiles)
-Directory with the article and suplementary material pdfs files.
+## 1. Article's supplementary material 
+[**"PDFfile"**](https://github.com/Zecao/2020Dijkstra/tree/master/SupMat)
+PDF file with article's suplementary material.
 
 ## 2. Initial population of evolutionary metaheuristics for the Distribution Network Reconfiguration problem
 [**"MSTInitialPopulation"**](https://github.com/Zecao/2020Dijkstra/tree/master/MSTInitialPopulation)
@@ -30,7 +30,7 @@ Directory with the Visual Studio C# OpenDSS customization project.
 The project also uses 2 dll files: EEPlus.dll (that allows Excel files to be read in the C#) and Auxiliares.dll (the co author Daniel Rocha routines) already included in the project. Essencially its a newer version from the project https://github.com/Zecao/ExecutorOpenDssBr
 
 ## 5. Cemig-D Distribution feeders
-[**"CemigFeeders"**](https://github.com/Zecao/2020Dijkstra/tree/master/CemigFeeders)
+[**"CemigFeeders"**](https://github.com/Zecao/2020Dijkstra/tree/master/CemigDFeeders)
 Directory with the OpenDSS files from 10 Cemig distribution feeders. These files are public as they were generated from geographic gistribution data base BDGD from Brazilian Regulatory Agency ANEEL.
 
 Ezequiel C. Pereira
