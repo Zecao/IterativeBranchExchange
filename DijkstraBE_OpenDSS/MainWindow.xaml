@@ -70,7 +70,7 @@
         </ComboBox>
 
         <Label Grid.Row="1" Grid.Column="1" Content="Ano" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,5,0,0" Height="26" Width="32"/>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="anoTextBox" HorizontalAlignment="Center" Height="24" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="60" LostFocus="AnoTB_LostFocus" Margin="10,0,0,2"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="anoTextBox" HorizontalAlignment="Center" Height="24" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="60" LostFocus="AnoTB_LostFocus" Margin="10,0,0,2" Text="2020"/>
 
         <Label Grid.Row="4" Grid.Column="0" Content="Tipo de fluxo" HorizontalAlignment="Center" VerticalAlignment="Top" Height="26" Margin="10,5,0,0" Width="79"  />
         <ComboBox Grid.Row="5" Grid.Column="0" x:Name="tipoFluxoComboBox" HorizontalAlignment="Center" Height="24" Width="90" LostFocus="TipoFluxoCB_LostFocus" KeyUp="TipoFluxoCB_LostFocus" Margin="10,6,0,10" >
@@ -99,7 +99,7 @@
 
         <Label Grid.Row="8" Grid.ColumnSpan="2" Content="Caminho dos recursos permanentes" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-        <TextBox Grid.Row="9" Grid.ColumnSpan="4" x:Name="caminhoPermTextBox" HorizontalAlignment="Stretch" Height="23" VerticalAlignment="Top" LostFocus="CaminhoTB_LostFocus" MouseDoubleClick="TextBox_MouseDoubleClick" Text="I:\SA\GRMP\PERDAS-TECNICAS\0perdasTecnicasOpenDSS\Recursos\"/>
+        <TextBox Grid.Row="9" Grid.ColumnSpan="4" x:Name="caminhoPermTextBox" HorizontalAlignment="Stretch" Height="23" VerticalAlignment="Top" LostFocus="CaminhoTB_LostFocus" MouseDoubleClick="TextBox_MouseDoubleClick" Text=""/>
         <Button Grid.Row="9" Grid.Column="3" x:Name="caminhoPermBrowserButton" HorizontalAlignment="Right" VerticalAlignment="Top" Width="20" Height="23" Margin="0,0,55,0" Content="..." Click="CaminhoPermBrowse_Click" Grid.ColumnSpan="2"/>
 
         <CheckBox Grid.Row="10" Grid.ColumnSpan="2" x:Name="AllowFormsCheckBox" Content="Exibir mensagens do OpenDSS" HorizontalAlignment="Left" IsChecked="True" Height="16" Margin="10,5,0,0" Width="180" />
