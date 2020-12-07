@@ -1,6 +1,6 @@
-new transformer.RT2610-1 Phases=1,windings=2,buses=[BMT125210824.1.0 BMT125210873.1.0],conns=[LN LN],kvs=[7.967 7.967],kvas=[762.000000000 762.000000000],xhl=0.500000000,%loadloss=0.150000000,%noloadloss=0.0388
-new RegControl.RC2610-1 transformer=RT2610-1,winding=2,PTphase=1,ptratio=66.4,band=2,vreg=124.992
-new transformer.RT2610-2 Phases=1,windings=2,buses=[BMT125210824.2.0 BMT125210873.2.0],conns=[LN LN],kvs=[7.967 7.967],kvas=[762.000000000 762.000000000],xhl=0.500000000,%loadloss=0.150000000,%noloadloss=0.0388
-new RegControl.RC2610-2 transformer=RT2610-2,winding=2,PTphase=1,ptratio=66.4,band=2,vreg=124.992
-new transformer.RT2610-3 Phases=1,windings=2,buses=[BMT125210824.3.0 BMT125210873.3.0],conns=[LN LN],kvs=[7.967 7.967],kvas=[762.000000000 762.000000000],xhl=0.500000000,%loadloss=0.150000000,%noloadloss=0.0388
-new RegControl.RC2610-3 transformer=RT2610-3,winding=2,PTphase=1,ptratio=66.4,band=2,vreg=124.992
+new transformer.RT2610-1 Phases=1,windings=2,buses=[BMT125210824.1.0 BMT125210873.1.0],conns=[LN LN],kvs=[7.967 7.967],kvas=[750.000000000 750.000000000],xhl=0.500000000,%loadloss=0.124000000,%noloadloss=0.0393
+new RegControl.RC2610-1 transformer=RT2610-1,winding=2,PTphase=1,ptratio=66.4,band=2,vreg=125.004
+new transformer.RT2610-2 Phases=1,windings=2,buses=[BMT125210824.2.0 BMT125210873.2.0],conns=[LN LN],kvs=[7.967 7.967],kvas=[750.000000000 750.000000000],xhl=0.500000000,%loadloss=0.124000000,%noloadloss=0.0393
+new RegControl.RC2610-2 transformer=RT2610-2,winding=2,PTphase=1,ptratio=66.4,band=2,vreg=125.004
+new transformer.RT2610-3 Phases=1,windings=2,buses=[BMT125210824.3.0 BMT125210873.3.0],conns=[LN LN],kvs=[7.967 7.967],kvas=[750.000000000 750.000000000],xhl=0.500000000,%loadloss=0.124000000,%noloadloss=0.0393
+new RegControl.RC2610-3 transformer=RT2610-3,winding=2,PTphase=1,ptratio=66.4,band=2,vreg=125.004
