@@ -16,8 +16,36 @@ new energymeter.carga element=line.TR6641928,terminal=1
 Set voltagebases=[13.800000000 0.24 0.22]
 CalcVoltageBases
 
-BatchEdit load..* pf=0.87
-
 Solve mode=daily,hour=18,number=1,stepsize=1h
 
-! BusCoords PSAU13CoordMT.csv
+BusCoords PSAU13CoordMT.csv
+
+clearBusMarkers
+set MarkRegulators=Yes regmarkercode=47
+! set Markswitches=Yes Switchmarkercode = 27 
+set MarkCapacitors=No
+set MarkTransformers=No
+
+AddBusMarker Bus=BMT124405859 code=12 color=Green size=5 
+
+AddBusMarker Bus=BMT124406482 code=27 color=Green size=3
+
+AddBusMarker Bus=BMT143552525 code=27 color=Red size=3
+!AddBusMarker Bus=BMT165634410 code=27 color=Red size=3
+AddBusMarker Bus=BMT143537006 code=27 color=Yellow size=3
+AddBusMarker Bus=BMT167591880 code=27 color=Red size=3
+!AddBusMarker Bus=BMT167002527 code=27 color=Red size=3 !outro alim
+!AddBusMarker Bus=BMT166444272 code=27 color=Red size=3 !mono
+AddBusMarker Bus=BMT155623631 code=27 color=Red size=3
+! AddBusMarker Bus=BMT171308824 code=27 color=Red size=3 !outro alim
+AddBusMarker Bus=BMT124409100 code=27 color=Red size=3
+AddBusMarker Bus=BMT133255322 code=27 color=Red size=3
+AddBusMarker Bus=BMT173152171 code=27 color=Red size=3
+AddBusMarker Bus=BMT143552280 code=27 color=Red size=3
+! AddBusMarker Bus=BMT165634411 code=27 color=Red size=3
+! AddBusMarker Bus=BMT169537942 code=27 color=Red size=3 !mono
+AddBusMarker Bus=BMT170755032 code=27 color=Red size=3
+
+!!-- Gerar Gráficos
+!plot circuit quantity=voltage dots=n labels=n subs=y showloops=n C1=Green C2=Blue C3=Red R2=0.95 R3=0.90
+plot circuit quantity=power dots=n labels=n subs=y C1=Blue C2=Blue C3=Red R2=0.95 R3=0.90
