@@ -1,0 +1,24 @@
+
+new energymeter.carga element=line.TRfic8,terminal=2
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+! Solve mode=daily,hour=0,number=24,stepsize=1h
+
+! BusCoords IIGD210CoordMT.csv
+
+! manobra IIGD220/221
+! IIGD210	ctrr42939	ctrr4978	5200	8165.94	8217.45	0.63
+!close line.CTRR42939 term=1 !numEQ 319112
+!open line.CTRR4978 term=1 !numEQ 139164
+
+! manobra IIGD210/222
+!IIGD210	ctr238141	ctr876880	1878.31	8116.55	8151.05	0.43
+!close line.CTR238141 term=1
+!open line.CTR876880 term=1 
+
+
+
+
+
