@@ -1,0 +1,108 @@
+clear
+new circuit.alimIIGD210 bus1=BMTFIC.1.2.3,basekv=13.800000000,pu=1.040000000
+
+Redirect ..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
+Redirect ..\0PermRes\Condutores.dss
+Redirect IIGD210SegmentosMT.dss
+Redirect IIGD210ChavesMT.dss
+Redirect IIGD210Reguladores.dss
+Redirect IIGD210Transformadores.dss
+Redirect IIGD210SegmentosBT.dss
+Redirect IIGD210Ramais.dss
+Redirect IIGD210CargaMT_Dez.dss
+Redirect IIGD210CargaBT_Dez.dss
+Redirect IIGD210CapacitorMT.dss
+
+!close line.CTRR42939 term=1 !numEQ 319112
+!open line.CTRR4978 term=1 !numEQ 139164
+
+new energymeter.carga element=line.TRfic8,terminal=2
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+Solve mode=daily,hour=18,number=1,stepsize=1h
+
+BusCoords IIGD210CoordMT.csv
+
+clearBusMarkers
+set MarkRegulators=Yes regmarkercode=47
+! set Markswitches=Yes Switchmarkercode = 27 
+set MarkCapacitors=No
+set MarkTransformers=No
+
+! substation
+AddBusMarker Bus=BMT100943376 code=12 color=Green size=5 
+
+AddBusMarker Bus=BMT100956879 code=27 color=Green size=3 
+
+AddBusMarker Bus=BMT161583410 code=27 color=Red size=3 !line.CTR428261 48407
+AddBusMarker Bus=BMT172309474 code=27 color=Red size=3 !line.CTR428471 48472
+AddBusMarker Bus=BMT159911131 code=27 color=Red size=3 !line.CTR428492 48479
+AddBusMarker Bus=BMT159909500 code=27 color=Red size=3 !line.CTR428499 48481
+AddBusMarker Bus=BMT165266586 code=27 color=Red size=3 !line.CTR428534 48492
+AddBusMarker Bus=BMT100961254 code=27 color=Red size=3 !line.CTR428625 48522
+AddBusMarker Bus=BMT166566484 code=27 color=Red size=3 !line.CTR428632 48524
+!AddBusMarker Bus=BMT149451371 code=27 color=Red size=3 !line.CTR428751 48560 !other sub
+AddBusMarker Bus=BMT161151170 code=27 color=Red size=3 !line.CTR427008 48019
+AddBusMarker Bus=BMT173216040 code=27 color=Red size=3 !line.CTR427589 48190
+AddBusMarker Bus=BMT172309876 code=27 color=Red size=3 !line.CTR233696 49633
+AddBusMarker Bus=BMT171099020 code=27 color=Red size=3 !line.CTR554583 49199
+AddBusMarker Bus=BMT167983603 code=27 color=Red size=3 !line.CTR557187 48491
+AddBusMarker Bus=BMT100949102 code=27 color=Red size=3 !line.CTR237231 48624
+AddBusMarker Bus=BMT156119642 code=27 color=Red size=3 !line.CTR237637 48506
+AddBusMarker Bus=BMT100961233 code=27 color=Red size=3 !line.CTR237749 48523
+AddBusMarker Bus=BMT151936948 code=27 color=Red size=3 !line.CTR238099 48393
+AddBusMarker Bus=BMT127036443 code=27 color=Red size=3 !line.CTR238141 48399
+AddBusMarker Bus=BMT104814355 code=27 color=Red size=3 !line.CTR203750 49183
+AddBusMarker Bus=BMT156119526 code=27 color=Red size=3 !line.CTR203806 73543
+AddBusMarker Bus=BMT160932769 code=27 color=Red size=3 !line.CTR203820 49392
+AddBusMarker Bus=BMT166637398 code=27 color=Red size=3 !line.CTR434400 50835
+AddBusMarker Bus=BMT100952168 code=27 color=Red size=3 !line.CTR434778 51231
+AddBusMarker Bus=BMT167983592 code=27 color=Red size=3 !line.CTR557215 48489
+AddBusMarker Bus=BMT100950201 code=27 color=Red size=3 !line.CTR55763 48303
+AddBusMarker Bus=BMT160993421 code=27 color=Red size=3 !line.CTR557761 48384
+AddBusMarker Bus=BMT100951699 code=27 color=Red size=3 !line.CTR557803 48337
+AddBusMarker Bus=BMT109143085 code=27 color=Red size=3 !line.CTR558237 48221
+AddBusMarker Bus=BMT110361155 code=27 color=Red size=3 !line.CTR558377 48229
+AddBusMarker Bus=BMT173097172 code=27 color=Red size=3 !line.CTR55840 48310
+AddBusMarker Bus=BMT173267500 code=27 color=Red size=3 !line.CTR559217 48002
+AddBusMarker Bus=BMT165148262 code=27 color=Red size=3 !line.CTR559238 48003
+AddBusMarker Bus=BMT172671440 code=27 color=Red size=3 !line.CTR725740 219701
+AddBusMarker Bus=BMT129949353 code=27 color=Red size=3 !line.CTR809649 305865
+AddBusMarker Bus=BMT100953176 code=27 color=Red size=3 !line.CTRR15821 78259
+AddBusMarker Bus=BMT169585671 code=27 color=Red size=3 !line.CTRR36764 234457
+AddBusMarker Bus=BMT166649648 code=27 color=Red size=3 !line.CTRR36798 256162
+AddBusMarker Bus=BMT173198922 code=27 color=Red size=3 !line.CTRR36807 234462
+AddBusMarker Bus=BMT157441421 code=27 color=Red size=3 !line.CTRR23927 297762
+AddBusMarker Bus=BMT160899331 code=27 color=Red size=3 !line.CTR846218 375253
+AddBusMarker Bus=BMT148811384 code=27 color=Red size=3 !line.CTR846283 293850
+AddBusMarker Bus=BMT139432680 code=27 color=Red size=3 !line.CTRR30885 293847
+AddBusMarker Bus=BMT166546578 code=27 color=Red size=3 !line.CTR431166 48949
+AddBusMarker Bus=BMT158401117 code=27 color=Red size=3 !line.CTR431915 49177
+AddBusMarker Bus=BMT171101773 code=27 color=Red size=3 !line.CTR431971 276807
+AddBusMarker Bus=BMT161886329 code=27 color=Red size=3 !line.CTRR32988 137336
+AddBusMarker Bus=BMT118364451 code=27 color=Yellow size=3 !line.CTRR42939 319112
+AddBusMarker Bus=BMT156119635 code=27 color=Red size=3 !line.CTR475231 186861
+! AddBusMarker Bus=BMT164697605 code=27 color=Red size=3 !line.CTR52669 49132 !other sub
+AddBusMarker Bus=BMT159365556 code=27 color=Red size=3 !line.CTR819099 190107
+AddBusMarker Bus=BMT164224998 code=27 color=Red size=3 !line.CTRR37747 260239
+AddBusMarker Bus=BMT100957782 code=27 color=Red size=3 !line.CTR251245 48028
+! AddBusMarker Bus=BMT172157933 code=27 color=Red size=3 !line.CTR341307 130019 !outro alim
+AddBusMarker Bus=BMT100957544 code=27 color=Red size=3 !line.CTR56771 48011
+AddBusMarker Bus=BMT166541095 code=27 color=Red size=3 !line.CTR56995 48009
+AddBusMarker Bus=BMT172739121 code=27 color=Red size=3 !line.CTRR33830 234463
+AddBusMarker Bus=BMT160932768 code=27 color=Red size=3 !line.CTRR33834 234467
+AddBusMarker Bus=BMT160932764 code=27 color=Red size=3 !line.CTRR34218 234461
+AddBusMarker Bus=BMT165090249 code=27 color=Red size=3 !line.CTR366374 137306
+AddBusMarker Bus=BMT165269613 code=27 color=Red size=3 !line.CTR54951 48485
+AddBusMarker Bus=BMT166654682 code=27 color=Red size=3 !line.CTR551727 50957
+AddBusMarker Bus=BMT100946372 code=27 color=Red size=3 !line.CTR55231 48467
+
+!-- Gerar Gráficos
+! plot circuit quantity=power dots=n labels=n subs=y showloops=n C1=Blue C2=Blue C3=Red R2=0.95 R3=0.90
+
+relcalc !restore=yes !If restore=y automatic restoration of unfaulted downline section is assumed
+ 
+? energymeter.carga.saifi
+? energymeter.carga.saidi
