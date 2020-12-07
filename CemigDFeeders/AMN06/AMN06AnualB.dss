@@ -7,3 +7,8 @@ CalcVoltageBases
 ! Solve mode=daily,hour=0,number=24,stepsize=1h
 
 ! BusCoords AMN06CoordMT.csv
+
+! manobra fechar 
+!close line.CTR378512 term=1 !233454
+!open line.CTR230035 term=1 !53296
+
