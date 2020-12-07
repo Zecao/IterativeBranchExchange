@@ -101,7 +101,6 @@ new line.CTR130074 bus1=BMT124406888.1.2.3,bus2=BMT143537132.1.2.3,Phases=3,Line
 new line.CTR130088 bus1=BMT124406615.1.2.3,bus2=BMT150655039.1.2.3,Phases=3,LineCode=tieSwitch,Length=0.001,Units=km,switch=T !numEQ 292427
 new line.CTR130102 bus1=BMT165641423.1.2.3,bus2=BMT165641438.1.2.3,Phases=3,LineCode=tieSwitch,Length=0.001,Units=km,switch=T !numEQ 44112
 new line.CTR130109 bus1=BMT143537006.1.2.3,bus2=BMT124406685.1.2.3,Phases=3,LineCode=tieSwitch,Length=0.001,Units=km,switch=T !numEQ 44055
-! manobra fechar
 open line.CTR130109 term=1
 new line.CTR159173 bus1=BMT167591880.1.2.3,bus2=BMT124419124.1.2.3,Phases=3,LineCode=tieSwitch,Length=0.001,Units=km,switch=T !numEQ 296406
 open line.CTR159173 term=1
@@ -117,8 +116,6 @@ new line.CTR41055 bus1=BMT124407518.1.2.3,bus2=BMT124407560.1.2.3,Phases=3,LineC
 new line.CTR41062 bus1=BMT124406405.3,bus2=BMT154230767.3,Phases=1,LineCode=tieSwitch1,Length=0.001,Units=km,switch=T !numEQ 292924
 new line.CTR41069 bus1=BMT124406552.1.2.3,bus2=BMT143552245.1.2.3,Phases=3,LineCode=tieSwitch,Length=0.001,Units=km,switch=T !numEQ 292428
 new line.CTR41083 bus1=BMT124406482.1.2.3,bus2=BMT143535172.1.2.3,Phases=3,LineCode=tieSwitch,Length=0.001,Units=km,switch=T !numEQ 44169
-! manobra abrir
-! open line.CTR41083 term=1
 new line.CTR41104 bus1=BMT124406629.1.2.3,bus2=BMT143537251.1.2.3,Phases=3,LineCode=tieSwitch,Length=0.001,Units=km,switch=T !numEQ 292425
 new line.CTR41111 bus1=BMT124406916.1.2.3,bus2=BMT162273559.1.2.3,Phases=3,LineCode=tieSwitch,Length=0.001,Units=km,switch=T !numEQ 292430
 new line.CTR41118 bus1=BMT124406643.1.2.3,bus2=BMT143536992.1.2.3,Phases=3,LineCode=tieSwitch,Length=0.001,Units=km,switch=T !numEQ 292432
