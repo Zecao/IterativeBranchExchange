@@ -130,16 +130,17 @@ namespace ExecutorOpenDSS.Classes_Auxiliares
         private List<List<int>> GetFeriados(string ano, MainWindow janela)
         {
             //
-            List<List<int>> feriados = new List<List<int>>();
+            string arquivo = _parGUI._pathRecursosPerm + "Feriados" + ano + ".txt";
 
             //
-            string arquivo = _parGUI._pathRecursosPerm + "Feriados" + ano + ".txt";
+            List<List<int>> feriados = new List<List<int>>();
 
             string line;
             for (int i = 0; i < 12; i++)
             {
                 feriados.Add(new List<int>());
             }
+
             if (File.Exists(arquivo))
             {
                 using (StreamReader file = new StreamReader(arquivo))
@@ -176,11 +177,21 @@ namespace ExecutorOpenDSS.Classes_Auxiliares
 
                 // TODO desabilitei pq a ausencia de feriado nao eh erro grave
                 //janela._cancelarExecucao = true;
-                
+
+                // TODO FIX ME
+                feriados[0].Add(1);
+                feriados[2].Add(1);
+                feriados[3].Add(1);
+                feriados[4].Add(1);
+                feriados[5].Add(1);
+                feriados[6].Add(1);
+                feriados[7].Add(1);
+                feriados[8].Add(1);
+                feriados[9].Add(1);
+                feriados[10].Add(1);
+                feriados[11].Add(1);
             }
             return feriados;
         }
-
-
     }
 }
