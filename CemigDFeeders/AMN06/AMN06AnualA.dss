@@ -1,8 +1,8 @@
 clear
 new circuit.alimAMN06 bus1=BMT98423600.1.2.3,basekv=13.800000000,pu=1.040000000
 
-Redirect ..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
-Redirect ..\0PermRes\Condutores.dss
+Redirect ..\..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
+Redirect ..\..\0PermRes\Condutores.dss
 Redirect AMN06SegmentosMT.dss
 Redirect AMN06ChavesMT.dss
 Redirect AMN06Reguladores.dss
@@ -19,4 +19,26 @@ CalcVoltageBases
 
 Solve mode=daily,hour=18,number=1,stepsize=1h
 
-! BusCoords AMN06CoordMT.csv
+BusCoords AMN06CoordMT.csv
+
+clearBusMarkers
+set MarkRegulators=No regmarkercode=47
+! set Markswitches=Yes Switchmarkercode = 27 
+set MarkCapacitors=No
+set MarkTransformers=No
+
+AddBusMarker Bus=BMT98423600 code=12 color=Green size=5 !substation
+
+! NC
+AddBusMarker Bus=BMT157413119 code=27 color=Green size=3  !53296 
+
+AddBusMarker Bus=BMT148401800 code=27 color=Red size=3 ! 83313
+AddBusMarker Bus=BMT154580249 code=27 color=Yellow size=3 ! 233454
+AddBusMarker Bus=BMT151870739 code=27 color=Red size=3 ! 375132
+AddBusMarker Bus=BMT164088337 code=27 color=Red size=3 ! 53043
+AddBusMarker Bus=BMT157639552 code=27 color=Red size=3 ! 185203
+! AddBusMarker Bus=BMT157439906 code=27 color=Red size=3 ! 250236
+AddBusMarker Bus=BMT155711561 code=27 color=Red size=3 ! 82147
+
+!-- Gerar Gráficos
+plot circuit quantity=power dots=n labels=n subs=y showloops=n C1=Blue C2=Blue C3=Red R2=0.95 R3=0.90
