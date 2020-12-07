@@ -1,6 +1,0 @@
-new transformer.RT5006-1 Phases=1,windings=2,buses=[BMT102963023.1.0 BMT166918524.1.0],conns=[LN LN],kvs=[7.967 7.967],kvas=[1670.000000000 1670.000000000],xhl=0.750000000,%loadloss=0.150000000,%noloadloss=0.032
-new RegControl.RC5006-1 transformer=RT5006-1,winding=2,PTphase=1,ptratio=66.4,band=2,vreg=124.992
-new transformer.RT5006-2 Phases=1,windings=2,buses=[BMT102963023.2.0 BMT166918524.2.0],conns=[LN LN],kvs=[7.967 7.967],kvas=[1670.000000000 1670.000000000],xhl=0.750000000,%loadloss=0.150000000,%noloadloss=0.032
-new RegControl.RC5006-2 transformer=RT5006-2,winding=2,PTphase=1,ptratio=66.4,band=2,vreg=124.992
-new transformer.RT5006-3 Phases=1,windings=2,buses=[BMT102963023.3.0 BMT166918524.3.0],conns=[LN LN],kvs=[7.967 7.967],kvas=[1670.000000000 1670.000000000],xhl=0.750000000,%loadloss=0.150000000,%noloadloss=0.032
-new RegControl.RC5006-3 transformer=RT5006-3,winding=2,PTphase=1,ptratio=66.4,band=2,vreg=124.992
