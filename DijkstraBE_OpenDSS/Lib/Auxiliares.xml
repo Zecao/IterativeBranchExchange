@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Auxiliares</name>
+    </assembly>
+    <members>
+        <member name="T:NotifyBinding.BindingTela">
+            <summary>
+            Herde essa classe para utilizar o NotifyPropertyChanged em bindings no WPF.
+            </summary>
+        </member>
+        <member name="T:SaveData.ConfiguracoesXML">
+            <summary>
+            Classe que contém métodos para gravar e ler arquivos xml contendo configurações do programa que se deseja armazenar.
+            </summary>
+        </member>
+        <member name="M:SaveData.ConfiguracoesXML.Grava(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)">
+            <summary>
+            GravaClasse os dados presentes em "dados" em um arquivo xml.
+            </summary>
+            <param name="dados">Dicionário contendo o par nome da variável / dado a ser gravado. Utiliza o método ToString() do dado</param>
+            <param name="arquivo">Nome do arquivo que será gerado. O padrão é "Configuracoes.xml" no diretório atual</param>
+            <returns>Retorna veradeiro se foi possível gravar, e falso se não foi possível</returns>
+        </member>
+        <member name="M:SaveData.ConfiguracoesXML.Le(System.String)">
+            <summary>
+            Lê o arquivo xml de configurações e retorna um dicionário com os valores e as chaves. 
+            Os valores são retornados como objetos, deve-se usar um cast para atribuir a uma variável.
+            Tipos criados pelo usuário, podem retornar como string.
+            </summary>
+            <param name="arquivo">Nome do arquivo. O padrão é "Configuracoes.xml" no diretório atual</param>
+            <returns>Dicionário contendo a chave/valor armazenado no xml</returns>
+        </member>
+        <member name="M:SaveData.ConfiguracoesXML.GravaClasse``1(``0,System.String)">
+            <summary>
+            GravaClasse as propriedades de uma variável de determinado tipo de classe em um arquivo XML, 
+            utilizando o Serializer
+            </summary>
+            <typeparam name="T">Tipo da classe</typeparam>
+            <param name="classe">Instância da classe que se deseja gravar</param>
+            <param name="arquivo">Nome do arquivo</param>
+        </member>
+        <member name="M:SaveData.ConfiguracoesXML.LeClasse``1(System.String)">
+            <summary>
+            Le as propriedades de uma variável de determinado tipo de classe, 
+            a partir de um arquivo XML, criado utilizando o Serializer. Retorna a instância da classe 
+            </summary>
+            <typeparam name="T">Tipo da classe</typeparam>
+            <param name="arquivo">Nome do arquivo XML</param>
+            <returns>Retorna uma instância da classe, com os dados do XML</returns>
+        </member>
+        <member name="T:FileManipulation.FileManip">
+            <summary>
+            Classe associada a manipulação de arquivos
+            </summary>
+        </member>
+        <member name="M:FileManipulation.FileManip.SafeDelete(System.String)">
+            <summary>
+            Deleta o file "file", caso exista.
+            </summary>
+            <param name="file">Arquivo a ser deletado.</param>
+        </member>
+        <member name="M:FileManipulation.FileManip.Hide(System.String)">
+            <summary>
+            Esconde um arquivo
+            </summary>
+            <param name="file">Arquivo a ser escondido</param>
+        </member>
+        <member name="M:FileManipulation.FileManip.UnHide(System.String)">
+            <summary>
+            Revela um aquivo escondido
+            </summary>
+            <param name="file">Nome do arquivo</param>
+        </member>
+        <member name="M:FileManipulation.FileManip.SafeWriteAllText(System.String,System.String)">
+            <summary>
+            Utiliza o método File.WriteAllText, mas cria o diretório, caso ele não exista
+            </summary>
+            <param name="file">Nome do arquivo</param>
+            <param name="content">Conteúdo a ser gravado no arquivo</param>
+        </member>
+        <member name="M:FileManipulation.FileManip.SafeWriteAllLines(System.String,System.String[])">
+            <summary>
+            Utiliza o método File.WriteAllLines, mas cria o diretório, caso ele não exista
+            </summary>
+            <param name="file">Nome do arquivo</param>
+            <param name="content">Conteúdo a ser gravado no arquivo</param>
+        </member>
+        <member name="M:FileManipulation.FileManip.SafeAppendAllText(System.String,System.String)">
+            <summary>
+            Utiliza o método File.AppendAllTExt, mas cria o diretório, caso ele não exista
+            </summary>
+            <param name="file">Nome do arquivo</param>
+            <param name="content">Conteúdo a ser gravado no arquivo</param>
+        </member>
+        <member name="M:FileManipulation.FileManip.SafeAppendAllLines(System.String,System.String[])">
+            <summary>
+            Utiliza o método File.AppendAllLines, mas cria o diretório, caso ele não exista
+            </summary>
+            <param name="file">Nome do arquivo</param>
+            <param name="content">Conteúdo a ser gravado no arquivo</param>
+        </member>
+        <member name="T:ExcelAux.GravaExcel">
+            <summary>
+            Classe para gravar arquivos no Excel
+            </summary>
+        </member>
+        <member name="M:ExcelAux.GravaExcel.GravaClasse``1(System.Collections.Generic.List{``0},System.String,System.String,System.Boolean)">
+            <summary>
+            Grava uma lista de uma classe no Excel
+            </summary>
+            <typeparam name="T">Tipo da classe</typeparam>
+            <param name="valores">Lista de valores</param>
+            <param name="arquivo">Nome do arquivo</param>
+            <param name="planilha">Nome da planilha. Caso exista, será sobreescrita</param>
+            <param name="append">"true" para adicionar a planilha ao arquivo (se a planilha já existe, é sobreescrita). 
+            "false" para sobreescrever o arquivo. O padrão é true</param>
+        </member>
+        <member name="M:ExcelAux.GravaExcel.GravaClasseCSV``1(System.Collections.Generic.List{``0},System.String,System.Char)">
+            <summary>
+            Grava uma lista de uma classe em csv
+            </summary>
+            <typeparam name="T">Tipo da classe</typeparam>
+            <param name="valores">Lista de valores</param>
+            <param name="arquivo">Nome do arquivo</param>
+            <param name="separador">Caracter de separação dos campos no csv</param>
+        </member>
+        <member name="M:ExcelAux.GravaExcel.GravaLista``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}},System.String,System.String,System.Boolean)">
+            <summary>
+            Grava uma Lista de Lista de objetos no Excel
+            </summary>
+            <param name="valores">Dados a serem gravados. A lista externa é o conjunto de linhas,
+            com cada lista interna correspondendo a uma linha</param>
+            <param name="arquivo">Nome do arquivo</param>
+            <param name="planilha">Nome da planilha. O valor default é Plan1. A planilha é sobreescrita, 
+            caso já exista uma com o nome especificado</param>
+            <param name="append">Caso seja true e o arquivo exista, o conteúdo é adicionado 
+            (A planilha ainda é sobrescrita, caso já exista uma com o mesmo nome). 
+            Caso contrário, o arquivo é sobreescrito. O padrão é true.</param>
+        </member>
+        <member name="M:ExcelAux.GravaExcel.CsvToExcel(System.String,System.String,System.Char,System.String,System.Boolean)">
+            <summary>
+            Converte um CSV para XLSX
+            </summary>
+            <param name="arquivoCsv">Caminho para o arquivo CSV</param>
+            <param name="arquivoExcel">Caminho para o arquivo de saída</param>
+            <param name="separador">Separador do CSV. O padrão é ';'</param>
+            <param name="planilha">Nome da planilha. Caso já exista, será sobreescrita</param>
+            <param name="append">Marque false para sobrescrever um arquivo, 
+            true para adicionar o conteúdo ao arquivo 
+            (caso a planilha com o nome fornecido já exista, ela será sobrescrita). O padrão é true</param>
+        </member>
+        <member name="M:ExcelAux.GravaExcel.LeCsv(System.String,System.Char)">
+            <summary>
+            Lê um arquivo CSV e retorna uma lista de lista de strings
+            </summary>
+            <param name="arquivo">Nome do arquivo CSV</param>
+            <param name="separador">Separador de campos. O padrão é ';'</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

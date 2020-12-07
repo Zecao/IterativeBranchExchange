@@ -1,0 +1,3111 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dss_sharp</name>
+    </assembly>
+    <members>
+        <member name="T:dss_sharp.OpenDSS.Lib">
+            <summary>
+            Lib exposes DSS C-API functions to C#, as well as contains
+            some helper functions.
+            </summary>
+        </member>
+        <member name="T:dss_sharp.OpenDSS.Lib.ConstCharPtrMarshaler">
+            <summary>
+            Custom marshaler to avoid the deallocation of Pascal strings
+            
+            The default Marshaler tries to deallocate the native memory, which
+            is too restrictive, since Pascal uses a different memory allocation 
+            model.
+            
+            Note: we probably should use custom marshalers for every other 
+                  pointer in future.
+            
+            Credit: https://stackoverflow.com/a/38677638
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ActiveClass.ActiveClassName">
+            <summary>
+            (read-only) Returns name of active class.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ActiveClass.AllNames">
+            <summary>
+            (read-only) Array of strings consisting of all element names in the active class.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ActiveClass.Count">
+            <summary>
+            (read-only) Number of elements in Active Class. Same as NumElements Property.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ActiveClass.First">
+            <summary>
+            (read-only) Sets first element in the active class to be the active DSS object. If object is a CktElement, ActiveCktELment also points to this element. Returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ActiveClass.Name">
+            <summary>
+            (read-only) Name of the Active Element of the Active Class
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ActiveClass.Next">
+            <summary>
+            (read-only) Sets next element in active class to be the active DSS object. If object is a CktElement, ActiveCktElement also points to this element.  Returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ActiveClass.NumElements">
+            <summary>
+            (read-only) Number of elements in this class. Same as Count property.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Coorddefined">
+            <summary>
+            (read-only) False=0 else True. Indicates whether a coordinate has been defined for this bus
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.CplxSeqVoltages">
+            <summary>
+            (read-only) Complex Double array of Sequence Voltages (0, 1, 2) at this Bus.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Cust_Duration">
+            <summary>
+            (read-only) Accumulated customer outage durations
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Cust_Interrupts">
+            <summary>
+            (read-only) Annual number of customer-interruptions from this bus
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Distance">
+            <summary>
+            (read-only) Distance from energymeter (if non-zero)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Int_Duration">
+            <summary>
+            (read-only) Average interruption duration, hr.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Isc">
+            <summary>
+            (read-only) Short circuit currents at bus; Complex Array.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Lambda">
+            <summary>
+            (read-only) Accumulated failure rate downstream from this bus; faults per year
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.N_Customers">
+            <summary>
+            (read-only) Total numbers of customers served downline from this bus
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.N_interrupts">
+            <summary>
+            (read-only) Number of interruptions this bus per year
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Name">
+            <summary>
+            (read-only) Name of Bus
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Nodes">
+            <summary>
+            (read-only) Integer Array of Node Numbers defined at the bus in same order as the voltages.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.NumNodes">
+            <summary>
+            (read-only) Number of Nodes this bus.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.SectionID">
+            <summary>
+            (read-only) Integer ID of the feeder section in which this bus is located.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.SeqVoltages">
+            <summary>
+            (read-only) Double Array of sequence voltages at this bus.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.TotalMiles">
+            <summary>
+            (read-only) Total length of line downline from this bus, in miles. For recloser siting algorithm.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.VLL">
+            <summary>
+            (read-only) For 2- and 3-phase buses, returns array of complex numbers represetin L-L voltages in volts. Returns -1.0 for 1-phase bus. If more than 3 phases, returns only first 3.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.VMagAngle">
+            <summary>
+            (read-only) Variant Array of doubles containing voltages in Magnitude (VLN), angle (deg) 
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Voc">
+            <summary>
+            (read-only) Open circuit voltage; Complex array.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Voltages">
+            <summary>
+            (read-only) Complex array of voltages at this bus.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.YscMatrix">
+            <summary>
+            (read-only) Complex array of Ysc matrix at bus. Column by column.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Zsc0">
+            <summary>
+            (read-only) Complex Zero-Sequence short circuit impedance at bus.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.Zsc1">
+            <summary>
+            (read-only) Complex Positive-Sequence short circuit impedance at bus..
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.ZscMatrix">
+            <summary>
+            (read-only) Complex array of Zsc matrix at bus. Column by column.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.kVBase">
+            <summary>
+            (read-only) Base voltage at bus in kV
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.puVLL">
+            <summary>
+            (read-only) Returns Complex array of pu L-L voltages for 2- and 3-phase buses. Returns -1.0 for 1-phase bus. If more than 3 phases, returns only 3 phases.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.puVmagAngle">
+            <summary>
+            (read-only) Array of doubles containig voltage magnitude, angle pairs in per unit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.puVoltages">
+            <summary>
+            (read-only) Complex Array of pu voltages at the bus.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.x">
+            <summary>
+            X Coordinate for bus (double)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Bus.y">
+            <summary>
+            Y coordinate for bus(double)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Capacitors.AllNames">
+            <summary>
+            (read-only) Array of strings with all Capacitor names in the circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Capacitors.AvailableSteps">
+            <summary>
+            (read-only) Number of Steps available in cap bank to be switched ON.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Capacitors.Count">
+            <summary>
+            (read-only) Number of Capacitor objects in active circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Capacitors.First">
+            <summary>
+            (read-only) Sets the first Capacitor active. Returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Capacitors.IsDelta">
+            <summary>
+            Delta connection or wye?
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Capacitors.Name">
+            <summary>
+            Sets the active Capacitor by Name.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Capacitors.Next">
+            <summary>
+            (read-only) Sets the next Capacitor active. Returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Capacitors.NumSteps">
+            <summary>
+            Number of steps (default 1) for distributing and switching the total bank kVAR.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Capacitors.States">
+            <summary>
+            (read) A array of  integer [0..numsteps-1] indicating state of each step. If value is -1 an error has occurred.
+            (write) Array of integer [0 ..numSteps-1] indicating the state of each step
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Capacitors.kV">
+            <summary>
+            Bank kV rating. Use LL for 2 or 3 phases, or actual can rating for 1 phase.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Capacitors.kvar">
+            <summary>
+            Total bank KVAR, distributed equally among phases and steps.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.AllNames">
+            <summary>
+            (read-only) Array of strings with all CapControl names.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.CTratio">
+            <summary>
+            Transducer ratio from pirmary current to control current.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.Capacitor">
+            <summary>
+            Name of the Capacitor that is controlled.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.Count">
+            <summary>
+            (read-only) Number of CapControls in Active Circuit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.Delay">
+            <summary>
+            Time delay [s] to switch on after arming.  Control may reset before actually switching.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.DelayOff">
+            <summary>
+            Time delay [s] before swithcing off a step. Control may reset before actually switching.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.First">
+            <summary>
+            (read-only) Sets the first CapControl as active. Return 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.Mode">
+            <summary>
+            Type of automatic controller.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.MonitoredObj">
+            <summary>
+            Full name of the element that PT and CT are connected to.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.MonitoredTerm">
+            <summary>
+            Terminal number on the element that PT and CT are connected to.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.Name">
+            <summary>
+            Sets a CapControl active by name.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.Next">
+            <summary>
+            (read-only) Gets the next CapControl in the circut. Returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.OFFSetting">
+            <summary>
+            Threshold to switch off a step. See Mode for units.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.ONSetting">
+            <summary>
+            Threshold to arm or switch on a step.  See Mode for units.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.PTratio">
+            <summary>
+            Transducer ratio from primary feeder to control voltage.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.UseVoltOverride">
+            <summary>
+            Enables Vmin and Vmax to override the control Mode
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.Vmax">
+            <summary>
+            With VoltOverride, swtich off whenever PT voltage exceeds this level.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CapControls.Vmin">
+            <summary>
+            With VoltOverride, switch ON whenever PT voltage drops below this level.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.CmathLib.cabs(System.Double,System.Double)">
+            <summary>
+            (read-only) Return abs value of complex number given in real and imag doubles
+            </summary>
+        </member>
+        <member name="M:dss_sharp.CmathLib.cdang(System.Double,System.Double)">
+            <summary>
+            (read-only) Returns the angle, in degrees, of a complex number specified as two doubles: Realpart and imagpart.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.CmathLib.cdiv(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            (read-only) Divide two complex number: (a1, b1)/(a2, b2). Returns array of two doubles representing complex result.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.CmathLib.cmplx(System.Double,System.Double)">
+            <summary>
+            (read-only) Convert real and imaginary doubles to Array of doubles
+            </summary>
+        </member>
+        <member name="M:dss_sharp.CmathLib.cmul(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            (read-only) Multiply two complex numbers: (a1, b1) * (a2, b2). Returns result as a array of two doubles.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.CmathLib.ctopolardeg(System.Double,System.Double)">
+            <summary>
+            (read-only) Convert complex number to magnitude and angle, degrees. Returns array of two doubles.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.CmathLib.pdegtocomplex(System.Double,System.Double)">
+            <summary>
+            (read-only) Convert magnitude, angle in degrees to a complex number. Returns Array of two doubles.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CtrlQueue.ActionCode">
+            <summary>
+            (read-only) Code for the active action. Long integer code to tell the control device what to do
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CtrlQueue.DeviceHandle">
+            <summary>
+            (read-only) Handle (User defined) to device that must act on the pending action.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CtrlQueue.NumActions">
+            <summary>
+            (read-only) Number of Actions on the current actionlist (that have been popped off the control queue by CheckControlActions)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CtrlQueue.PopAction">
+            <summary>
+            (read-only) Pops next action off the action list and makes it the active action. Returns zero if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CtrlQueue.Queue">
+            <summary>
+            (read-only) Array of strings containing the entire queue in CSV format
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CtrlQueue.QueueSize">
+            <summary>
+            (read-only) Number of items on the OpenDSS control Queue
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CtrlQueue.Action">
+            <summary>
+            (write-only) Set the active action by index
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSSProgress.Caption">
+            <summary>
+            (write-only) Caption to appear on the bottom of the DSS Progress form.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSSProgress.PctProgress">
+            <summary>
+            (write-only) Percent progress to indicate [0..100]
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSSProperty.Description">
+            <summary>
+            (read-only) Description of the property.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSSProperty.Name">
+            <summary>
+            (read-only) Name of Property
+            </summary>
+        </member>
+        <member name="M:dss_sharp.DSS_Executive.Command(System.Int32)">
+            <summary>
+            (read-only) Get i-th command
+            </summary>
+        </member>
+        <member name="M:dss_sharp.DSS_Executive.CommandHelp(System.Int32)">
+            <summary>
+            (read-only) Get help string for i-th command
+            </summary>
+        </member>
+        <member name="M:dss_sharp.DSS_Executive.Option(System.Int32)">
+            <summary>
+            (read-only) Get i-th option
+            </summary>
+        </member>
+        <member name="M:dss_sharp.DSS_Executive.OptionHelp(System.Int32)">
+            <summary>
+            (read-only) Get help string for i-th option
+            </summary>
+        </member>
+        <member name="M:dss_sharp.DSS_Executive.OptionValue(System.Int32)">
+            <summary>
+            (read-only) Get present value of i-th option
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSS_Executive.NumCommands">
+            <summary>
+            (read-only) Number of DSS Executive Commands
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSS_Executive.NumOptions">
+            <summary>
+            (read-only) Number of DSS Executive Options
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Error.Description">
+            <summary>
+            (read-only) Description of error for last operation
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Error.Number">
+            <summary>
+            (read-only) Error Number
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.AllNames">
+            <summary>
+            (read-only) Array of strings containing names of all Fuses in the circuit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.Count">
+            <summary>
+            (read-only) Number of Fuse elements in the circuit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.Delay">
+            <summary>
+            (read) A fixed delay time in seconds added to the fuse blowing time determined by the TCC curve. Default is 0.
+            (write) Fixed delay time in seconds added to the fuse blowing time to represent fuse clear or other delay.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.First">
+            <summary>
+            (read-only) Set the first Fuse to be the active fuse. Returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.MonitoredObj">
+            <summary>
+            Full name of the circuit element to which the fuse is connected.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.MonitoredTerm">
+            <summary>
+            (read) Terminal number to which the fuse is connected.
+            (write) Number of the terminal to which the fuse is connected
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.Name">
+            <summary>
+            (read) Get the name of the active Fuse element
+            (write) Set the active Fuse element by name.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.Next">
+            <summary>
+            (read-only) Advance the active Fuse element pointer to the next fuse. Returns 0 if no more fuses.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.NumPhases">
+            <summary>
+            (read-only) Number of phases, this fuse. 
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.RatedCurrent">
+            <summary>
+            (read) Multiplier or actual amps for the TCCcurve object. Defaults to 1.0.  Multipliy current values of TCC curve by this to get actual amps.
+            (write) Multiplier or actual fuse amps for the TCC curve. Defaults to 1.0. Has to correspond to the Current axis of TCCcurve object.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.SwitchedObj">
+            <summary>
+            (read) Full name of the circuit element switch that the fuse controls. Defaults to the MonitoredObj.
+            (write) Full name of the circuit element switch that the fuse controls. Defaults to MonitoredObj.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.SwitchedTerm">
+            <summary>
+            (read) Number of the terminal containing the switch controlled by the fuse.
+            (write) Number of the terminal of the controlled element containing the switch controlled by the fuse.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.TCCcurve">
+            <summary>
+            Name of the TCCcurve object that determines fuse blowing.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Fuses.idx">
+            <summary>
+            (read) Get/set active fuse by index into the list of fuses. 1 based: 1..count
+            (write) Set Fuse active by index into the list of fuses. 1..count
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.AllNames">
+            <summary>
+            (read-only) Array of names of all Generator objects.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.Count">
+            <summary>
+            (read-only) Number of Generator Objects in Active Circuit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.First">
+            <summary>
+            (read-only) Sets first Generator to be active.  Returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.ForcedON">
+            <summary>
+            Indicates whether the generator is forced ON regardles of other dispatch criteria.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.Model">
+            <summary>
+            Generator Model
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.Name">
+            <summary>
+            Sets a generator active by name.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.Next">
+            <summary>
+            (read-only) Sets next Generator to be active.  Returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.PF">
+            <summary>
+            Power factor (pos. = producing vars). Updates kvar based on present kW value.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.Phases">
+            <summary>
+            Number of phases
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.RegisterNames">
+            <summary>
+            (read-only) Array of Names of all generator energy meter registers
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.RegisterValues">
+            <summary>
+            (read-only) Array of valus in generator energy meter registers.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.Vmaxpu">
+            <summary>
+            (read) vmaxpu for Generator model
+            (write) Vmaxpu for generator model
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.Vminpu">
+            <summary>
+            Vminpu for Generator model
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.idx">
+            <summary>
+            (read) Get/Set active Generator by index into generators list.  1..Count
+            (write) Get/Set active Generator by index into generators list. 1..Count
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.kV">
+            <summary>
+            Voltage base for the active generator, kV
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.kVArated">
+            <summary>
+            (read) kVA rating of the generator
+            (write) KVA Rating of the generator
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.kW">
+            <summary>
+            (read) kW output for the active generator. kvar is updated for current power factor.
+            (write) kW output for the active generator. kvar is updated for current power factor
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Generators.kvar">
+            <summary>
+            (read) kvar output for the active generator. Updates power factor based on present kW value.
+            (write) kvar output for the active generator. Updates power factor based on present kW.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ISources.AllNames">
+            <summary>
+            (read-only) Array of strings containing names of all ISOURCE elements.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ISources.Amps">
+            <summary>
+            (read) Get the magnitude of the ISOURCE in amps
+            (write) Set the magnitude of the ISOURCE, amps
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ISources.AngleDeg">
+            <summary>
+            Phase angle for ISOURCE, degrees
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ISources.Count">
+            <summary>
+            (read-only) Count: Number of ISOURCE elements.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ISources.First">
+            <summary>
+            (read-only) Set the First ISOURCE to be active; returns Zero if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ISources.Frequency">
+            <summary>
+            (read) The present frequency of the ISOURCE, Hz
+            (write) Set the present frequency for the ISOURCE
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ISources.Name">
+            <summary>
+            (read) Get name of active ISOURCE
+            (write) Set Active ISOURCE by name
+            </summary>
+        </member>
+        <member name="P:dss_sharp.ISources.Next">
+            <summary>
+            (read-only) Sets the next ISOURCE element to be the active one. Returns Zero if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.AllNames">
+            <summary>
+            (read-only) Array of strings with names of all devices
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.C0">
+            <summary>
+            (read-only) Zero-sequence capacitance, nF per unit length
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.C1">
+            <summary>
+            (read-only) Positive-sequence capacitance, nF per unit length
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.Cmatrix">
+            <summary>
+            (read-only) Capacitance matrix, nF per unit length
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.Count">
+            <summary>
+            (read-only) Number of LineCodes
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.EmergAmps">
+            <summary>
+            (read-only) Emergency ampere rating
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.IsZ1Z0">
+            <summary>
+            (read-only) Flag denoting whether impedance data were entered in symmetrical components
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.Name">
+            <summary>
+            (read-only) Name of active LineCode
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.NormAmps">
+            <summary>
+            (read-only) Normal Ampere rating
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.Phases">
+            <summary>
+            Number of Phases
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.R0">
+            <summary>
+            (read-only) Zero-Sequence Resistance, ohms per unit length
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.R1">
+            <summary>
+            (read-only) Positive-sequence resistance ohms per unit length
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.Rmatrix">
+            <summary>
+            (read-only) Resistance matrix, ohms per unit length
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.X0">
+            <summary>
+            (read-only) Zero Sequence Reactance, Ohms per unit length
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.X1">
+            <summary>
+            (read-only) Posiive-sequence reactance, ohms per unit length
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LineCodes.Xmatrix">
+            <summary>
+            (read-only) Reactance matrix, ohms per unit length
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.AllNames">
+            <summary>
+            (read-only) Names of all Line Objects
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Bus1">
+            <summary>
+            Name of bus for terminal 1.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Bus2">
+            <summary>
+            Name of bus for terminal 2.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.C0">
+            <summary>
+            Zero Sequence capacitance, nanofarads per unit length.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.C1">
+            <summary>
+            Positive Sequence capacitance, nanofarads per unit length.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Count">
+            <summary>
+            (read-only) Number of Line objects in Active Circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.EmergAmps">
+            <summary>
+            Emergency (maximum) ampere rating of Line.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.First">
+            <summary>
+            (read-only) Invoking this property sets the first element active.  Returns 0 if no lines.  Otherwise, index of the line element.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Geometry">
+            <summary>
+            Line geometry code
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Length">
+            <summary>
+            Length of line section in units compatible with the LineCode definition.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.LineCode">
+            <summary>
+            Name of LineCode object that defines the impedances.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Name">
+            <summary>
+            Specify the name of the Line element to set it active.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Next">
+            <summary>
+            (read-only) Invoking this property advances to the next Line element active.  Returns 0 if no more lines.  Otherwise, index of the line element.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.NormAmps">
+            <summary>
+            Normal ampere rating of Line.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.NumCust">
+            <summary>
+            (read-only) Number of customers on this line section.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Parent">
+            <summary>
+            (read-only) Sets Parent of the active Line to be the active line. Returns 0 if no parent or action fails.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Phases">
+            <summary>
+            Number of Phases, this Line element.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.R0">
+            <summary>
+            Zero Sequence resistance, ohms per unit length.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.R1">
+            <summary>
+            Positive Sequence resistance, ohms per unit length.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Rg">
+            <summary>
+            Earth return resistance value used to compute line impedances at power frequency
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Rho">
+            <summary>
+            Earth Resistivity, m-ohms
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Rmatrix">
+            <summary>
+            Resistance matrix (full), ohms per unit length. Array of doubles.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Spacing">
+            <summary>
+            Line spacing code
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.TotalCust">
+            <summary>
+            (read-only) Total Number of customers served from this line section.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.X0">
+            <summary>
+            Zero Sequence reactance ohms per unit length.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.X1">
+            <summary>
+            Positive Sequence reactance, ohms per unit length.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Xg">
+            <summary>
+            Earth return reactance value used to compute line impedances at power frequency
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Lines.Yprim">
+            <summary>
+            Yprimitive: Does Nothing at present on Put; Dangerous
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.AllNames">
+            <summary>
+            (read-only) Array of strings containing all Load names
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.AllocationFactor">
+            <summary>
+            (read-only) Factor for allocating loads by connected xfkva
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.CVRcurve">
+            <summary>
+            (read-only) Name of a loadshape with both Mult and Qmult, for CVR factors as a function of time.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.CVRvars">
+            <summary>
+            (read-only) Percent reduction in Q for percent reduction in V. Must be used with dssLoadModelCVR.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.CVRwatts">
+            <summary>
+            (read-only) Percent reduction in P for percent reduction in V. Must be used with dssLoadModelCVR.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Cfactor">
+            <summary>
+            (read-only) Factor relates average to peak kw.  Used for allocation with kwh and kwhdays/
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Count">
+            <summary>
+            (read-only) Number of Load objects in active circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.First">
+            <summary>
+            (read-only) Set first Load element to be active; returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Growth">
+            <summary>
+            (read-only) Name of the growthshape curve for yearly load growth factors.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.IsDelta">
+            <summary>
+            (read-only) Delta loads are connected line-to-line.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Model">
+            <summary>
+            (read-only) The Load Model defines variation of P and Q with voltage.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Name">
+            <summary>
+            Set active load by name.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Next">
+            <summary>
+            (read-only) Sets next Load element to be active; returns 0 of none else index of active load.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.NumCust">
+            <summary>
+            (read-only) Number of customers in this load, defaults to one.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.PF">
+            <summary>
+            (read) Set Power Factor for Active Load. Specify leading PF as negative. Updates kvar based on kW value
+            (write) Set Power Factor for Active Load. Specify leading PF as negative. Updates kvar based on present value of kW.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.PctMean">
+            <summary>
+            (read-only) Average percent of nominal load in Monte Carlo studies; only if no loadshape defined for this load.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.PctStdDev">
+            <summary>
+            (read-only) Percent standard deviation for Monte Carlo load studies; if there is no loadshape assigned to this load.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.RelWeight">
+            <summary>
+            Relative Weighting factor for the active LOAD
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Rneut">
+            <summary>
+            (read-only) Neutral resistance for wye-connected loads.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Spectrum">
+            <summary>
+            (read-only) Name of harmonic current spectrrum shape.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Status">
+            <summary>
+            (read-only) Response to load multipliers: Fixed (growth only), Exempt (no LD curve), Variable (all).
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Vmaxpu">
+            <summary>
+            (read-only) Maximum per-unit voltage to use the load model. Above this, constant Z applies.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Vminemerg">
+            <summary>
+            (read-only) Minimum voltage for unserved energy (UE) evaluation.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Vminnorm">
+            <summary>
+            (read-only) Minimum voltage for energy exceeding normal (EEN) evaluations.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Vminpu">
+            <summary>
+            (read-only) Minimum voltage to apply the load model. Below this, constant Z is used.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Xneut">
+            <summary>
+            (read-only) Neutral reactance for wye-connected loads.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.Yearly">
+            <summary>
+            (read-only) Name of yearly duration loadshape
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.ZIPV">
+            <summary>
+            (read-only) Array of 7  doubles with values for ZIPV property of the LOAD object
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.daily">
+            <summary>
+            (read-only) Name of the loadshape for a daily load profile.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.duty">
+            <summary>
+            (read-only) Name of the loadshape for a duty cycle simulation.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.kV">
+            <summary>
+            Set kV rating for active Load. For 2 or more phases set Line-Line kV. Else actual kV across terminals.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.kW">
+            <summary>
+            Set kW for active Load. Updates kvar based on present PF.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.kva">
+            <summary>
+            (read-only) Base load kva. Also defined kw and kvar or pf input, or load allocation by kwh or xfkva.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.kvar">
+            <summary>
+            (read) Set kvar for active Load. Updates PF based in present kW.
+            (write) Set kvar for active Load. Updates PF based on present kW.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.kwh">
+            <summary>
+            (read-only) kwh billed for this period. Can be used with Cfactor for load allocation.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.kwhdays">
+            <summary>
+            (read-only) Length of kwh billing period for average demand calculation. Default 30.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.pctSeriesRL">
+            <summary>
+            (write-only) Percent of Load that is modeled as series R-L for harmonics studies
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Loads.xfkVA">
+            <summary>
+            (read-only) Rated service transformer kVA for load allocation, using AllocationFactor. Affects kW, kvar, and pf.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.AllNames">
+            <summary>
+            (read-only) Array of strings containing names of all Loadshape objects currently defined.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.Count">
+            <summary>
+            (read-only) Number of Loadshape objects currently defined in Loadshape collection
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.First">
+            <summary>
+            (read-only) Set the first loadshape active and return integer index of the loadshape. Returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.HrInterval">
+            <summary>
+            (read) Fixed interval time value, hours
+            (write) Fixed interval time value, hours.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.MinInterval">
+            <summary>
+            Fixed Interval time value, in minutes
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.Name">
+            <summary>
+            (read) Get the Name of the active Loadshape
+            (write) Set the active Loadshape by name
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.Next">
+            <summary>
+            (read-only) Advance active Loadshape to the next on in the collection. Returns 0 if no more loadshapes.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.Npts">
+            <summary>
+            (read) Get Number of points in active Loadshape.
+            (write) Set number of points to allocate for active Loadshape.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.Pmult">
+            <summary>
+            (read) Array of Doubles for the P multiplier in the Loadshape.
+            (write) Array of doubles containing the P array for the Loadshape.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.Qbase">
+            <summary>
+            Base for normalizing Q curve. If left at zero, the peak value is used.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.Qmult">
+            <summary>
+            Array of doubles containing the Q multipliers.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.TimeArray">
+            <summary>
+            Time array in hours correscponding to P and Q multipliers when the Interval=0.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.LoadShapes.UseActual">
+            <summary>
+            T/F flag to let Loads know to use the actual value in the curve rather than use the value as a multiplier.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.AllBranchesInZone">
+            <summary>
+            (read-only) Wide string list of all branches in zone of the active energymeter object.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.AllEndElements">
+            <summary>
+            (read-only) Array of names of all zone end elements.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.AllNames">
+            <summary>
+            (read-only) Array of all energy Meter names
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.AllocFactors">
+            <summary>
+            Array of doubles: set the phase allocation factors for the active meter.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.AvgRepairTime">
+            <summary>
+            (read-only) Average Repair time in this section of the meter zone
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.CalcCurrent">
+            <summary>
+            Set the magnitude of the real part of the Calculated Current (normally determined by solution) for the Meter to force some behavior on Load Allocation
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.Count">
+            <summary>
+            (read-only) Number of Energy Meters in the Active Circuit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.CountBranches">
+            <summary>
+            (read-only) Number of branches in Active energymeter zone. (Same as sequencelist size)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.CountEndElements">
+            <summary>
+            (read-only) Number of zone end elements in the active meter zone.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.CustInterrupts">
+            <summary>
+            (read-only) Total customer interruptions for this Meter zone based on reliability calcs.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.DIFilesAreOpen">
+            <summary>
+            (read-only) Global Flag in the DSS to indicate if Demand Interval (DI) files have been properly opened.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.FaultRateXRepairHrs">
+            <summary>
+            (read-only) Sum of Fault Rate time Repair Hrs in this section of the meter zone
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.First">
+            <summary>
+            (read-only) Set the first energy Meter active. Returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.MeteredElement">
+            <summary>
+            Set Name of metered element
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.MeteredTerminal">
+            <summary>
+            set Number of Metered Terminal
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.Name">
+            <summary>
+            (read) Get/Set the active meter  name.
+            (write) Set a meter to be active by name.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.Next">
+            <summary>
+            (read-only) Sets the next energy Meter active.  Returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.NumSectionBranches">
+            <summary>
+            (read-only) Number of branches (lines) in this section
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.NumSectionCustomers">
+            <summary>
+            (read-only) Number of Customers in the active section.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.NumSections">
+            <summary>
+            (read-only) Number of feeder sections in this meter's zone
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.OCPDeviceType">
+            <summary>
+            (read-only) Type of OCP device. 1=Fuse; 2=Recloser; 3=Relay
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.Peakcurrent">
+            <summary>
+            Array of doubles to set values of Peak Current property
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.RegisterNames">
+            <summary>
+            (read-only) Array of strings containing the names of the registers.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.RegisterValues">
+            <summary>
+            (read-only) Array of all the values contained in the Meter registers for the active Meter.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.SAIDI">
+            <summary>
+            (read-only) SAIDI for this meter's zone. Execute DoReliabilityCalc first.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.SAIFI">
+            <summary>
+            (read-only) Returns SAIFI for this meter's Zone. Execute Reliability Calc method first.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.SAIFIKW">
+            <summary>
+            (read-only) SAIFI based on kW rather than number of customers. Get after reliability calcs.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.SectSeqIdx">
+            <summary>
+            (read-only) SequenceIndex of the branch at the head of this section
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.SectTotalCust">
+            <summary>
+            (read-only) Total Customers downline from this section
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.SeqListSize">
+            <summary>
+            (read-only) Size of Sequence List
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.SequenceIndex">
+            <summary>
+            Get/set Index into Meter's SequenceList that contains branch pointers in lexical order. Earlier index guaranteed to be upline from later index. Sets PDelement active.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.SumBranchFltRates">
+            <summary>
+            (read-only) Sum of the branch fault rates in this section of the meter's zone
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.TotalCustomers">
+            <summary>
+            (read-only) Total Number of customers in this zone (downline from the EnergyMeter)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Meters.Totals">
+            <summary>
+            (read-only) Totals of all registers of all meters
+            </summary>
+        </member>
+        <member name="M:dss_sharp.Monitors.Channel(System.Int32)">
+            <summary>
+            (read-only) Array of doubles for the specified channel  (usage: MyArray = DSSMonitor.Channel(i)) A Save or SaveAll  should be executed first. Done automatically by most standard solution modes.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.AllNames">
+            <summary>
+            (read-only) Array of all Monitor Names
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.ByteStream">
+            <summary>
+            (read-only) Byte Array containing monitor stream values. Make sure a "save" is done first (standard solution modes do this automatically)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.Count">
+            <summary>
+            (read-only) Number of Monitors
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.Element">
+            <summary>
+            Full object name of element being monitored.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.FileName">
+            <summary>
+            (read-only) Name of CSV file associated with active Monitor.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.FileVersion">
+            <summary>
+            (read-only) Monitor File Version (integer)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.First">
+            <summary>
+            (read-only) Sets the first Monitor active.  Returns 0 if no monitors.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.Header">
+            <summary>
+            (read-only) Header string;  Array of strings containing Channel names
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.Mode">
+            <summary>
+            Set Monitor mode (bitmask integer - see DSS Help)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.Name">
+            <summary>
+            Sets the active Monitor object by name
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.Next">
+            <summary>
+            (read-only) Sets next monitor active.  Returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.NumChannels">
+            <summary>
+            (read-only) Number of Channels in the active Monitor
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.RecordSize">
+            <summary>
+            (read-only) Size of each record in ByteStream (Integer). Same as NumChannels.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.SampleCount">
+            <summary>
+            (read-only) Number of Samples in Monitor at Present
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.Terminal">
+            <summary>
+            (read) Terminal number of element being monitored
+            (write) Terminal number of element being monitored.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.dblFreq">
+            <summary>
+            (read-only) Array of doubles containing frequency values for harmonics mode solutions; Empty for time mode solutions (use dblHour)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Monitors.dblHour">
+            <summary>
+            (read-only) Array of doubles containgin time value in hours for time-sampled monitor values; Empty if frequency-sampled values for harmonics solution  (see dblFreq)
+            </summary>
+        </member>
+        <member name="M:dss_sharp.Parser.Matrix(System.Int32)">
+            <summary>
+            (read-only) Use this property to parse a Matrix token in OpenDSS format.  Returns square matrix of order specified. Order same as default Fortran order: column by column.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.Parser.SymMatrix(System.Int32)">
+            <summary>
+            (read-only) Use this property to parse a matrix token specified in lower triangle form. Symmetry is forced.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.Parser.Vector(System.Int32)">
+            <summary>
+            (read-only) Returns token as array of doubles. For parsing quoted array syntax.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Parser.AutoIncrement">
+            <summary>
+            Default is FALSE. If TRUE parser automatically advances to next token after DblValue, IntValue, or StrValue. Simpler when you don't need to check for parameter names.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Parser.BeginQuote">
+            <summary>
+            (read) Get String containing the the characters for Quoting in OpenDSS scripts. Matching pairs defined in EndQuote. Default is "'([{.
+            (write) Set String containing the the characters for Quoting in OpenDSS scripts. Matching pairs defined in EndQuote. Default is "'([{.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Parser.CmdString">
+            <summary>
+            String to be parsed. Loading this string resets the Parser to the beginning of the line. Then parse off the tokens in sequence.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Parser.DblValue">
+            <summary>
+            (read-only) Return next parameter as a double.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Parser.Delimiters">
+            <summary>
+            String defining hard delimiters used to separate token on the command string. Default is , and =. The = separates token name from token value. These override whitesspace to separate tokens.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Parser.EndQuote">
+            <summary>
+            String containing characters, in order, that match the beginning quote characters in BeginQuote. Default is "')]}
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Parser.IntValue">
+            <summary>
+            (read-only) Return next parameter as a long integer.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Parser.NextParam">
+            <summary>
+            (read-only) Get next token and return tag name (before = sign) if any. See AutoIncrement.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Parser.StrValue">
+            <summary>
+            (read-only) Return next parameter as a string
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Parser.WhiteSpace">
+            <summary>
+            (read) Get the characters used for White space in the command string.  Default is blank and Tab.
+            (write) Set the characters used for White space in the command string.  Default is blank and Tab.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.AccumulatedL">
+            <summary>
+            (read-only) accummulated failure rate for this branch on downline
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.Count">
+            <summary>
+            (read-only) Number of PD elements (including disabled elements)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.FaultRate">
+            <summary>
+            (read-only) Get/Set Number of failures per year. For LINE elements: Number of failures per unit length per year. 
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.First">
+            <summary>
+            (read-only) Set the first enabled PD element to be the active element.  Returns 0 if none found.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.FromTerminal">
+            <summary>
+            (read-only) Number of the terminal of active PD element that is on the "from" side. This is set after the meter zone is determined.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.IsShunt">
+            <summary>
+            (read-only) Variant boolean indicating of PD element should be treated as a shunt element rather than a series element. Applies to Capacitor and Reactor elements in particular.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.Lambda">
+            <summary>
+            (read-only) Failure rate for this branch. Faults per year including length of line.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.Name">
+            <summary>
+            (read-only) Get/Set name of active PD Element. Returns null string if active element is not PDElement type.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.Next">
+            <summary>
+            (read-only) Advance to the next PD element in the circuit. Enabled elements only. Returns 0 when no more elements.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.Numcustomers">
+            <summary>
+            (read-only) Number of customers, this branch
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.ParentPDElement">
+            <summary>
+            (read-only) Sets the parent PD element to be the active circuit element.  Returns 0 if no more elements upline.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.RepairTime">
+            <summary>
+            Average repair time for this element in hours
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.SectionID">
+            <summary>
+            (read-only) Integer ID of the feeder section that this PDElement branch is part of
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.TotalMiles">
+            <summary>
+            (read-only) Total miles of line from this element to the end of the zone. For recloser siting algorithm.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.Totalcustomers">
+            <summary>
+            (read-only) Total number of customers from this branch to the end of the zone
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PDElements.pctPermanent">
+            <summary>
+            (read-only) Get/Set percent of faults that are permanent (require repair). Otherwise, fault is assumed to be transient/temporary.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.AllNames">
+            <summary>
+            (read-only) Vairant array of strings with all PVSystem names
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.Count">
+            <summary>
+            (read-only) Number of PVSystems
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.First">
+            <summary>
+            (read-only) Set first PVSystem active; returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.Irradiance">
+            <summary>
+            (read) Get the present value of the Irradiance property in W/sq-m
+            (write) Set the present Irradiance value in W/sq-m
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.Name">
+            <summary>
+            (read) Get the name of the active PVSystem
+            (write) Set the name of the active PVSystem
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.Next">
+            <summary>
+            (read-only) Sets next PVSystem active; returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.PF">
+            <summary>
+            (read) Get Power factor 
+            (write) Set PF 
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.RegisterNames">
+            <summary>
+            (read-only) Variant Array of PVSYSTEM energy meter register names
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.RegisterValues">
+            <summary>
+            (read-only) Array of doubles containing values in PVSystem registers.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.idx">
+            <summary>
+            (read) Get/set active PVSystem by index;  1..Count
+            (write) Get/Set Active PVSystem by index:  1.. Count
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.kVArated">
+            <summary>
+            (read) Get Rated kVA of the PVSystem
+            (write) Set kva rated
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.kW">
+            <summary>
+            (read-only) get kW output
+            </summary>
+        </member>
+        <member name="P:dss_sharp.PVSystems.kvar">
+            <summary>
+            (read) Get kvar value
+            (write) Set kvar output value
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.AllNames">
+            <summary>
+            (read-only) Array of strings with names of all Reclosers in Active Circuit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.Count">
+            <summary>
+            (read-only) Number of Reclosers in active circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.First">
+            <summary>
+            (read-only) Set First Recloser to be Active Ckt Element. Returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.GroundInst">
+            <summary>
+            (read) Ground (3I0) instantaneous trip setting - curve multipler or actual amps.
+            (write) Ground (3I0) trip instantaneous multiplier or actual amps
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.GroundTrip">
+            <summary>
+            (read-only) Ground (3I0) trip multiplier or actual amps
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.MonitoredObj">
+            <summary>
+            (read) Full name of object this Recloser is monitoring.
+            (write) Set monitored object by full name.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.MonitoredTerm">
+            <summary>
+            (read-only) Terminal number of Monitored object for the Recloser 
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.Name">
+            <summary>
+            (read-only) Get Name of active Recloser or set the active Recloser by name.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.Next">
+            <summary>
+            (read-only) Iterate to the next recloser in the circuit. Returns zero if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.NumFast">
+            <summary>
+            (read-only) Number of fast shots
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.PhaseInst">
+            <summary>
+            (read-only) Phase instantaneous curve multipler or actual amps
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.PhaseTrip">
+            <summary>
+            (read) Phase trip curve multiplier or actual amps
+            (write) Phase Trip multiplier or actual amps
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.RecloseIntervals">
+            <summary>
+            (read-only) Variant Array of Doubles: reclose intervals, s, between shots.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.Shots">
+            <summary>
+            (read-only) Number of shots to lockout (fast + delayed)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.SwitchedObj">
+            <summary>
+            (read-only) Full name of the circuit element that is being switched by the Recloser.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.SwitchedTerm">
+            <summary>
+            (read-only) Terminal number of the controlled device being switched by the Recloser
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Reclosers.idx">
+            <summary>
+            (read) Get/Set the active Recloser by index into the recloser list.  1..Count
+            (write) Get/Set the Active Recloser by index into the recloser list. 1..Count
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.AllNames">
+            <summary>
+            (read-only) Array of strings containing all RegControl names
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.CTPrimary">
+            <summary>
+            CT primary ampere rating (secondary is 0.2 amperes)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.Count">
+            <summary>
+            (read-only) Number of RegControl objects in Active Circuit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.Delay">
+            <summary>
+            Time delay [s] after arming before the first tap change. Control may reset before actually changing taps.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.First">
+            <summary>
+            (read-only) Sets the first RegControl active. Returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.ForwardBand">
+            <summary>
+            Regulation bandwidth in forward direciton, centered on Vreg
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.ForwardR">
+            <summary>
+            LDC R setting in Volts
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.ForwardVreg">
+            <summary>
+            Target voltage in the forward direction, on PT secondary base.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.ForwardX">
+            <summary>
+            LDC X setting in Volts
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.IsInverseTime">
+            <summary>
+            Time delay is inversely adjsuted, proportinal to the amount of voltage outside the regulating band.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.IsReversible">
+            <summary>
+            Regulator can use different settings in the reverse direction.  Usually not applicable to substation transformers.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.MaxTapChange">
+            <summary>
+            Maximum tap change per iteration in STATIC solution mode. 1 is more realistic, 16 is the default for a faster soluiton.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.MonitoredBus">
+            <summary>
+            Name of a remote regulated bus, in lieu of LDC settings
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.Name">
+            <summary>
+            (read) Get/set Active RegControl  name
+            (write) Sets a RegControl active by name
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.Next">
+            <summary>
+            (read-only) Sets the next RegControl active. Returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.PTratio">
+            <summary>
+            PT ratio for voltage control settings
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.ReverseBand">
+            <summary>
+            Bandwidth in reverse direction, centered on reverse Vreg.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.ReverseR">
+            <summary>
+            Reverse LDC R setting in Volts.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.ReverseVreg">
+            <summary>
+            Target voltage in the revese direction, on PT secondary base.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.ReverseX">
+            <summary>
+            Reverse LDC X setting in volts.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.TapDelay">
+            <summary>
+            Time delay [s] for subsequent tap changes in a set. Control may reset before actually changing taps.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.TapNumber">
+            <summary>
+            (write-only) Integer number of the tap that the controlled transformer winding is currentliy on.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.TapWinding">
+            <summary>
+            Tapped winding number
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.Transformer">
+            <summary>
+            Name of the transformer this regulator controls
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.VoltageLimit">
+            <summary>
+            First house voltage limit on PT secondary base.  Setting to 0 disables this function.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.RegControls.Winding">
+            <summary>
+            Winding number for PT and CT connections
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Relays.AllNames">
+            <summary>
+            (read-only) Array of strings containing names of all Relay elements
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Relays.Count">
+            <summary>
+            (read-only) Number of Relays in circuit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Relays.First">
+            <summary>
+            (read-only) Set First Relay active. If none, returns 0.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Relays.MonitoredObj">
+            <summary>
+            (read-only) Full name of object this Relay is monitoring.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Relays.MonitoredTerm">
+            <summary>
+            (read-only) Number of terminal of monitored element that this Relay is monitoring.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Relays.Name">
+            <summary>
+            (read) Get name of active relay.
+            (write) Set Relay active by name
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Relays.Next">
+            <summary>
+            (read-only) Advance to next Relay object. Returns 0 when no more relays.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Relays.SwitchedObj">
+            <summary>
+            (read-only) Full name of element that will be switched when relay trips.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Relays.SwitchedTerm">
+            <summary>
+            (write-only) Terminal number of the switched object that will be opened when the relay trips.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Relays.idx">
+            <summary>
+            (read) Get/Set active Relay by index into the Relay list. 1..Count
+            (write) Get/Set Relay active by index into relay list. 1..Count
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.AllNames">
+            <summary>
+            (read-only) Array of Sensor names.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.Count">
+            <summary>
+            (read-only) Number of Sensors in Active Circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.Currents">
+            <summary>
+            (read-only) Array of doubles for the line current measurements; don't use with kWS and kVARS.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.First">
+            <summary>
+            (read-only) Sets the first sensor active. Returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.IsDelta">
+            <summary>
+            (read-only) True if measured voltages are line-line. Currents are always line currents.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.MeteredElement">
+            <summary>
+            (read-only) Full Name of the measured element
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.MeteredTerminal">
+            <summary>
+            (read-only) Number of the measured terminal in the measured element.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.Name">
+            <summary>
+            (read) Name of the active sensor.
+            (write) Set the active Sensor by name.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.Next">
+            <summary>
+            (read-only) Sets the next Sensor active. Returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.PctError">
+            <summary>
+            (read-only) Assumed percent error in the Sensor measurement. Default is 1.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.ReverseDelta">
+            <summary>
+            (read-only) True if voltage measurements are 1-3, 3-2, 2-1.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.Weight">
+            <summary>
+            (read-only) Weighting factor for this Sensor measurement with respect to other Sensors. Default is 1.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.kVARS">
+            <summary>
+            (read-only) Array of doubles for Q measurements. Overwrites Currents with a new estimate using kWS.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.kVS">
+            <summary>
+            (read-only) Array of doubles for the LL or LN (depending on Delta connection) voltage measurements.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.kVbase">
+            <summary>
+            (read-only) Voltage base for the sensor measurements. LL for 2 and 3-phase sensors, LN for 1-phase sensors.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Sensors.kWS">
+            <summary>
+            (read-only) Array of doubles for P measurements. Overwrites Currents with a new estimate using kVARS.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.AllowDuplicates">
+            <summary>
+            {True | False*} Designates whether to allow duplicate names of objects
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.AutoBusList">
+            <summary>
+            List of Buses or (File=xxxx) syntax for the AutoAdd solution mode.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.CktModel">
+            <summary>
+            {dssMultiphase * | dssPositiveSeq} IIndicate if the circuit model is positive sequence.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.ControlTrace">
+            <summary>
+            {True | False*} Denotes whether to trace the control actions to a file.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.EmergVmaxpu">
+            <summary>
+            Per Unit maximum voltage for Emergency conditions.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.EmergVminpu">
+            <summary>
+            Per Unit minimum voltage for Emergency conditions.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.LossRegs">
+            <summary>
+            Integer array defining which energy meter registers to use for computing losses
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.LossWeight">
+            <summary>
+            Weighting factor applied to Loss register values.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.NormVmaxpu">
+            <summary>
+            Per Unit maximum voltage for Normal conditions.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.NormVminpu">
+            <summary>
+            Per Unit minimum voltage for Normal conditions.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.PriceCurve">
+            <summary>
+            Name of LoadShape object that serves as the source of price signal data for yearly simulations, etc.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.PriceSignal">
+            <summary>
+            Price Signal for the Circuit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.Trapezoidal">
+            <summary>
+            {True | False *} Gets value of trapezoidal integration flag in energy meters.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.UEregs">
+            <summary>
+            Array of Integers defining energy meter registers to use for computing UE
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.UEweight">
+            <summary>
+            Weighting factor applied to UE register values.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.VoltageBases">
+            <summary>
+            Array of doubles defining the legal voltage bases in kV L-L
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.ZoneLock">
+            <summary>
+            {True | False*}  Locks Zones on energy meters to prevent rebuilding if a circuit change occurs.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Settings.AllocationFactors">
+            <summary>
+            (write-only) Sets all load allocation factors for all loads defined by XFKVA property to this value.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.AddType">
+            <summary>
+            Type of device to add in AutoAdd Mode: {dssGen (Default) | dssCap}
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Algorithm">
+            <summary>
+            Base Solution algorithm: {dssNormalSolve | dssNewtonSolve}
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Capkvar">
+            <summary>
+            Capacitor kvar for adding capacitors in AutoAdd mode
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.ControlActionsDone">
+            <summary>
+            (read-only) Flag indicating the control actions are done.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.ControlIterations">
+            <summary>
+            Value of the control iteration counter
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.ControlMode">
+            <summary>
+            {dssStatic* | dssEvent | dssTime}  Modes for control devices
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Converged">
+            <summary>
+            Flag to indicate whether the circuit solution converged
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.DefaultDaily">
+            <summary>
+            Default daily load shape (defaults to "Default")
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.DefaultYearly">
+            <summary>
+            Default Yearly load shape (defaults to "Default")
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.EventLog">
+            <summary>
+            (read-only) Array of strings containing the Event Log
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Frequency">
+            <summary>
+            Set the Frequency for next solution
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.GenMult">
+            <summary>
+            Default Multiplier applied to generators (like LoadMult)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.GenPF">
+            <summary>
+            PF for generators in AutoAdd mode
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.GenkW">
+            <summary>
+            Generator kW for AutoAdd mode
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Hour">
+            <summary>
+            Set Hour for time series solutions.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.IntervalHrs">
+            <summary>
+            (read) Get/Set the Solution.IntervalHrs variable used for devices that integrate
+            (write) Get/Set the Solution.IntervalHrs variable for custom solution algorithms
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Iterations">
+            <summary>
+            (read-only) Number of iterations taken for last solution. (Same as TotalIterations)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.LDCurve">
+            <summary>
+            Load-Duration Curve name for LD modes
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.LoadModel">
+            <summary>
+            Load Model: {dssPowerFlow (default) | dssAdmittance}
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.LoadMult">
+            <summary>
+            Default load multiplier applied to all non-fixed loads
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.MaxControlIterations">
+            <summary>
+            Maximum allowable control iterations
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.MaxIterations">
+            <summary>
+            Max allowable iterations.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.MinIterations">
+            <summary>
+            (read) Minimum number of iterations required for a power flow solution.
+            (write) Mininum number of iterations required for a power flow solution.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Mode">
+            <summary>
+            Set present solution mode (by a text code - see DSS Help)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.ModeID">
+            <summary>
+            (read-only) ID (text) of the present solution mode
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.MostIterationsDone">
+            <summary>
+            (read-only) Max number of iterations required to converge at any control iteration of the most recent solution.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Number">
+            <summary>
+            Number of solutions to perform for Monte Carlo and time series simulations
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Process_Time">
+            <summary>
+            (read-only) Gets the time required to perform the latest solution (Read only)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Random">
+            <summary>
+            Randomization mode for random variables "Gaussian" or "Uniform"
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Seconds">
+            <summary>
+            Seconds from top of the hour.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.StepSize">
+            <summary>
+            Time step size in sec
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.SystemYChanged">
+            <summary>
+            (read-only) Flag that indicates if elements of the System Y have been changed by recent activity.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Time_of_Step">
+            <summary>
+            (read-only) Get the solution process time + sample time for time step
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Tolerance">
+            <summary>
+            Solution convergence tolerance.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Total_Time">
+            <summary>
+            (read) Gets the accumulated time of the simulation
+            (write) Sets the Accumulated time of the simulation
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Totaliterations">
+            <summary>
+            (read-only) Total iterations including control iterations for most recent solution.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.Year">
+            <summary>
+            Set year for planning studies
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.dblHour">
+            <summary>
+            Hour as a double, including fractional part
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.pctGrowth">
+            <summary>
+            Percent default  annual load growth rate
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.StepsizeHr">
+            <summary>
+            (write-only) Set Stepsize in Hr
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Solution.StepsizeMin">
+            <summary>
+            (write-only) Set Stepsize in minutes
+            </summary>
+        </member>
+        <member name="P:dss_sharp.SwtControls.Action">
+            <summary>
+            Open or Close the switch. No effect if switch is locked.  However, Reset removes any lock and then closes the switch (shelf state).
+            </summary>
+        </member>
+        <member name="P:dss_sharp.SwtControls.AllNames">
+            <summary>
+            (read-only) Array of strings with all SwtControl names in the active circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.SwtControls.Delay">
+            <summary>
+            Time delay [s] betwen arming and opening or closing the switch.  Control may reset before actually operating the switch.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.SwtControls.First">
+            <summary>
+            (read-only) Sets the first SwtControl active. Returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.SwtControls.IsLocked">
+            <summary>
+            The lock prevents both manual and automatic switch operation.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.SwtControls.Name">
+            <summary>
+            Sets a SwtControl active by Name.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.SwtControls.Next">
+            <summary>
+            (read-only) Sets the next SwtControl active. Returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.SwtControls.NormalState">
+            <summary>
+            (read) Get Normal state of switch
+            (write) set Normal state of switch  (see actioncodes) dssActionOpen or dssActionClose
+            </summary>
+        </member>
+        <member name="P:dss_sharp.SwtControls.State">
+            <summary>
+            (read) Force switch to specified state
+            (write) Get Present state of switch
+            </summary>
+        </member>
+        <member name="P:dss_sharp.SwtControls.SwitchedObj">
+            <summary>
+            Full name of the switched element.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.SwtControls.SwitchedTerm">
+            <summary>
+            Terminal number where the switch is located on the SwitchedObj
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Text.Command">
+            <summary>
+            Input command string for the DSS.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Text.Result">
+            <summary>
+            (read-only) Result string for the last command.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.ActiveBranch">
+            <summary>
+            (read-only) Returns index of the active branch
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.ActiveLevel">
+            <summary>
+            (read-only) Topological depth of the active branch
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.AllIsolatedBranches">
+            <summary>
+            (read-only) Array of all isolated branch names.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.AllIsolatedLoads">
+            <summary>
+            (read-only) Array of all isolated load names.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.AllLoopedPairs">
+            <summary>
+            (read-only) Array of all looped element names, by pairs.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.BackwardBranch">
+            <summary>
+            (read-only) MOve back toward the source, return index of new active branch, or 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.BranchName">
+            <summary>
+            (read-only) Name of the active branch.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.BusName">
+            <summary>
+            (write-only) Set the active branch to one containing this bus, return index or 0 if not found
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.First">
+            <summary>
+            (read-only) Sets the first branch active, returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.FirstLoad">
+            <summary>
+            (read-only) First load at the active branch, return index or 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.ForwardBranch">
+            <summary>
+            (read-only) Move forward in the tree, return index of new active branch or 0 if no more
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.LoopedBranch">
+            <summary>
+            (read-only) Move to looped branch, return index or 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.Next">
+            <summary>
+            (read-only) Sets the next branch active, returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.NextLoad">
+            <summary>
+            (read-only) Next load at the active branch, return index or 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.NumIsolatedBranches">
+            <summary>
+            (read-only) Number of isolated branches (PD elements and capacitors).
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.NumIsolatedLoads">
+            <summary>
+            (read-only) Number of isolated loads
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.NumLoops">
+            <summary>
+            (read-only) Number of loops
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Topology.ParallelBranch">
+            <summary>
+            (read-only) Move to directly parallel branch, return index or 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.AllNames">
+            <summary>
+            (read-only) Array of strings with all Transformer names in the active circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.First">
+            <summary>
+            (read-only) Sets the first Transformer active. Returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.IsDelta">
+            <summary>
+            Active Winding delta or wye connection?
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.MaxTap">
+            <summary>
+            Active Winding maximum tap in per-unit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.MinTap">
+            <summary>
+            Active Winding minimum tap in per-unit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.Name">
+            <summary>
+            Sets a Transformer active by Name.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.Next">
+            <summary>
+            (read-only) Sets the next Transformer active. Returns 0 if no more.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.NumTaps">
+            <summary>
+            Active Winding number of tap steps betwein MinTap and MaxTap.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.NumWindings">
+            <summary>
+            Number of windings on this transformer. Allocates memory; set or change this property first.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.R">
+            <summary>
+            Active Winding resistance in %
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.Rneut">
+            <summary>
+            Active Winding neutral resistance [ohms] for wye connections. Set less than zero for ungrounded wye.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.Tap">
+            <summary>
+            Active Winding tap in per-unit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.Wdg">
+            <summary>
+            Active Winding Number from 1..NumWindings. Update this before reading or setting a sequence of winding properties (R, Tap, kV, kVA, etc.)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.XfmrCode">
+            <summary>
+            Name of an XfrmCode that supplies electircal parameters for this Transformer.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.Xhl">
+            <summary>
+            Percent reactance between windings 1 and 2, on winding 1 kVA base. Use for 2-winding or 3-winding transformers.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.Xht">
+            <summary>
+            Percent reactance between windigns 1 and 3, on winding 1 kVA base.  Use for 3-winding transformers only.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.Xlt">
+            <summary>
+            Percent reactance between windings 2 and 3, on winding 1 kVA base. Use for 3-winding transformers only.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.Xneut">
+            <summary>
+            Active Winding neutral reactance [ohms] for wye connections.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.kV">
+            <summary>
+            Active Winding kV rating.  Phase-phase for 2 or 3 phases, actual winding kV for 1 phase transformer.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Transformers.kVA">
+            <summary>
+            Active Winding kVA rating. On winding 1, this also determines normal and emergency current ratings for all windings.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Vsources.AllNames">
+            <summary>
+            (read-only) Names of all Vsource objects in the circuit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Vsources.AngleDeg">
+            <summary>
+            (read) Phase angle of first phase in degrees
+            (write) phase angle in degrees
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Vsources.BasekV">
+            <summary>
+            (read) Source Voltage in kV
+            (write) Source voltage in kV
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Vsources.Count">
+            <summary>
+            (read-only) Number of Vsource Object
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Vsources.First">
+            <summary>
+            (read-only) Sets the first VSOURCE to be active; Returns 0 if none
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Vsources.Frequency">
+            <summary>
+            (read) Source Frequency in Hz
+            (write) Source frequency in Hz
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Vsources.Name">
+            <summary>
+            (read) Get Active VSOURCE name
+            (write) Set Active VSOURCE by Name
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Vsources.Next">
+            <summary>
+            (read-only) Sets the next VSOURCE object to be active; returns zero if no more
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Vsources.Phases">
+            <summary>
+            (read) Number of Phases
+            (write) Number of phases
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Vsources.pu">
+            <summary>
+            (read) Source pu voltage.
+            (write) Per-unit value of source voltage based on kV
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.Count">
+            <summary>
+            (read-only) Number of XYCurve Objects
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.First">
+            <summary>
+            (read-only) Sets first XYcurve object active; returns 0 if none.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.Name">
+            <summary>
+            (read) Name of active XYCurve Object
+            (write) Get Name of active XYCurve Object
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.Next">
+            <summary>
+            (read-only) Advances to next XYCurve object; returns 0 if no more objects of this class
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.Npts">
+            <summary>
+            (read) Get/Set Number of points in X-Y curve
+            (write) Get/Set Number of Points in X-Y curve
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.Xarray">
+            <summary>
+            Get/Set X values as a Array of doubles. Set Npts to max number expected if setting
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.Xscale">
+            <summary>
+            Factor to scale X values from original curve
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.Xshift">
+            <summary>
+            (read-only) Amount to shift X value from original curve
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.Yarray">
+            <summary>
+            Get/Set Y values in curve; Set Npts to max number expected if setting
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.Yscale">
+            <summary>
+            (read) Factor to scale Y values from original curve
+            (write) Amount to scale Y values from original curve. Represents a curve shift.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.Yshift">
+            <summary>
+            (read-only) amount to shift Y valiue from original curve
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.x">
+            <summary>
+            (read-only) Set X value or get interpolated value after setting Y
+            </summary>
+        </member>
+        <member name="P:dss_sharp.XYCurves.y">
+            <summary>
+            (read) Y value for present X or set this value then get corresponding X
+            (write) Set Y value or get interpolated Y value after setting X
+            </summary>
+        </member>
+        <member name="M:dss_sharp.CktElement.Controller(System.Int32)">
+            <summary>
+            (read-only) Full name of the i-th controller attached to this element. Ex: str = Controller(2).  See NumControls to determine valid index range
+            </summary>
+        </member>
+        <member name="M:dss_sharp.CktElement.Variable(System.String,System.Int32)">
+            <summary>
+            (read-only) For PCElement, get the value of a variable by name. If Code>0 Then no variable by this name or not a PCelement.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.CktElement.Variablei(System.Int32,System.Int32)">
+            <summary>
+            (read-only) For PCElement, get the value of a variable by integer index.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.AllPropertyNames">
+            <summary>
+            (read-only) Array containing all property names of the active device.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.AllVariableNames">
+            <summary>
+            (read-only) Array of strings listing all the published variable names, if a PCElement. Otherwise, null string.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.AllVariableValues">
+            <summary>
+            (read-only) Array of doubles. Values of state variables of active element if PC element.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.BusNames">
+            <summary>
+            (read) Array of strings. Get  Bus definitions to which each terminal is connected. 0-based array.
+            (write) Array of strings. Set Bus definitions for each terminal is connected.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.CplxSeqCurrents">
+            <summary>
+            (read-only) Complex double array of Sequence Currents for all conductors of all terminals of active circuit element.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.CplxSeqVoltages">
+            <summary>
+            (read-only) Complex double array of Sequence Voltage for all terminals of active circuit element.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.Currents">
+            <summary>
+            (read-only) Complex array of currents into each conductor of each terminal
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.CurrentsMagAng">
+            <summary>
+            (read-only) Currents in magnitude, angle format as a array of doubles.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.DisplayName">
+            <summary>
+            Display name of the object (not necessarily unique)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.EmergAmps">
+            <summary>
+            (read) Emergency Ampere Rating for PD elements
+            (write) Emergency Ampere Rating
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.Enabled">
+            <summary>
+            Boolean indicating that element is currently in the circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.EnergyMeter">
+            <summary>
+            (read-only) Name of the Energy Meter this element is assigned to.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.GUID">
+            <summary>
+            (read-only) globally unique identifier for this object
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.Handle">
+            <summary>
+            (read-only) Pointer to this object
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.HasOCPDevice">
+            <summary>
+            (read-only) True if a recloser, relay, or fuse controlling this ckt element. OCP = Overcurrent Protection 
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.HasSwitchControl">
+            <summary>
+            (read-only) This element has a SwtControl attached.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.HasVoltControl">
+            <summary>
+            (read-only) This element has a CapControl or RegControl attached.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.Losses">
+            <summary>
+            (read-only) Total losses in the element: two-element complex array
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.Name">
+            <summary>
+            (read-only) Full Name of Active Circuit Element
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.NodeOrder">
+            <summary>
+            (read-only) Array of integer containing the node numbers (representing phases, for example) for each conductor of each terminal. 
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.NormalAmps">
+            <summary>
+            (read) Normal ampere rating for PD Elements
+            (write) Normal ampere rating
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.NumConductors">
+            <summary>
+            (read-only) Number of Conductors per Terminal
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.NumControls">
+            <summary>
+            (read-only) Number of controls connected to this device. Use to determine valid range for index into Controller array.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.NumPhases">
+            <summary>
+            (read-only) Number of Phases
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.NumProperties">
+            <summary>
+            (read-only) Number of Properties this Circuit Element.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.NumTerminals">
+            <summary>
+            (read-only) Number of Terminals this Circuit Element
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.OCPDevIndex">
+            <summary>
+            (read-only) Index into Controller list of OCP Device controlling this CktElement
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.OCPDevType">
+            <summary>
+            (read-only) 0=None; 1=Fuse; 2=Recloser; 3=Relay;  Type of OCP controller device
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.PhaseLosses">
+            <summary>
+            (read-only) Complex array of losses by phase
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.Powers">
+            <summary>
+            (read-only) Complex array of powers into each conductor of each terminal
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.Residuals">
+            <summary>
+            (read-only) Residual currents for each terminal: (mag, angle)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.SeqCurrents">
+            <summary>
+            (read-only) Double array of symmetrical component currents into each 3-phase terminal
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.SeqPowers">
+            <summary>
+            (read-only) Double array of sequence powers into each 3-phase teminal
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.SeqVoltages">
+            <summary>
+            (read-only) Double array of symmetrical component voltages at each 3-phase terminal
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.Voltages">
+            <summary>
+            (read-only) Complex array of voltages at terminals
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.VoltagesMagAng">
+            <summary>
+            (read-only) Voltages at each conductor in magnitude, angle form as array of doubles.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.CktElement.Yprim">
+            <summary>
+            (read-only) YPrim matrix, column order, complex numbers (paired)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSSElement.AllPropertyNames">
+            <summary>
+            (read-only) Array of strings containing the names of all properties for the active DSS object.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSSElement.Name">
+            <summary>
+            (read-only) Full Name of Active DSS Object (general element or circuit element).
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSSElement.NumProperties">
+            <summary>
+            (read-only) Number of Properties for the active DSS object.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.Circuit.get_Buses(System.Int32)">
+            <summary>
+            Activates and returns a bus by its (zero-based) index.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.Circuit.get_Buses(System.String)">
+            <summary>
+            Activates and returns a bus by its name.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.Circuit.get_CktElements(System.Int32)">
+            <summary>
+            Activates and returns a CktElement by its global (zero-based) index.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.Circuit.get_CktElements(System.String)">
+            <summary>
+            Activates and returns a CktElement by its full name (e.g. "load.abc").
+            </summary>
+        </member>
+        <member name="M:dss_sharp.Circuit.AllNodeDistancesByPhase(System.Int32)">
+            <summary>
+            (read-only) Returns an array of doubles representing the distances to parent EnergyMeter. Sequence of array corresponds to other node ByPhase properties.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.Circuit.AllNodeNamesByPhase(System.Int32)">
+            <summary>
+            (read-only) Return array of strings of the node names for the By Phase criteria. Sequence corresponds to other ByPhase properties.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.Circuit.AllNodeVmagByPhase(System.Int32)">
+            <summary>
+            (read-only) Returns Array of doubles represent voltage magnitudes for nodes on the specified phase.
+            </summary>
+        </member>
+        <member name="M:dss_sharp.Circuit.AllNodeVmagPUByPhase(System.Int32)">
+            <summary>
+            (read-only) Returns array of per unit voltage magnitudes for each node by phase
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.AllBusDistances">
+            <summary>
+            (read-only) Returns distance from each bus to parent EnergyMeter. Corresponds to sequence in AllBusNames.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.AllBusNames">
+            <summary>
+            (read-only) Array of strings containing names of all buses in circuit (see AllNodeNames).
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.AllBusVmag">
+            <summary>
+            (read-only) Array of magnitudes (doubles) of voltages at all buses
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.AllBusVmagPu">
+            <summary>
+            (read-only) Double Array of all bus voltages (each node) magnitudes in Per unit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.AllBusVolts">
+            <summary>
+            (read-only) Complex array of all bus, node voltages from most recent solution
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.AllElementLosses">
+            <summary>
+            (read-only) Array of total losses (complex) in each circuit element
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.AllElementNames">
+            <summary>
+            (read-only) Array of strings containing Full Name of all elements.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.AllNodeDistances">
+            <summary>
+            (read-only) Returns an array of distances from parent EnergyMeter for each Node. Corresponds to AllBusVMag sequence.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.AllNodeNames">
+            <summary>
+            (read-only) Array of strings containing full name of each node in system in same order as returned by AllBusVolts, etc.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.LineLosses">
+            <summary>
+            (read-only) Complex total line losses in the circuit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.Losses">
+            <summary>
+            (read-only) Total losses in active circuit, complex number (two-element array of double).
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.Name">
+            <summary>
+            (read-only) Name of the active circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.NumBuses">
+            <summary>
+            (read-only) Total number of Buses in the circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.NumCktElements">
+            <summary>
+            (read-only) Number of CktElements in the circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.NumNodes">
+            <summary>
+            (read-only) Total number of nodes in the circuit.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.ParentPDElement">
+            <summary>
+            (read-only) Sets Parent PD element, if any, to be the active circuit element and returns index>0; Returns 0 if it fails or not applicable.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.SubstationLosses">
+            <summary>
+            (read-only) Complex losses in all transformers designated to substations.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.SystemY">
+            <summary>
+            (read-only) System Y matrix (after a solution has been performed)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.TotalPower">
+            <summary>
+            (read-only) Total power, watts delivered to the circuit
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.YCurrents">
+            <summary>
+            (read-only) Array of doubles containing complex injection currents for the present solution. Is is the "I" vector of I=YV
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.YNodeOrder">
+            <summary>
+            (read-only) Array of strings containing the names of the nodes in the same order as the Y matrix
+            </summary>
+        </member>
+        <member name="P:dss_sharp.Circuit.YNodeVarray">
+            <summary>
+            (read-only) Complex array of actual node voltages in same order as SystemY matrix.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSS.Classes">
+            <summary>
+            (read-only) List of DSS intrinsic classes (names of the classes)
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSS.DataPath">
+            <summary>
+            DSS Data File Path.  Default path for reports, etc. from DSS
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSS.DefaultEditor">
+            <summary>
+            (read-only) Returns the path name for the default text editor.
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSS.NumCircuits">
+            <summary>
+            (read-only) Number of Circuits currently defined
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSS.NumClasses">
+            <summary>
+            (read-only) Number of DSS intrinsic classes
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSS.NumUserClasses">
+            <summary>
+            (read-only) Number of user-defined classes
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSS.UserClasses">
+            <summary>
+            (read-only) List of user-defined classes
+            </summary>
+        </member>
+        <member name="P:dss_sharp.DSS.Version">
+            <summary>
+            (read-only) Get version string for the DSS.
+            </summary>
+        </member>
+    </members>
+</doc>
