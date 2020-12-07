@@ -68,28 +68,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Auxiliares">
-      <HintPath>Bibliotecas\Auxiliares.dll</HintPath>
+      <HintPath>Lib\Auxiliares.dll</HintPath>
     </Reference>
     <Reference Include="dss_sharp, Version=0.10.0.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Bibliotecas\dss_sharp.dll</HintPath>
+      <HintPath>Lib\dss_sharp.dll</HintPath>
     </Reference>
     <Reference Include="EPPlus">
-      <HintPath>..\..\..\Bibliotecas Externas\EPPlus 4.0.4\EPPlus.dll</HintPath>
+      <HintPath>Lib\EPPlus.dll</HintPath>
     </Reference>
     <Reference Include="PresentationFramework.Aero" />
     <Reference Include="QuickGraph, Version=3.6.61114.0, Culture=neutral, PublicKeyToken=f3fb40175eec2af3, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.dll</HintPath>
+      <HintPath>Lib\QuickGraph.dll</HintPath>
     </Reference>
     <Reference Include="QuickGraph.Data">
-      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Data.dll</HintPath>
+      <HintPath>Lib\QuickGraph.Data.dll</HintPath>
     </Reference>
     <Reference Include="QuickGraph.Graphviz">
-      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Graphviz.dll</HintPath>
+      <HintPath>Lib\QuickGraph.Graphviz.dll</HintPath>
     </Reference>
     <Reference Include="QuickGraph.Serialization">
-      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Serialization.dll</HintPath>
+      <HintPath>Lib\QuickGraph.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
