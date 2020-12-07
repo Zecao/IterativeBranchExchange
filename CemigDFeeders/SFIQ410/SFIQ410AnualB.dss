@@ -7,3 +7,6 @@ CalcVoltageBases
 ! Solve mode=daily,hour=0,number=24,stepsize=1h
 
 ! BusCoords SFIQ410CoordMT.csv
+
+!close  line.CTR238041 term=1 !195463
+!open line.CTR888878 term=1 ! 252959
