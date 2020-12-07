@@ -1,1 +1,3 @@
-new capacitor.CAP287017 bus1=BMT165393272.1.2.3.0,Phases=3,Conn=wye,Kvar=300.000000000,Kv=13.800000000
+new capacitor.CAP287017-1 bus1=BMT165393272.1.0,Phases=1,Conn=LN,Kvar=100,Kv=13.8
+new capacitor.CAP287017-2 bus1=BMT165393272.2.0,Phases=1,Conn=LN,Kvar=100,Kv=13.8
+new capacitor.CAP287017-3 bus1=BMT165393272.3.0,Phases=1,Conn=LN,Kvar=100,Kv=13.8
