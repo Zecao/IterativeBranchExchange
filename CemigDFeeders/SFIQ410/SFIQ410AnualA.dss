@@ -1,8 +1,8 @@
 clear
 new circuit.alimSFIQ410 bus1=BMT125208640.1.2.3,basekv=13.800000000,pu=1.040000000
 
-Redirect ..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
-Redirect ..\0PermRes\Condutores.dss
+Redirect ..\..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
+Redirect ..\..\0PermRes\Condutores.dss
 Redirect SFIQ410SegmentosMT.dss
 Redirect SFIQ410ChavesMT.dss
 Redirect SFIQ410Reguladores.dss
@@ -11,12 +11,47 @@ Redirect SFIQ410SegmentosBT.dss
 Redirect SFIQ410Ramais.dss
 Redirect SFIQ410CargaMT_Dez.dss
 Redirect SFIQ410CargaBT_Dez.dss
+Redirect SFIQ410CapacitorMT.dss
+
+!close line.CTR238041 term=1 !195463
+!open line.CTR888878 term=1 ! 252959
 
 new energymeter.carga element=line.TR3950869,terminal=1
 
 Set voltagebases=[13.800000000 0.24 0.22]
 CalcVoltageBases
 
-! Solve mode=daily,hour=0,number=24,stepsize=1h
+Solve mode=daily,hour=18,number=1,stepsize=1h
 
-! BusCoords SFIQ410CoordMT.csv
+BusCoords SFIQ410CoordMT.csv
+
+clearBusMarkers
+!set MarkRegulators=Yes regmarkercode=47
+set MarkCapacitors=No
+set MarkTransformers=No
+
+AddBusMarker Bus=BMT125208640 code=12 color=Green size=5 
+
+AddBusMarker Bus=BMT162574211 code=27 color=Green size=3
+
+! AddBusMarker Bus=BMT170300432 code=27 color=Red size=3
+! AddBusMarker Bus=BMT170300431 code=27 color=Red size=3
+! AddBusMarker Bus=BMT170800213 code=27 color=Red size=3
+! AddBusMarker Bus=BMT134908463 code=27 color=Red size=3 !outro alim
+! AddBusMarker Bus=BMT170996385 code=27 color=Red size=3
+AddBusMarker Bus=BMT172897887 code=27 color=Yellow size=3
+AddBusMarker Bus=BMT172560871 code=27 color=Red size=3
+AddBusMarker Bus=BMT172511682 code=27 color=Red size=3
+AddBusMarker Bus=BMT172789552 code=27 color=Red size=3
+AddBusMarker Bus=BMT148521963 code=27 color=Red size=3
+AddBusMarker Bus=BMT149201532 code=27 color=Red size=3
+! AddBusMarker Bus=BMT143849864 code=27 color=Red size=3 !outro alim
+! AddBusMarker Bus=BMT172029659 code=27 color=Red size=3 !outro alim
+
+!!-- Gerar Gráficos
+!plot circuit quantity=voltage dots=n labels=n subs=y showloops=n C1=Green C2=Blue C3=Red R2=0.95 R3=0.90
+! plot circuit quantity=power dots=n labels=n subs=y C1=Blue C2=Blue C3=Red R2=0.95 R3=0.9
+
+relcalc !restore=yes !If restore=y automatic restoration of unfaulted downline section is assumed
+! ? energymeter.carga.saifi
+? energymeter.carga.saidi
