@@ -24,6 +24,10 @@ switch nome
     case 'alim\Sistema_415.txt'; 
         sis = 6;        
         return;
+    case 'Sistema119buses'; 
+        sis = 7;        
+        return;
+        
     otherwise
         sis = [];
 end
