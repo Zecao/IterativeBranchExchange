@@ -9,28 +9,32 @@ function alim = carregaChavesIEEE(sistema,alim)
 
 switch sistema
     
-    case 1 %
+    case 1 
         alim.FmChavesIEEE = CHAVESSistemaZhu20023fontes();
          
-    case 2 %
+    case 2 
         alim.FmChavesIEEE = CHAVESSistemaZhu2002();
         
-    case 3 %
+    case 3 
         alim.FmChavesIEEE = CHAVESSistemaHuang2002();
     
-    case 4 %
+    case 4 
+        alim.FmChavesIEEE = CHAVESSistema136();      
 
-        alim.FmChavesIEEE = CHAVESSistema136();
-        
-    case 42 %
-
-        alim.FmChavesIEEE = CHAVESSistema136_teste();
-           
-    case 5 %        
+    case 5        
         alim.FmChavesIEEE = CHAVESSistemaTPC2003();
        
     case 6
         alim.FmChavesIEEE = CHAVESSistema417();
+        
+    case 7
+        alim.FmChavesIEEE = CHAVESSistema119();
+        
+    case 8
+        alim.FmChavesIEEE = CHAVESSistema703();
+        
+    otherwise 
+        disp('ERRO');
         
 end 
 
