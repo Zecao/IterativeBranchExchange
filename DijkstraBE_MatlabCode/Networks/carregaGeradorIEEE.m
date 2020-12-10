@@ -40,17 +40,7 @@ switch opcao
         %cria matriz mGerador
         mGerador = zeros(size(A,1),21);
         mGerador = setaPotenciaGerador(mGerador,20,10);
-        
-    case 42 % 'alim\Sistema_Brasileiro2008.txt';
-        
-        A = Sistema136barras_teste();
-        
-        A = A(1,:);
-        
-        %cria matriz mGerador
-        mGerador = zeros(size(A,1),21);
-        mGerador = setaPotenciaGerador(mGerador,20,10);    
-          
+                 
     case 5 % 'alim\Sistema_TPC2003.txt
         
         A = SistemaTPC2003A();
@@ -58,7 +48,7 @@ switch opcao
         
         %cria matriz mGerador
         mGerador = zeros(size(A,1),21);
-        mGerador = setaPotenciaGerador(mGerador,4.0,3.0); % ind otimo 4.4,3.3
+        mGerador = setaPotenciaGerador(mGerador,4.0,3.0); 
         
     case 6
         
@@ -69,17 +59,45 @@ switch opcao
         
         %cria matriz mGerador       
         mGerador = zeros(size(A,1),21);
-        mGerador = setaPotenciaGerador(mGerador,4.0,3.0); % ind otimo 4.4,3.3
+        mGerador = setaPotenciaGerador(mGerador,4.0,3.0); 
+        
+    case 7
+        
+        A = Sistema119barras();        
+        
+        % indices doss geradores 
+        indGerador = find(A(:, 2)==3);
+        
+        A = A(indGerador,:);    
+        
+        %cria matriz mGerador       
+        mGerador = zeros(size(A,1),21);
+        mGerador = setaPotenciaGerador(mGerador,4.0,3.0);
+        
+    case 8
+        
+        A = Sistema703barrasCemig();        
+        
+        % indices doss geradores 
+        indGerador = find(A(:, 2)==3);
+        
+        A = A(indGerador,:);    
+        
+        %cria matriz mGerador       
+        mGerador = zeros(size(A,1),21);
+        mGerador = setaPotenciaGerador(mGerador,40.0,30.0);
+        
+    otherwise 
+        disp('ERRO');
+        
 end 
 
 % cria matrizes geradores
-global Sbase;
-
 % bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin	Pc1	Pc2	Qc1min	Qc1max	Qc2min	Qc2max	ramp_agc	ramp_10	ramp_30	ramp_q	apf
 mGerador(:,1) = A(:,1); % bus number
 
 mGerador(:,6) = 1.0; % voltage magnitude setpoint (p.u.)
-mGerador(:,7) = Sbase; % total MVA base of machine, defaults to baseMVA 
+mGerador(:,7) = alim.Sbase; % total MVA base of machine, defaults to baseMVA 
 mGerador(:,8) = 1; % machine status
 
 mGerador(:,11) = 0; % lower real power output of PQ capability curve (MW)
