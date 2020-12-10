@@ -14,6 +14,7 @@ rng('default');
 % 4 Sistema_Brasileiro2008 - 136 buses;  
 % 5 Sistema_TPC2003 - 84 buses;
 % 6 Sistema 417 barras - 417 buses
+% 7 Sistema 119 barras - 119 buses
 sistema = 3;
 
 % ALGORITMOS 
@@ -39,7 +40,7 @@ for i=1:numexec
     defineParametrosGerais();
     
     % seta configuracoes do algoritmo genetico
-    setaConfiguracoesAG(sistema,algoritmo);
+    setaConfiguracoesAG(sistema);
         
     % carregaArquivoAlimentador
     alim = carregaAlimentadorDeTxt(sistema);
