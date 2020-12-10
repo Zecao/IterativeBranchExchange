@@ -10,15 +10,16 @@ alimentador = setfield(alimentador,'Ftipo', []);
 alimentador = setfield(alimentador,'funcao', 'fluxo');
 alimentador = setfield(alimentador,'Fnome', []);
 alimentador = setfield(alimentador,'FbarraIdCab', []);
-alimentador = setfield(alimentador,'FmTrafos', []); 
+% alimentador = setfield(alimentador,'FmTrafos', []); % TODO testando
 alimentador = setfield(alimentador,'FmChaves', []);
 alimentador = setfield(alimentador,'FmBus', []);
 alimentador = setfield(alimentador,'FmBranch', []);
 alimentador = setfield(alimentador,'FmGerador', [] );
 
+% TODO testando
 % campos formato Carlos IEEE
-alimentador = setfield(alimentador,'FmBarras', [] );
-alimentador = setfield(alimentador,'FmLinhas', [] );
+% alimentador = setfield(alimentador,'FmBarras', [] );
+% alimentador = setfield(alimentador,'FmLinhas', [] );
 alimentador = setfield(alimentador,'FmChavesIEEE', [] );
 
 % campos alimentadores Cemig 
