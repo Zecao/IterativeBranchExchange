@@ -12,7 +12,7 @@ Things to note:
 3. The code is mainly with portuguese comments, so I apologize for the non-portugues speaking.  
 
 ## 2. Article OpenDSS customization code
-[**"DijkstraBranchExchangeOpenDSS"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBE_OpenDSS)
+[**"DijkstraBE_OpenDSS"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBE_OpenDSS)
 Directory with the Visual Studio C# OpenDSS customization project. Essencially its a newer version from the project https://github.com/Zecao/ExecutorOpenDssBr
 The project uses the graph data structures and algorithms from [QuickGraph 3.6](https://archive.codeplex.com/?p=quickgraph)
 The project also uses 2 dll files: EEPlus.dll (that allows Excel files to be read in the C#) and Auxiliares.dll (the co author Daniel Rocha routines) already included in the project. 
