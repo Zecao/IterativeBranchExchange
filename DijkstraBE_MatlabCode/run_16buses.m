@@ -39,7 +39,7 @@ for i=1:numexec
     defineParametrosGerais();
     
     % seta configuracoes do algoritmo genetico
-    setaConfiguracoesAG(sistema,algoritmo);
+    setaConfiguracoesAG(sistema);
         
     % carregaArquivoAlimentador
     alim = carregaAlimentadorDeTxt(sistema);
