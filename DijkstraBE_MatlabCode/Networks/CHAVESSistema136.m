@@ -3,7 +3,7 @@ function chaves = CHAVESSistema136()
 % IdLinha	No_Emissor	No_Receptor		Tipo		Operacional			Estado
 %                                       (NA=1/NF=0)	(0-inativo,1-ativo)	(0-aberta,1-fechada)
 chaves = [
-1	136	1	0	1	1
+1	136	1	0	1	1 %
 2	1	2	0	1	1
 3	2	3	0	1	1
 4	3	4	0	1	1
@@ -19,7 +19,7 @@ chaves = [
 14	13	14	0	0	1
 15	13	15	0	1	1
 16	15	16	0	0	1
-17	136	17	0	1	1
+17	136	17	0	1	1  %
 18	17	18	0	1	1
 19	18	19	0	1	1
 20	19	20	0	1	1
@@ -41,7 +41,7 @@ chaves = [
 36	35	36	0	0	1
 37	36	37	0	0	1
 38	35	38	0	1	1
-39	136	39	0	1	1
+39	136	39	0	1	1 %
 40	39	40	0	1	1
 41	40	41	0	0	1
 42	40	42	0	1	1
