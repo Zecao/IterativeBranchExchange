@@ -15,15 +15,15 @@ Things to note:
 [**"DijkstraBE_OpenDSS"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBE_OpenDSS)
 Directory with the Visual Studio C# OpenDSS customization project. Essencially its a newer version from the project https://github.com/Zecao/ExecutorOpenDssBr
 The project uses the graph data structures and algorithms from [QuickGraph 3.6](https://archive.codeplex.com/?p=quickgraph)
-The project also uses 2 dll files: EEPlus.dll (that allows Excel files to be read in the C#) and Auxiliares.dll (the co author Daniel Rocha routines) already included in the project. 
+The project also uses 2 dll files: EEPlus.dll to read Excel files and Auxiliares.dll already included in the project. 
 
 ## 3. Cemig-D Distribution feeders
 [**"CemigFeeders"**](https://github.com/Zecao/2020Dijkstra/tree/master/CemigDFeeders)
-Directory with the OpenDSS files from 4 Cemig distribution feeders and 1 substation. These files are public as they were generated from geographic gistribution data base BDGD from Brazilian Regulatory Agency ANEEL.
+Directory with the OpenDSS files (.dss) from 4 Cemig distribution feeders and 1 substation. These files are public as they were generated from a geographic distribution data base BDGD from Brazilian Regulatory Agency ANEEL.
 
 ## 4. Initial population of evolutionary metaheuristics for the Distribution Network Reconfiguration problem
 [**"MSTInitialPopulation"**](https://github.com/Zecao/2020Dijkstra/tree/master/MSTInitialPopulation)
-Directory with the initial populations used in the article for the Distribution Network Reconfiguration - DNR problem. The files are in Matlab (.mat) format and uses the binary codification, i.e. they represent the normally closed (NC) switches by 1s and the normally opened (NO) switches by 0s for the following test cases:  
+Directory with the initial populations used in the article for the Distribution Network Reconfiguration - DNR problem. These files are in Matlab format (.mat) and uses the binary codification, i.e. they represent the normally closed (NC) switches by 1s and the normally opened (NO) switches by 0s for the following test cases:  
 * (Zhu, 2002) 33 buses system
 * (Huang, 2002) 69 (or 70) buses system
 * (Su & Lee, 2003) 84 buses system
@@ -31,6 +31,6 @@ Directory with the initial populations used in the article for the Distribution 
 * (Ramirez-rosado & Bernal-Agustín, 1998) 417 (or 415) buses system
 * (Zhang, 2007) 119 buses system.
 
-The OpenDSS(.dss) files for these networks and some references works can be found here: (https://www.dropbox.com/sh/15fo64kxz7115e2/AAAGgAVzJmnLzA6rVlqfBdGca?dl=0)
+Also, the OpenDSS files (.dss) for these networks and some references works can be found here: (https://www.dropbox.com/sh/15fo64kxz7115e2/AAAGgAVzJmnLzA6rVlqfBdGca?dl=0)
 
 Ezequiel C. Pereira
