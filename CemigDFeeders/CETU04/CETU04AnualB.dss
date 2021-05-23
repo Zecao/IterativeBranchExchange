@@ -1,0 +1,11 @@
+
+new energymeter.carga element=line.TRfic4,terminal=2
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+! Solve mode=daily,hour=0,number=24,stepsize=1h
+
+! BusCoords CETU04CoordMT.csv
+!close line.CTR349105 term=1!302068
+!open line.CTRR42278  term=1 !257107
