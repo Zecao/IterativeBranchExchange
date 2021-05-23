@@ -1,0 +1,60 @@
+clear
+new circuit.alimIIGU115 bus1=BMT172015269.1.2.3,basekv=13.800000000,pu=1.040000000
+
+Redirect ..\..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
+Redirect ..\..\0PermRes\Condutores.dss
+Redirect IIGU115SegmentosMT.dss
+Redirect IIGU115ChavesMT.dss
+Redirect IIGU115Reguladores.dss
+Redirect IIGU115Transformadores.dss
+Redirect IIGU115SegmentosBT.dss
+Redirect IIGU115Ramais.dss
+Redirect IIGU115CargaMT_Dez.dss
+Redirect IIGU115CargaBT_Dez.dss
+Redirect IIGU115CapacitorMT.dss
+
+new energymeter.carga element=line.TR12246072,terminal=1
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+! manobra fechar 
+!close line.CTR680898 term=1 !130817
+!open  line.CTR430263 term=1 !48676
+
+set maxControlIter = 20
+set maxIter = 100
+
+Solve mode=daily,hour=18,number=1,stepsize=1h
+
+BusCoords IIGU115CoordMT.csv
+
+clearBusMarkers
+set MarkRegulators=Yes regmarkercode=47
+! set Markswitches=Yes Switchmarkercode = 27 
+set MarkCapacitors=No
+set MarkTransformers=No
+
+! SE 
+AddBusMarker Bus=BMT172015269 code=12 color=Green size=5 !substation
+
+! NC
+AddBusMarker Bus=BMT172015493 code=27 color=Green size=3  ! 48676
+
+AddBusMarker Bus=BMT172016589 code=27 color=Red size=3 !!numEQ 137374
+AddBusMarker Bus=BMT172015285 code=27 color=Red size=3 !numEQ 8590
+AddBusMarker Bus=BMT172015780 code=27 color=Red size=3 !!numEQ 180230
+AddBusMarker Bus=BMT172387919 code=27 color=Red size=3 !!numEQ 48753
+AddBusMarker Bus=BMT172015290 code=27 color=Red size=3 !!numEQ 51451
+AddBusMarker Bus=BMT172015330 code=27 color=Red size=3 !!numEQ 224102
+AddBusMarker Bus=BMT172015293 code=27 color=Red size=3 !!numEQ 48405
+AddBusMarker Bus=BMT172605776 code=27 color=Red size=3 !!numEQ 142312
+AddBusMarker Bus=BMT172016715 code=27 color=Red size=3 !!numEQ 49143
+AddBusMarker Bus=BMT172015521 code=27 color=Yellow size=3 !!numEQ 130817
+AddBusMarker Bus=BMT172016707 code=27 color=Red size=3 !numEQ  88129
+AddBusMarker Bus=BMT172016996 code=27 color=Red size=3 !!numEQ 217249
+AddBusMarker Bus=BMT172254929 code=27 color=Red size=3 !!numEQ 49226
+AddBusMarker Bus=BMT172016661 code=27 color=Red size=3 !!numEQ 73537
+
+!-- Gerar Gráficos
+plot circuit quantity=power dots=n labels=n subs=y showloops=n C1=Blue C2=Blue C3=Red R2=0.95 R3=0.90
