@@ -234,154 +234,6 @@ new linecode.BT105_BT108_7_3_1 nPhases=3,r1=1.229,x1=0.3377,r0=1.977,x0=1.474,un
 new linecode.BT105_BT307_7_3_1 nPhases=3,r1=1.229,x1=0.3377,r0=1.977,x0=1.474,units=km,normamps=101
 new linecode.BT105_BT803_7_3_1 nPhases=3,r1=1.229,x1=0.3377,r0=1.977,x0=1.474,units=km,normamps=101
 new linecode.BT105_BT810_7_3_1 nPhases=3,r1=1.229,x1=0.3377,r0=1.977,x0=1.474,units=km,normamps=101
-new linecode.BT106_BT005_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT005_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT006_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT102_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT102_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT103_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
-new linecode.BT106_BT103_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT103_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT104_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT105_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
-new linecode.BT106_BT105_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT105_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT106_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
-new linecode.BT106_BT106_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT106_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT107_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
-new linecode.BT106_BT107_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT107_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT108_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
-new linecode.BT106_BT108_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT108_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT109_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT111_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT111_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT206_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
-new linecode.BT106_BT206_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT206_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT207_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
-new linecode.BT106_BT207_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT208_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT208_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT306_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT506_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT803_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT808_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BT810_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BT814_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BTC01_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BTC02_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
-new linecode.BT106_BTC02_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT106_BTC02_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.BT106_BTH01_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
-new linecode.BT106_BTH02_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
-new linecode.BT106_BTH02_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
-new linecode.BT107_BT005_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT005_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT006_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT007_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT011_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT102_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT102_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT103_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT103_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT104_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT105_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT105_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT106_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
-new linecode.BT107_BT106_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT106_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT107_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
-new linecode.BT107_BT107_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT107_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT107_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT108_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
-new linecode.BT107_BT108_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT108_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT109_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
-new linecode.BT107_BT109_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT109_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT111_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
-new linecode.BT107_BT111_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT111_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT112_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT201_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
-new linecode.BT107_BT206_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
-new linecode.BT107_BT206_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT206_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT207_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
-new linecode.BT107_BT207_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT207_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT208_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
-new linecode.BT107_BT208_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT307_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT307_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT308_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT503_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT507_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT518_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT521_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT801_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT803_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT807_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT808_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT808_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT809_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT810_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BT811_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT814_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BT816_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.BT107_BTC02_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
-new linecode.BT107_BTC02_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BTH01_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
-new linecode.BT107_BTH01_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT107_BTJ01_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
-new linecode.BT108_BT006_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT007_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT008_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT102_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT102_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT103_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT103_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT105_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT105_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT106_7_1_1 nPhases=1,rMatrix=[0.8641|0.2503],xMatrix=[0.7815|0.4575],units=km,normamps=201
-new linecode.BT108_BT106_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT106_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT107_7_1_1 nPhases=1,rMatrix=[0.8641|0.2503],xMatrix=[0.7815|0.4575],units=km,normamps=201
-new linecode.BT108_BT107_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT107_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT108_7_1_1 nPhases=1,rMatrix=[0.8641|0.2503],xMatrix=[0.7815|0.4575],units=km,normamps=201
-new linecode.BT108_BT108_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT108_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT109_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT109_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT110_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT111_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT111_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT201_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT204_7_1_1 nPhases=1,rMatrix=[0.8641|0.2503],xMatrix=[0.7815|0.4575],units=km,normamps=201
-new linecode.BT108_BT204_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT206_7_1_1 nPhases=1,rMatrix=[0.8641|0.2503],xMatrix=[0.7815|0.4575],units=km,normamps=201
-new linecode.BT108_BT206_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT206_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT207_7_1_1 nPhases=1,rMatrix=[0.8641|0.2503],xMatrix=[0.7815|0.4575],units=km,normamps=201
-new linecode.BT108_BT207_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT207_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT208_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT307_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT507_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT508_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT514_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT518_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT803_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT808_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
-new linecode.BT108_BT808_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT809_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BT810_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.BT108_BTJ01_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
 new linecode.BT109_BT005_7_3_1 nPhases=3,r1=0.486,x1=0.427,r0=1.036,x0=1.18,units=km,normamps=230
 new linecode.BT109_BT007_7_3_1 nPhases=3,r1=0.486,x1=0.427,r0=1.036,x0=1.18,units=km,normamps=230
 new linecode.BT109_BT106_7_1_1 nPhases=1,r1=0.486,x1=0.427,r0=1.036,x0=1.18,units=km,normamps=230
@@ -433,6 +285,7 @@ new linecode.BT206_BT106_7_3_1 nPhases=3,r1=1.551,x1=1.361,r0=2.202,x0=1.984,uni
 new linecode.BT206_BT107_7_1_1 nPhases=1,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
 new linecode.BT206_BT107_7_2_1 nPhases=2,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
 new linecode.BT206_BT107_7_3_1 nPhases=3,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
+new linecode.BT206_BT108_7_3_1 nPhases=3,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
 new linecode.BT206_BT204_7_2_1 nPhases=2,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
 new linecode.BT206_BT205_7_2_1 nPhases=2,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
 new linecode.BT206_BT206_7_1_1 nPhases=1,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
@@ -444,10 +297,12 @@ new linecode.BT206_BT207_7_3_1 nPhases=3,r1=1.551,x1=1.361,r0=2.202,x0=1.984,uni
 new linecode.BT206_BT211_7_2_1 nPhases=2,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
 new linecode.BT206_BT306_7_2_1 nPhases=2,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
 new linecode.BT206_BT801_7_2_1 nPhases=2,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
+new linecode.BT206_BT808_7_2_1 nPhases=2,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
 new linecode.BT206_BT811_7_2_1 nPhases=2,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
 new linecode.BT206_BT814_7_2_1 nPhases=2,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
 new linecode.BT206_BTC02_7_1_1 nPhases=1,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
 new linecode.BT206_BTH03_7_2_1 nPhases=2,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
+new linecode.BT206_BTJ01_7_2_1 nPhases=2,r1=1.551,x1=1.361,r0=2.202,x0=1.984,units=km,normamps=112
 new linecode.BT207_BT006_7_2_1 nPhases=2,r1=0.975,x1=0.857,r0=1.594,x0=1.988,units=km,normamps=151
 new linecode.BT207_BT106_7_1_1 nPhases=1,r1=0.975,x1=0.857,r0=1.594,x0=1.988,units=km,normamps=151
 new linecode.BT207_BT106_7_2_1 nPhases=2,r1=0.975,x1=0.857,r0=1.594,x0=1.988,units=km,normamps=151
@@ -570,6 +425,7 @@ new linecode.BT304_BT304_7_2_1 nPhases=2,r1=0.7349,x1=0.1287,r0=2.061,x0=1.263,u
 new linecode.BT304_BT304_7_3_1 nPhases=3,r1=0.7349,x1=0.1287,r0=2.061,x0=1.263,units=km,normamps=93
 new linecode.BT304_BT307_5_2_1 nPhases=2,r1=0.7349,x1=0.1287,r0=2.061,x0=1.263,units=km,normamps=93
 new linecode.BT304_BT307_7_2_1 nPhases=2,r1=0.7349,x1=0.1287,r0=2.061,x0=1.263,units=km,normamps=93
+new linecode.BT304_BT309_5_3_1 nPhases=3,r1=0.7349,x1=0.1287,r0=2.061,x0=1.263,units=km,normamps=93
 new linecode.BT304_BT315_5_2_1 nPhases=2,r1=0.7349,x1=0.1287,r0=2.061,x0=1.263,units=km,normamps=93
 new linecode.BT304_BT316_5_2_1 nPhases=2,r1=0.7349,x1=0.1287,r0=2.061,x0=1.263,units=km,normamps=93
 new linecode.BT304_BT316_7_2_1 nPhases=2,r1=0.7349,x1=0.1287,r0=2.061,x0=1.263,units=km,normamps=93
@@ -620,6 +476,7 @@ new linecode.BT306_BT307_5_3_1 nPhases=3,r1=0.8819,x1=0.1318,r0=2.3,x0=1.484,uni
 new linecode.BT306_BT307_7_2_1 nPhases=2,r1=0.8819,x1=0.1318,r0=2.3,x0=1.484,units=km,normamps=145
 new linecode.BT306_BT307_7_3_1 nPhases=3,r1=0.8819,x1=0.1318,r0=2.3,x0=1.484,units=km,normamps=145
 new linecode.BT306_BT315_5_2_1 nPhases=2,r1=0.8819,x1=0.1318,r0=2.3,x0=1.484,units=km,normamps=145
+new linecode.BT306_BTH01_7_2_1 nPhases=2,r1=0.8819,x1=0.1318,r0=2.3,x0=1.484,units=km,normamps=145
 new linecode.BT307_BT005_5_2_1 nPhases=2,r1=0.6361,x1=0.1255,r0=1.872,x0=1.107,units=km,normamps=192
 new linecode.BT307_BT005_7_2_1 nPhases=2,r1=0.6361,x1=0.1255,r0=1.872,x0=1.107,units=km,normamps=192
 new linecode.BT307_BT007_7_2_1 nPhases=2,r1=0.6361,x1=0.1255,r0=1.872,x0=1.107,units=km,normamps=192
@@ -675,6 +532,7 @@ new linecode.BT308_BT007_5_3_1 nPhases=3,r1=0.3805,x1=0.1236,r0=1.25,x0=0.731,un
 new linecode.BT308_BT008_5_2_1 nPhases=2,r1=0.3805,x1=0.1236,r0=1.25,x0=0.731,units=km,normamps=258
 new linecode.BT308_BT008_5_3_1 nPhases=3,r1=0.3805,x1=0.1236,r0=1.25,x0=0.731,units=km,normamps=258
 new linecode.BT308_BT206_7_2_1 nPhases=2,r1=0.3805,x1=0.1236,r0=1.25,x0=0.731,units=km,normamps=258
+new linecode.BT308_BT207_7_2_1 nPhases=2,r1=0.3805,x1=0.1236,r0=1.25,x0=0.731,units=km,normamps=258
 new linecode.BT308_BT207_7_3_1 nPhases=3,r1=0.3805,x1=0.1236,r0=1.25,x0=0.731,units=km,normamps=258
 new linecode.BT308_BT208_7_2_1 nPhases=2,r1=0.3805,x1=0.1236,r0=1.25,x0=0.731,units=km,normamps=258
 new linecode.BT308_BT208_7_3_1 nPhases=3,r1=0.3805,x1=0.1236,r0=1.25,x0=0.731,units=km,normamps=258
@@ -820,9 +678,11 @@ new linecode.BT317_BT314_7_2_1 nPhases=2,r1=0.2201,x1=0.1232,r0=0.716,x0=0.54,un
 new linecode.BT317_BT317_5_3_1 nPhases=3,r1=0.2201,x1=0.1232,r0=0.716,x0=0.54,units=km,normamps=427
 new linecode.BT317_BT317_7_2_1 nPhases=2,r1=0.2201,x1=0.1232,r0=0.716,x0=0.54,units=km,normamps=427
 new linecode.BT317_BT317_7_3_1 nPhases=3,r1=0.2201,x1=0.1232,r0=0.716,x0=0.54,units=km,normamps=427
+new linecode.BT317_BT513_7_2_1 nPhases=2,r1=0.2201,x1=0.1232,r0=0.716,x0=0.54,units=km,normamps=427
 new linecode.BT317_BT517_5_3_1 nPhases=3,r1=0.2201,x1=0.1232,r0=0.716,x0=0.54,units=km,normamps=427
 new linecode.BT318_BT008_7_3_1 nPhases=3,r1=0.1138,x1=0.12,r0=0.376,x0=0.464,units=km,normamps=660
 new linecode.BT318_BT314_7_3_1 nPhases=3,r1=0.1138,x1=0.12,r0=0.376,x0=0.464,units=km,normamps=660
+new linecode.BT318_BT318_5_3_1 nPhases=3,r1=0.1138,x1=0.12,r0=0.376,x0=0.464,units=km,normamps=660
 new linecode.BT318_BT318_7_2_1 nPhases=2,r1=0.1138,x1=0.12,r0=0.376,x0=0.464,units=km,normamps=660
 new linecode.BT318_BT318_7_3_1 nPhases=3,r1=0.1138,x1=0.12,r0=0.376,x0=0.464,units=km,normamps=660
 new linecode.BT501_BT001_5_2_1 nPhases=2,r1=6.1079,x1=0.1578,r0=7.128,x0=3.28,units=km,normamps=48
@@ -832,6 +692,7 @@ new linecode.BT501_BT103_5_2_1 nPhases=2,r1=6.1079,x1=0.1578,r0=7.128,x0=3.28,un
 new linecode.BT501_BT106_5_2_1 nPhases=2,r1=6.1079,x1=0.1578,r0=7.128,x0=3.28,units=km,normamps=48
 new linecode.BT501_BT107_5_2_1 nPhases=2,r1=6.1079,x1=0.1578,r0=7.128,x0=3.28,units=km,normamps=48
 new linecode.BT501_BT109_5_2_1 nPhases=2,r1=6.1079,x1=0.1578,r0=7.128,x0=3.28,units=km,normamps=48
+new linecode.BT501_BT301_7_3_1 nPhases=3,r1=6.1079,x1=0.1578,r0=7.128,x0=3.28,units=km,normamps=48
 new linecode.BT501_BT307_5_3_1 nPhases=3,r1=6.1079,x1=0.1578,r0=7.128,x0=3.28,units=km,normamps=48
 new linecode.BT501_BT501_5_2_1 nPhases=2,r1=6.1079,x1=0.1578,r0=7.128,x0=3.28,units=km,normamps=48
 new linecode.BT501_BT501_5_3_1 nPhases=3,r1=6.1079,x1=0.1578,r0=7.128,x0=3.28,units=km,normamps=48
@@ -847,6 +708,7 @@ new linecode.BT502_BT502_7_3_1 nPhases=3,r1=3.8384,x1=0.1477,r0=4.982,x0=3.084,u
 new linecode.BT502_BT504_5_2_1 nPhases=2,r1=3.8384,x1=0.1477,r0=4.982,x0=3.084,units=km,normamps=64
 new linecode.BT502_BT504_5_3_1 nPhases=3,r1=3.8384,x1=0.1477,r0=4.982,x0=3.084,units=km,normamps=64
 new linecode.BT502_BT507_5_2_1 nPhases=2,r1=3.8384,x1=0.1477,r0=4.982,x0=3.084,units=km,normamps=64
+new linecode.BT502_BT514_5_3_1 nPhases=3,r1=6.1079,x1=0.1578,r0=7.128,x0=3.28,units=km,normamps=48
 new linecode.BT503_BT001_5_1_1 nPhases=1,r1=2.179,x1=0.585,r0=3.492,x0=2.304,units=km,normamps=82
 new linecode.BT503_BT001_5_2_1 nPhases=2,r1=2.179,x1=0.585,r0=3.492,x0=2.304,units=km,normamps=82
 new linecode.BT503_BT001_5_3_1 nPhases=3,r1=2.179,x1=0.585,r0=3.492,x0=2.304,units=km,normamps=82
@@ -1005,6 +867,7 @@ new linecode.BT506_BT106_5_2_1 nPhases=2,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,un
 new linecode.BT506_BT106_5_3_1 nPhases=3,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
 new linecode.BT506_BT106_7_2_1 nPhases=2,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
 new linecode.BT506_BT206_7_2_1 nPhases=2,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
+new linecode.BT506_BT206_7_3_1 nPhases=3,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
 new linecode.BT506_BT301_5_2_1 nPhases=2,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
 new linecode.BT506_BT305_5_2_1 nPhases=2,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
 new linecode.BT506_BT305_5_3_1 nPhases=3,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
@@ -1030,6 +893,7 @@ new linecode.BT506_BT519_5_2_1 nPhases=2,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,un
 new linecode.BT506_BT519_5_3_1 nPhases=3,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
 new linecode.BT506_BT521_5_3_1 nPhases=3,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
 new linecode.BT506_BT810_5_3_1 nPhases=3,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
+new linecode.BT506_BT815_7_2_1 nPhases=2,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
 new linecode.BT506_BTH01_7_2_1 nPhases=2,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
 new linecode.BT506_BTH01_7_3_1 nPhases=3,r1=1.9158,x1=0.1334,r0=3.009,x0=2.21,units=km,normamps=113
 new linecode.BT507_BT005_5_2_1 nPhases=2,r1=1.2047,x1=0.1255,r0=2.515,x0=1.693,units=km,normamps=150
@@ -1078,6 +942,8 @@ new linecode.BT507_BT521_7_2_1 nPhases=2,r1=1.2047,x1=0.1255,r0=2.515,x0=1.693,u
 new linecode.BT507_BT801_5_2_1 nPhases=2,r1=1.2047,x1=0.1255,r0=2.515,x0=1.693,units=km,normamps=150
 new linecode.BT507_BT803_7_2_1 nPhases=2,r1=1.2047,x1=0.1255,r0=2.515,x0=1.693,units=km,normamps=150
 new linecode.BT507_BT811_5_2_1 nPhases=2,r1=1.2047,x1=0.1255,r0=2.515,x0=1.693,units=km,normamps=150
+new linecode.BT507_BTH01_7_2_1 nPhases=2,r1=1.2047,x1=0.1255,r0=2.515,x0=1.693,units=km,normamps=150
+new linecode.BT507_BTH01_7_3_1 nPhases=3,r1=1.2047,x1=0.1255,r0=2.515,x0=1.693,units=km,normamps=150
 new linecode.BT507_BTH02_7_2_1 nPhases=2,r1=1.2047,x1=0.1255,r0=2.515,x0=1.693,units=km,normamps=150
 new linecode.BT508_BT006_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT508_BT007_5_1_1 nPhases=1,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
@@ -1086,6 +952,7 @@ new linecode.BT508_BT008_5_1_1 nPhases=1,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,u
 new linecode.BT508_BT008_5_3_1 nPhases=3,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT508_BT107_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT508_BT108_5_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
+new linecode.BT508_BT108_5_3_1 nPhases=3,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT508_BT206_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT508_BT304_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT508_BT308_7_3_1 nPhases=3,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
@@ -1114,9 +981,12 @@ new linecode.BT508_BT517_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,u
 new linecode.BT508_BT518_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT508_BT518_7_3_1 nPhases=3,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT508_BT521_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
+new linecode.BT508_BT801_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT508_BT803_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT508_BT803_7_3_1 nPhases=3,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
+new linecode.BT508_BT808_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT508_BT810_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
+new linecode.BT508_BT811_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT508_BTH01_7_2_1 nPhases=2,r1=1.0445,x1=0.1236,r0=1.904,x0=1.136,units=km,normamps=201
 new linecode.BT509_BT005_5_3_1 nPhases=3,r1=0.6569,x1=0.1208,r0=1.613,x0=0.924,units=km,normamps=232
 new linecode.BT509_BT007_5_2_1 nPhases=2,r1=0.6569,x1=0.1208,r0=1.613,x0=0.924,units=km,normamps=232
@@ -1152,10 +1022,12 @@ new linecode.BT509_BT518_7_2_1 nPhases=2,r1=0.6569,x1=0.1208,r0=1.613,x0=0.924,u
 new linecode.BT509_BT518_7_3_1 nPhases=3,r1=0.6569,x1=0.1208,r0=1.613,x0=0.924,units=km,normamps=232
 new linecode.BT509_BT521_7_2_1 nPhases=2,r1=0.6569,x1=0.1208,r0=1.613,x0=0.924,units=km,normamps=232
 new linecode.BT509_BT521_7_3_1 nPhases=3,r1=0.6569,x1=0.1208,r0=1.613,x0=0.924,units=km,normamps=232
+new linecode.BT509_BT803_7_3_1 nPhases=3,r1=0.6569,x1=0.1208,r0=1.613,x0=0.924,units=km,normamps=232
 new linecode.BT509_BT811_5_2_1 nPhases=2,r1=0.6569,x1=0.1208,r0=1.613,x0=0.924,units=km,normamps=232
 new linecode.BT510_BT509_5_3_1 nPhases=3,r1=0.5212,x1=0.1094,r0=1.271,x0=0.696,units=km,normamps=269
 new linecode.BT510_BT509_7_2_1 nPhases=2,r1=0.5212,x1=0.1094,r0=1.271,x0=0.696,units=km,normamps=269
 new linecode.BT510_BT509_7_3_1 nPhases=3,r1=0.5212,x1=0.1094,r0=1.271,x0=0.696,units=km,normamps=269
+new linecode.BT510_BT510_5_2_1 nPhases=2,r1=0.5212,x1=0.1094,r0=1.271,x0=0.696,units=km,normamps=269
 new linecode.BT510_BT510_7_2_1 nPhases=2,r1=0.5212,x1=0.1094,r0=1.271,x0=0.696,units=km,normamps=269
 new linecode.BT510_BT510_7_3_1 nPhases=3,r1=0.5212,x1=0.1094,r0=1.271,x0=0.696,units=km,normamps=269
 new linecode.BT510_BT810_7_2_1 nPhases=2,r1=0.5212,x1=0.1094,r0=1.271,x0=0.696,units=km,normamps=269
@@ -1174,6 +1046,7 @@ new linecode.BT511_BT511_7_3_1 nPhases=3,r1=0.382,x1=0.117,r0=1.025,x0=0.618,uni
 new linecode.BT511_BT513_7_2_1 nPhases=2,r1=0.382,x1=0.117,r0=1.025,x0=0.618,units=km,normamps=312
 new linecode.BT511_BT513_7_3_1 nPhases=3,r1=0.382,x1=0.117,r0=1.025,x0=0.618,units=km,normamps=312
 new linecode.BT511_BT516_7_3_1 nPhases=3,r1=0.382,x1=0.117,r0=1.025,x0=0.618,units=km,normamps=312
+new linecode.BT511_BT518_7_2_1 nPhases=2,r1=0.382,x1=0.117,r0=1.025,x0=0.618,units=km,normamps=312
 new linecode.BT512_BT010_5_3_1 nPhases=3,r1=0.3029,x1=0.1164,r0=0.666,x0=0.506,units=km,normamps=390
 new linecode.BT512_BT011_5_3_1 nPhases=3,r1=0.3029,x1=0.1164,r0=0.666,x0=0.506,units=km,normamps=390
 new linecode.BT512_BT503_5_3_1 nPhases=3,r1=0.3029,x1=0.1164,r0=0.666,x0=0.506,units=km,normamps=390
@@ -1231,6 +1104,8 @@ new linecode.BT513_BT518_7_2_1 nPhases=2,r1=0.289,x1=0.255,r0=1.038,x0=0.638,uni
 new linecode.BT513_BT518_7_3_1 nPhases=3,r1=0.289,x1=0.255,r0=1.038,x0=0.638,units=km,normamps=386
 new linecode.BT513_BT519_5_3_1 nPhases=3,r1=0.289,x1=0.255,r0=1.038,x0=0.638,units=km,normamps=386
 new linecode.BT513_BT521_5_3_1 nPhases=3,r1=0.289,x1=0.255,r0=1.038,x0=0.638,units=km,normamps=386
+new linecode.BT513_BT521_7_2_1 nPhases=2,r1=0.289,x1=0.255,r0=1.038,x0=0.638,units=km,normamps=386
+new linecode.BT513_BT803_7_3_1 nPhases=3,r1=0.289,x1=0.255,r0=1.038,x0=0.638,units=km,normamps=386
 new linecode.BT513_BT805_7_3_1 nPhases=3,r1=0.289,x1=0.255,r0=1.038,x0=0.638,units=km,normamps=386
 new linecode.BT513_BTC02_5_3_1 nPhases=3,r1=0.289,x1=0.255,r0=1.038,x0=0.638,units=km,normamps=386
 new linecode.BT514_BT007_5_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
@@ -1241,6 +1116,7 @@ new linecode.BT514_BT107_7_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,uni
 new linecode.BT514_BT108_5_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
 new linecode.BT514_BT309_5_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
 new linecode.BT514_BT309_7_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
+new linecode.BT514_BT313_5_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
 new linecode.BT514_BT313_7_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
 new linecode.BT514_BT314_5_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
 new linecode.BT514_BT314_7_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
@@ -1271,6 +1147,7 @@ new linecode.BT514_BT518_5_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,uni
 new linecode.BT514_BT518_7_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
 new linecode.BT514_BT520_7_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
 new linecode.BT514_BT805_5_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
+new linecode.BT514_BT813_7_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
 new linecode.BT514_BTC02_5_3_1 nPhases=3,r1=0.143,x1=0.1199,r0=0.49,x0=0.481,units=km,normamps=612
 new linecode.BT515_BT005_5_3_1 nPhases=3,r1=0.1399,x1=0.1205,r0=0.869,x0=0.576,units=km,normamps=186
 new linecode.BT515_BT007_5_3_1 nPhases=3,r1=0.1399,x1=0.1205,r0=0.869,x0=0.576,units=km,normamps=186
@@ -1388,11 +1265,13 @@ new linecode.BT518_BT521_5_2_1 nPhases=2,r1=0.506,x1=0.443,r0=1.523,x0=0.898,uni
 new linecode.BT518_BT521_5_3_1 nPhases=3,r1=0.506,x1=0.443,r0=1.523,x0=0.898,units=km,normamps=138
 new linecode.BT518_BT521_7_2_1 nPhases=2,r1=0.506,x1=0.443,r0=1.523,x0=0.898,units=km,normamps=138
 new linecode.BT518_BT803_5_3_1 nPhases=3,r1=0.506,x1=0.443,r0=1.523,x0=0.898,units=km,normamps=138
+new linecode.BT518_BT803_7_2_1 nPhases=2,r1=0.506,x1=0.443,r0=1.523,x0=0.898,units=km,normamps=138
 new linecode.BT518_BT803_7_3_1 nPhases=3,r1=0.506,x1=0.443,r0=1.523,x0=0.898,units=km,normamps=138
 new linecode.BT518_BT807_5_2_1 nPhases=2,r1=0.506,x1=0.443,r0=1.523,x0=0.898,units=km,normamps=138
 new linecode.BT518_BT807_7_2_1 nPhases=2,r1=0.506,x1=0.443,r0=1.523,x0=0.898,units=km,normamps=138
 new linecode.BT518_BTC02_5_2_1 nPhases=2,r1=0.506,x1=0.443,r0=1.523,x0=0.898,units=km,normamps=138
 new linecode.BT518_BTC02_5_3_1 nPhases=3,r1=0.506,x1=0.443,r0=1.523,x0=0.898,units=km,normamps=138
+new linecode.BT518_BTH01_7_2_1 nPhases=2,r1=0.506,x1=0.443,r0=1.523,x0=0.898,units=km,normamps=138
 new linecode.BT518_BTJ01_7_2_1 nPhases=2,r1=0.506,x1=0.443,r0=1.523,x0=0.898,units=km,normamps=138
 new linecode.BT519_BT001_5_1_1 nPhases=1,r1=3.514,x1=0.1462,r0=4.427,x0=2.971,units=km,normamps=48
 new linecode.BT519_BT001_5_2_1 nPhases=2,r1=3.514,x1=0.1462,r0=4.427,x0=2.971,units=km,normamps=48
@@ -1494,6 +1373,7 @@ new linecode.BT521_BT521_5_3_1 nPhases=3,r1=0.732,x1=0.585,r0=2.114,x0=1.341,uni
 new linecode.BT521_BT521_7_2_1 nPhases=2,r1=0.732,x1=0.585,r0=2.114,x0=1.341,units=km,normamps=170
 new linecode.BT521_BT521_7_3_1 nPhases=3,r1=0.732,x1=0.585,r0=2.114,x0=1.341,units=km,normamps=170
 new linecode.BT521_BT803_7_3_1 nPhases=3,r1=0.732,x1=0.585,r0=2.114,x0=1.341,units=km,normamps=170
+new linecode.BT521_BT807_7_2_1 nPhases=2,r1=0.732,x1=0.585,r0=2.114,x0=1.341,units=km,normamps=170
 new linecode.BT521_BT809_5_3_1 nPhases=3,r1=0.732,x1=0.585,r0=2.114,x0=1.341,units=km,normamps=170
 new linecode.BT521_BT813_5_3_1 nPhases=3,r1=0.732,x1=0.585,r0=2.114,x0=1.341,units=km,normamps=170
 new linecode.BT521_BTC02_5_2_1 nPhases=2,r1=0.732,x1=0.585,r0=2.114,x0=1.341,units=km,normamps=170
@@ -1501,51 +1381,21 @@ new linecode.BT521_BTC02_5_3_1 nPhases=3,r1=0.732,x1=0.585,r0=2.114,x0=1.341,uni
 new linecode.BT521_BTC02_7_3_1 nPhases=3,r1=0.732,x1=0.585,r0=2.114,x0=1.341,units=km,normamps=170
 new linecode.BT521_BTF01_7_3_1 nPhases=3,r1=0.732,x1=0.585,r0=2.114,x0=1.341,units=km,normamps=170
 new linecode.BT521_BTH01_7_2_1 nPhases=2,r1=0.732,x1=0.585,r0=2.114,x0=1.341,units=km,normamps=170
-new linecode.BT801_BT801_4_1_3 nPhases=1,rMatrix=[1.2825|0.4191],xMatrix=[0.5446|0.4191],units=km,normamps=99
-new linecode.BT801_BT801_4_2_3 nPhases=2,rMatrix=[1.2825|0.4191 1.2825],xMatrix=[0.5446|0.4191 0.5446],units=km,normamps=99
+new linecode.BT521_BTH01_7_3_1 nPhases=3,r1=0.732,x1=0.585,r0=2.114,x0=1.341,units=km,normamps=170
 new linecode.BT801_BT801_4_3_3 nPhases=3,r1=0.868104,x1=0.125498,r0=2.111351,x0=1.382759,units=km,normamps=99
-new linecode.BT801_BT803_4_2_3 nPhases=2,rMatrix=[1.2825|0.4191 1.2825],xMatrix=[0.5446|0.4191 0.5446],units=km,normamps=99
-new linecode.BT801_BT807_4_2_3 nPhases=2,rMatrix=[1.2825|0.4191 1.2825],xMatrix=[0.5446|0.4191 0.5446],units=km,normamps=99
 new linecode.BT802_BT802_4_1_3 nPhases=1,r1=0.7318,x1=0.0835,r0=0.889,x0=2.067,units=km,normamps=123
 new linecode.BT802_BT802_4_2_3 nPhases=2,r1=0.7318,x1=0.0835,r0=0.889,x0=2.067,units=km,normamps=123
 new linecode.BT802_BT802_4_3_3 nPhases=3,r1=0.7318,x1=0.0835,r0=0.889,x0=2.067,units=km,normamps=123
 new linecode.BT802_BT809_4_3_3 nPhases=3,r1=0.7318,x1=0.0835,r0=0.889,x0=2.067,units=km,normamps=123
-new linecode.BT803_BT802_4_3_4 nPhases=3,r1=0.4965,x1=0.1377,r0=1.2837,x0=0.6583,c1=37.5993,c0=21.7217,units=km,normamps=147
-new linecode.BT803_BT803_4_1_4 nPhases=1,rMatrix=[0.7178|0.1735],xMatrix=[0.3112|0.1735],units=km,normamps=147
-new linecode.BT803_BT803_4_2_4 nPhases=2,rMatrix=[0.7178|0.1735 0.7178],xMatrix=[0.3112|0.1735 0.3112],units=km,normamps=147
-new linecode.BT803_BT803_4_3_4 nPhases=3,r1=0.4965,x1=0.1377,r0=1.2837,x0=0.6583,c1=37.5993,c0=21.7217,units=km,normamps=147
-new linecode.BT803_BT805_4_3_4 nPhases=3,r1=0.4965,x1=0.1377,r0=1.2837,x0=0.6583,c1=37.5993,c0=21.7217,units=km,normamps=147
 new linecode.BT804_BT802_4_3_4 nPhases=3,r1=0.5059,x1=0.08,r0=1.428,x0=1.128,units=km,normamps=180
 new linecode.BT804_BT803_4_3_4 nPhases=3,r1=0.5059,x1=0.08,r0=1.428,x0=1.128,units=km,normamps=180
 new linecode.BT804_BT804_4_2_4 nPhases=2,r1=0.5059,x1=0.08,r0=1.428,x0=1.128,units=km,normamps=180
 new linecode.BT804_BT804_4_3_4 nPhases=3,r1=0.5059,x1=0.08,r0=1.428,x0=1.128,units=km,normamps=180
-new linecode.BT805_BT802_4_3_4 nPhases=3,r1=0.284,x1=0.117,r0=1.0976,x0=0.6374,c1=46.5944,c0=24.9724,units=km,normamps=201
-new linecode.BT805_BT803_4_2_4 nPhases=2,rMatrix=[0.5317|0.1735 0.5317],xMatrix=[0.2904|0.1735 0.2904],units=km,normamps=201
-new linecode.BT805_BT803_4_3_4 nPhases=3,r1=0.284,x1=0.117,r0=1.0976,x0=0.6374,c1=46.5944,c0=24.9724,units=km,normamps=201
-new linecode.BT805_BT805_4_2_4 nPhases=2,rMatrix=[0.5317|0.1735 0.5317],xMatrix=[0.2904|0.1735 0.2904],units=km,normamps=201
-new linecode.BT805_BT805_4_3_4 nPhases=3,r1=0.284,x1=0.117,r0=1.0976,x0=0.6374,c1=46.5944,c0=24.9724,units=km,normamps=201
 new linecode.BT806_BT806_4_2_4 nPhases=2,r1=0.2156,x1=0.0865,r0=0.922,x0=0.72,units=km,normamps=225
 new linecode.BT806_BT806_4_3_4 nPhases=3,r1=0.2156,x1=0.0865,r0=0.922,x0=0.72,units=km,normamps=225
-new linecode.BT807_BT801_4_2_3 nPhases=2,rMatrix=[0.7489|0.2116 0.7489],xMatrix=[0.3119|0.2116 0.3119],units=km,normamps=200
-new linecode.BT807_BT807_4_1_3 nPhases=1,rMatrix=[0.7489|0.2116],xMatrix=[0.3119|0.2116],units=km,normamps=200
-new linecode.BT807_BT807_4_2_3 nPhases=2,rMatrix=[0.7489|0.2116 0.7489],xMatrix=[0.3119|0.2116 0.3119],units=km,normamps=200
 new linecode.BT807_BT807_4_3_3 nPhases=3,r1=0.443084,x1=0.100274,r0=1.360468,x0=0.73509,units=km,normamps=200
 new linecode.BT808_BT803_4_3_3 nPhases=3,r1=0.869427,x1=0.127771,r0=1.782781,x0=0.760259,units=km,normamps=110
-new linecode.BT808_BT807_4_2_3 nPhases=2,rMatrix=[1.1739|0.2108 1.1739],xMatrix=[0.3386|0.2108 0.3386],units=km,normamps=110
-new linecode.BT808_BT808_4_1_3 nPhases=1,rMatrix=[1.1739|0.2108],xMatrix=[0.3386|0.2108],units=km,normamps=110
-new linecode.BT808_BT808_4_2_3 nPhases=2,rMatrix=[1.1739|0.2108 1.1739],xMatrix=[0.3386|0.2108 0.3386],units=km,normamps=110
 new linecode.BT808_BT808_4_3_3 nPhases=3,r1=0.869427,x1=0.127771,r0=1.782781,x0=0.760259,units=km,normamps=110
-new linecode.BT809_BT803_4_3_4 nPhases=3,r1=0.9719,x1=0.1631,r0=1.949,x0=1.2599,c1=30.168,c0=15.0777,units=km,normamps=110
-new linecode.BT809_BT809_4_1_4 nPhases=1,rMatrix=[1.2172|0.3656],xMatrix=[0.5287|0.3656],units=km,normamps=110
-new linecode.BT809_BT809_4_2_4 nPhases=2,rMatrix=[1.2172|0.3656 1.2172],xMatrix=[0.5287|0.3656 0.5287],units=km,normamps=110
-new linecode.BT809_BT809_4_3_4 nPhases=3,r1=0.9719,x1=0.1631,r0=1.949,x0=1.2599,c1=30.168,c0=15.0777,units=km,normamps=110
-new linecode.BT809_BT810_4_3_4 nPhases=3,r1=0.9719,x1=0.1631,r0=1.949,x0=1.2599,c1=30.168,c0=15.0777,units=km,normamps=110
-new linecode.BT810_BT803_4_3_4 nPhases=3,r1=0.9719,x1=0.1629,r0=1.7002,x0=0.6834,c1=30.4683,c0=18.8853,units=km,normamps=110
-new linecode.BT810_BT808_4_2_4 nPhases=2,rMatrix=[1.1343|0.1735 1.1343],xMatrix=[0.3364|0.1735 0.3364],units=km,normamps=110
-new linecode.BT810_BT808_4_3_4 nPhases=3,r1=0.9719,x1=0.1629,r0=1.7002,x0=0.6834,c1=30.4683,c0=18.8853,units=km,normamps=110
-new linecode.BT810_BT810_4_1_4 nPhases=1,rMatrix=[1.1343|0.1735],xMatrix=[0.3364|0.1735],units=km,normamps=110
-new linecode.BT810_BT810_4_2_4 nPhases=2,rMatrix=[1.1343|0.1735 1.1343],xMatrix=[0.3364|0.1735 0.3364],units=km,normamps=110
-new linecode.BT810_BT810_4_3_4 nPhases=3,r1=0.9719,x1=0.1629,r0=1.7002,x0=0.6834,c1=30.4683,c0=18.8853,units=km,normamps=110
 new linecode.BT811_BT811_4_1_3 nPhases=1,r1=2.1716,x1=0.0821,r0=2.413,x0=2.14,units=km,normamps=95
 new linecode.BT811_BT811_4_2_3 nPhases=2,r1=2.1716,x1=0.0821,r0=2.413,x0=2.14,units=km,normamps=95
 new linecode.BT811_BT811_4_3_3 nPhases=3,r1=2.1716,x1=0.0821,r0=2.413,x0=2.14,units=km,normamps=95
@@ -1576,6 +1426,7 @@ new linecode.BTH01_BTH01_7_1_1 nPhases=1,r1=1.934,x1=0.001,r0=1.442,x0=0.083,uni
 new linecode.BTH01_BTH01_7_2_1 nPhases=2,r1=1.934,x1=0.001,r0=1.442,x0=0.083,units=km,normamps=125
 new linecode.BTH01_BTH01_7_3_1 nPhases=3,r1=1.934,x1=0.001,r0=1.442,x0=0.083,units=km,normamps=125
 new linecode.BTH02_BTH02_7_1_1 nPhases=1,r1=1.4616,x1=0.001,r0=1.442,x0=0.083,units=km,normamps=125
+new linecode.BTH02_BTH02_7_3_1 nPhases=3,r1=1.4616,x1=0.001,r0=1.442,x0=0.083,units=km,normamps=125
 new linecode.BTH03_BT803_7_3_1 nPhases=3,r1=0.9771,x1=1.3755,r0=1.079,x0=0.459,units=km,normamps=125
 new linecode.BTH03_BT809_7_3_1 nPhases=3,r1=0.9771,x1=1.3755,r0=1.079,x0=0.459,units=km,normamps=125
 new linecode.BTH03_BTH03_7_2_1 nPhases=2,r1=0.9771,x1=1.3755,r0=1.079,x0=0.459,units=km,normamps=125
@@ -1584,11 +1435,9 @@ new linecode.CAB001_3_1 nPhases=1,r1=2.389,x1=0.524,r0=7.591,x0=1.508,units=km,n
 new linecode.CAB001_3_2 nPhases=2,r1=2.389,x1=0.524,r0=7.591,x0=1.508,units=km,normamps=102
 new linecode.CAB001_3_3 nPhases=3,r1=2.389,x1=0.524,r0=7.591,x0=1.508,units=km,normamps=102
 new linecode.CAB001_5_3 nPhases=3,r1=2.389,x1=0.524,r0=7.591,x0=1.508,units=km,normamps=102
-new linecode.CAB002 nPhases=3,r1=1.564,x1=1.27,r0=4.769,x0=1.456,units=km,normamps=137
 new linecode.CAB002_3_1 nPhases=1,r1=1.564,x1=1.27,r0=4.769,x0=1.456,units=km,normamps=137
 new linecode.CAB002_3_3 nPhases=3,r1=1.564,x1=1.27,r0=4.769,x0=1.456,units=km,normamps=137
 new linecode.CAB002_5_3 nPhases=3,r1=1.564,x1=1.27,r0=4.769,x0=1.456,units=km,normamps=137
-new linecode.CAB003 nPhases=3,r1=0.984,x1=0.8,r0=3.006,x0=1.404,units=km,normamps=184
 new linecode.CAB003_3_1 nPhases=1,r1=0.984,x1=0.8,r0=3.006,x0=1.404,units=km,normamps=184
 new linecode.CAB003_3_3 nPhases=3,r1=0.984,x1=0.8,r0=3.006,x0=1.404,units=km,normamps=184
 new linecode.CAB003_5_3 nPhases=3,r1=0.984,x1=0.8,r0=3.006,x0=1.404,units=km,normamps=184
@@ -1602,281 +1451,14 @@ new linecode.CAB006_3_3 nPhases=3,r1=0.308,x1=0.441,r0=0.962,x0=1.26,units=km,no
 new linecode.CAB006_5_3 nPhases=3,r1=0.308,x1=0.441,r0=0.962,x0=1.26,units=km,normamps=396
 new linecode.CAB007_3_3 nPhases=3,r1=0.245,x1=0.197,r0=0.765,x0=1.234,units=km,normamps=457
 new linecode.CAB008_3_3 nPhases=3,r1=0.195,x1=0.158,r0=0.608,x0=1.208,units=km,normamps=534
-new linecode.CAB101 nPhases=3,r1=2.469,x1=2.176,r0=7.688,x0=1.444,units=km,normamps=110
 new linecode.CAB101_3_1 nPhases=1,r1=2.469,x1=2.176,r0=7.688,x0=1.444,units=km,normamps=110
 new linecode.CAB101_3_3 nPhases=3,r1=2.469,x1=2.176,r0=7.688,x0=1.444,units=km,normamps=110
-new linecode.CAB102 nPhases=3,r1=1.5208,x1=0.4543,r0=2.1462,x0=2.0127,c1=9.8389,c0=4.4221,units=km,normamps=150
-new linecode.CAB102_3_1 nPhases=1,rMatrix=[1.742|0.5092],xMatrix=[0.9634|0.5092],units=km,normamps=150
-new linecode.CAB102_3_2 nPhases=2,rMatrix=[1.742|0.5092 1.742],xMatrix=[0.9634|0.5092 0.9634],units=km,normamps=150
-new linecode.CAB102_3_3 nPhases=3,r1=1.5208,x1=0.4543,r0=2.1462,x0=2.0127,c1=9.8389,c0=4.4221,units=km,normamps=150
-new linecode.CAB103 nPhases=3,r1=0.9562,x1=0.4367,r0=1.5706,x0=1.9951,c1=10.2616,c0=4.5052,units=km,normamps=201
-new linecode.CAB102_5_1 nPhases=1,rMatrix=[1.742|0.5092],xMatrix=[0.9634|0.5092],units=km,normamps=150
-new linecode.CAB102_5_3 nPhases=3,r1=1.5208,x1=0.4543,r0=2.1462,x0=2.0127,c1=9.8389,c0=4.4221,units=km,normamps=150
-new linecode.CAB103_3_1 nPhases=1,rMatrix=[1.1663|0.5092],xMatrix=[0.9458|0.5092],units=km,normamps=201
-new linecode.CAB104 nPhases=3,r1=0.6013,x1=0.4192,r0=1.2068,x0=1.7491,c1=10.7279,c0=4.6133,units=km,normamps=272
-new linecode.CAB103_3_2 nPhases=2,rMatrix=[1.1663|0.5092 1.1663],xMatrix=[0.9458|0.5092 0.9458],units=km,normamps=201
-new linecode.CAB103_3_3 nPhases=3,r1=0.9562,x1=0.4367,r0=1.5706,x0=1.9951,c1=10.2616,c0=4.5052,units=km,normamps=201
-new linecode.CAB103_5_1 nPhases=1,rMatrix=[1.1663|0.5092],xMatrix=[0.9458|0.5092],units=km,normamps=201
-new linecode.CAB103_5_3 nPhases=3,r1=0.9562,x1=0.4367,r0=1.5706,x0=1.9951,c1=10.2616,c0=4.5052,units=km,normamps=201
-new linecode.CAB104_3_1 nPhases=1,rMatrix=[0.8049|0.4363],xMatrix=[0.8555|0.4363],units=km,normamps=272
-new linecode.CAB104_3_2 nPhases=2,rMatrix=[0.8049|0.4363 0.8049],xMatrix=[0.8555|0.4363 0.8555],units=km,normamps=272
-new linecode.CAB104_3_3 nPhases=3,r1=0.6013,x1=0.4192,r0=1.2068,x0=1.7491,c1=10.7279,c0=4.6133,units=km,normamps=272
-new linecode.CAB104_5_3 nPhases=3,r1=0.6013,x1=0.4192,r0=1.2068,x0=1.7491,c1=10.7279,c0=4.6133,units=km,normamps=272
-new linecode.CAB107_3_1 nPhases=1,rMatrix=[0.4709|0.3708],xMatrix=[0.7635|0.3708],units=km,normamps=425
-new linecode.CAB202 nPhases=3,r1=1.5207,x1=0.4746,r0=2.139,x0=1.9372,c1=9.3619,c0=4.7714,units=km,normamps=152
-new linecode.CAB107_3_3 nPhases=3,r1=0.3055,x1=0.3927,r0=0.8135,x0=1.5195,c1=11.508,c0=4.7751,units=km,normamps=425
-new linecode.CAB107_5_3 nPhases=3,r1=0.3055,x1=0.3927,r0=0.8135,x0=1.5195,c1=11.508,c0=4.7751,units=km,normamps=425
-new linecode.CAB108_3_1 nPhases=1,rMatrix=[0.3599|0.3708],xMatrix=[0.7272|0.3708],units=km,normamps=576
-new linecode.CAB108_3_2 nPhases=2,rMatrix=[0.3599|0.3708 0.3599],xMatrix=[0.7272|0.3708 0.7272],units=km,normamps=576
-new linecode.CAB108_3_3 nPhases=3,r1=0.192,x1=0.3565,r0=0.7025,x0=1.4833,c1=12.4178,c0=4.9242,units=km,normamps=576
-new linecode.CAB203 nPhases=3,r1=0.9561,x1=0.457,r0=1.5651,x0=1.9196,c1=9.7501,c0=4.8694,units=km,normamps=204
-new linecode.CAB108_5_3 nPhases=3,r1=0.192,x1=0.3565,r0=0.7025,x0=1.4833,c1=12.4178,c0=4.9242,units=km,normamps=576
-new linecode.CAB202_3_1 nPhases=1,rMatrix=[1.7313|0.4773],xMatrix=[0.9519|0.4773],units=km,normamps=152
-new linecode.CAB202_3_2 nPhases=2,rMatrix=[1.7313|0.4773 1.7313],xMatrix=[0.9519|0.4773 0.9519],units=km,normamps=152
-new linecode.CAB202_3_3 nPhases=3,r1=1.5207,x1=0.4746,r0=2.139,x0=1.9372,c1=9.3619,c0=4.7714,units=km,normamps=152
-new linecode.CAB202_5_1 nPhases=1,rMatrix=[1.7313|0.4773],xMatrix=[0.9519|0.4773],units=km,normamps=152
-new linecode.CAB204 nPhases=3,r1=0.6012,x1=0.4396,r0=1.2121,x0=1.6709,c1=10.1689,c0=4.9959,units=km,normamps=275
-new linecode.CAB202_5_3 nPhases=3,r1=1.5207,x1=0.4746,r0=2.139,x0=1.9372,c1=9.3619,c0=4.7714,units=km,normamps=152
-new linecode.CAB203_3_1 nPhases=1,rMatrix=[1.1597|0.4773],xMatrix=[0.9343|0.4773],units=km,normamps=204
-new linecode.CAB203_3_2 nPhases=2,rMatrix=[1.1597|0.4773 1.1597],xMatrix=[0.9343|0.4773 0.9343],units=km,normamps=204
-new linecode.CAB203_3_3 nPhases=3,r1=0.9561,x1=0.457,r0=1.5651,x0=1.9196,c1=9.7501,c0=4.8694,units=km,normamps=204
-new linecode.CAB207 nPhases=1,rMatrix=[0.4731|0.3381],xMatrix=[0.7513|0.3381],units=km,normamps=430
-new linecode.CAB203_5_1 nPhases=1,rMatrix=[1.1597|0.4773],xMatrix=[0.9343|0.4773],units=km,normamps=204
-new linecode.CAB207_3_2 nPhases=2,rMatrix=[0.4731|0.3381 0.4731],xMatrix=[0.7513|0.3381 0.7513],units=km,normamps=430
-new linecode.CAB203_5_3 nPhases=3,r1=0.9561,x1=0.457,r0=1.5651,x0=1.9196,c1=9.7501,c0=4.8694,units=km,normamps=204
-new linecode.CAB204_3_1 nPhases=1,rMatrix=[0.8066|0.4035],xMatrix=[0.8431|0.4035],units=km,normamps=275
-new linecode.CAB204_3_2 nPhases=2,rMatrix=[0.8066|0.4035 0.8066],xMatrix=[0.8431|0.4035 0.8431],units=km,normamps=275
-new linecode.CAB204_3_3 nPhases=3,r1=0.6012,x1=0.4396,r0=1.2121,x0=1.6709,c1=10.1689,c0=4.9959,units=km,normamps=275
-new linecode.CAB204_5_3 nPhases=3,r1=0.6012,x1=0.4396,r0=1.2121,x0=1.6709,c1=10.1689,c0=4.9959,units=km,normamps=275
-new linecode.CAB207_3_1 nPhases=1,rMatrix=[0.4731|0.3381],xMatrix=[0.7513|0.3381],units=km,normamps=430
-new linecode.CABA06 nPhases=3,r1=0.7178,x1=0.3035,r0=1.3041,x0=2.0219,c1=17.0266,c0=3.7172,units=km,normamps=229
-new linecode.CAB207_3_3 nPhases=3,r1=0.3005,x1=0.4133,r0=0.8205,x0=1.4417,c1=10.8705,c0=5.1862,units=km,normamps=430
-new linecode.CAB207_5_3 nPhases=3,r1=0.3005,x1=0.4133,r0=0.8205,x0=1.4417,c1=10.8705,c0=5.1862,units=km,normamps=430
-new linecode.CAB208_3_1 nPhases=1,rMatrix=[0.3621|0.3381],xMatrix=[0.7251|0.3381],units=km,normamps=586
-new linecode.CAB208_3_2 nPhases=2,rMatrix=[0.3621|0.3381 0.3621],xMatrix=[0.7251|0.3381 0.7251],units=km,normamps=586
-new linecode.CAB208_3_3 nPhases=3,r1=0.1919,x1=0.3871,r0=0.7095,x0=1.4156,c1=11.4983,c0=5.3233,units=km,normamps=586
-new linecode.CABA061 nPhases=3,r1=0.717237,x1=0.303497,r0=1.30381,x0=1.99211,C1=17.0266,C0=3.71716,units=km,normamps=229
-new linecode.CABA08 nPhases=3,r1=0.2319,x1=0.2409,r0=0.7241,x0=1.7654,c1=19.1315,c0=3.8228,units=km,normamps=456
-new linecode.CAB208_5_3 nPhases=3,r1=0.1919,x1=0.3871,r0=0.7095,x0=1.4156,c1=11.4983,c0=5.3233,units=km,normamps=586
-new linecode.CABA06_3_1 nPhases=1,rMatrix=[0.9163|0.5679],xMatrix=[0.8644|0.5679],units=km,normamps=229
-new linecode.CABA06_3_2 nPhases=2,rMatrix=[0.9163|0.5679 0.9163],xMatrix=[0.8644|0.5679 0.8644],units=km,normamps=229
-new linecode.CABA06_3_3 nPhases=3,r1=0.7178,x1=0.3035,r0=1.3041,x0=2.0219,c1=17.0266,c0=3.7172,units=km,normamps=229
-new linecode.CABBT304 nPhases=3,r1=0.7349,units=km,normamps=93
-new linecode.CABBT304_7_2 nPhases=2,r1=0.7349,units=km,normamps=93
-new linecode.CABBT304_7_3 nPhases=3,r1=0.7349,units=km,normamps=93
-new linecode.CABBT307 nPhases=3,r1=0.6361,units=km,normamps=192
-new linecode.CABBT307_7_2 nPhases=2,r1=0.6361,units=km,normamps=192
-new linecode.CABBT307_7_3 nPhases=3,r1=0.6361,units=km,normamps=192
-new linecode.CABBT308 nPhases=3,r1=0.3805,units=km,normamps=258
-new linecode.CABBT313 nPhases=3,r1=0.1747,units=km,normamps=498
-new linecode.CABBT313_5_3 nPhases=3,r1=0.1747,units=km,normamps=498
-new linecode.CABBT313_7_3 nPhases=3,r1=0.1747,units=km,normamps=498
-new linecode.CABBT314_5_2 nPhases=2,r1=0.0871,units=km,normamps=789
-new linecode.CABBT314_5_3 nPhases=3,r1=0.0871,units=km,normamps=789
-new linecode.CABBT314_7_2 nPhases=2,r1=0.0871,units=km,normamps=789
-new linecode.CABBT314_7_3 nPhases=3,r1=0.0871,units=km,normamps=789
-new linecode.CABBT315 nPhases=3,r1=13.0642,units=km,normamps=12
-new linecode.CABBT316 nPhases=3,r1=1.9597,units=km,normamps=102
-new linecode.CABBT316_7_3 nPhases=3,r1=1.9597,units=km,normamps=102
-new linecode.CABBT317 nPhases=3,r1=0.2201,units=km,normamps=427
-new linecode.CABBT317_5_3 nPhases=3,r1=0.2201,units=km,normamps=427
-new linecode.CABBT317_7_2 nPhases=2,r1=0.2201,units=km,normamps=427
-new linecode.CABBT317_7_3 nPhases=3,r1=0.2201,units=km,normamps=427
-new linecode.CABBT318_7_2 nPhases=2,r1=0.1138,units=km,normamps=660
-new linecode.CABBT318_7_3 nPhases=3,r1=0.1138,units=km,normamps=660
-new linecode.CABBT501 nPhases=3,r1=6.1079,units=km,normamps=48
-new linecode.CABBT501_5_1 nPhases=1,r1=6.1079,units=km,normamps=48
-new linecode.CABBT501_7_1 nPhases=1,r1=6.1079,units=km,normamps=48
-new linecode.CABBT503 nPhases=3,r1=2.179,units=km,normamps=82
-new linecode.CABBT503_5_1 nPhases=1,r1=2.179,units=km,normamps=82
-new linecode.CABBT503_5_2 nPhases=2,r1=2.179,units=km,normamps=82
-new linecode.CABBT503_5_3 nPhases=3,r1=2.179,units=km,normamps=82
-new linecode.CABBT503_7_1 nPhases=1,r1=2.179,units=km,normamps=82
-new linecode.CABBT503_7_2 nPhases=2,r1=2.179,units=km,normamps=82
-new linecode.CABBT504_7_1 nPhases=1,r1=2.4156,units=km,normamps=85
-new linecode.CABBT504_7_2 nPhases=2,r1=2.4156,units=km,normamps=85
-new linecode.CABBT504_7_3 nPhases=3,r1=2.4156,units=km,normamps=85
-new linecode.CABBT505 nPhases=3,r1=1.369,units=km,normamps=101
-new linecode.CABBT505_5_1 nPhases=1,r1=1.369,units=km,normamps=101
-new linecode.CABBT505_7_3 nPhases=3,r1=1.369,units=km,normamps=101
-new linecode.CABBT506 nPhases=3,r1=1.9158,units=km,normamps=113
-new linecode.CABBT506_7_1 nPhases=1,r1=1.9158,units=km,normamps=113
-new linecode.CABBT506_7_2 nPhases=2,r1=1.9158,units=km,normamps=113
-new linecode.CABBT507 nPhases=3,r1=1.2047,units=km,normamps=150
-new linecode.CABBT507_5_3 nPhases=3,r1=1.2047,units=km,normamps=150
-new linecode.CABBT507_7_3 nPhases=3,r1=1.2047,units=km,normamps=150
-new linecode.CABBT508 nPhases=3,r1=1.0445,units=km,normamps=201
-new linecode.CABBT509 nPhases=3,r1=0.6569,units=km,normamps=232
-new linecode.CABBT510 nPhases=3,r1=0.5212,units=km,normamps=269
-new linecode.CABBT511 nPhases=3,r1=0.382,units=km,normamps=312
-new linecode.CABBT512_7_2 nPhases=2,r1=0.3029,units=km,normamps=390
-new linecode.CABBT513 nPhases=3,r1=0.289,units=km,normamps=386
-new linecode.CABBT513_5_3 nPhases=3,r1=0.289,units=km,normamps=386
-new linecode.CABBT513_7_1 nPhases=1,r1=0.289,units=km,normamps=386
-new linecode.CABBT513_7_2 nPhases=2,r1=0.289,units=km,normamps=386
-new linecode.CABBT513_7_3 nPhases=3,r1=0.289,units=km,normamps=386
-new linecode.CABBT514 nPhases=3,r1=0.143,units=km,normamps=612
-new linecode.CABBT514_5_1 nPhases=1,r1=0.143,units=km,normamps=612
-new linecode.CABBT514_5_2 nPhases=2,r1=0.143,units=km,normamps=612
-new linecode.CABBT514_5_3 nPhases=3,r1=0.143,units=km,normamps=612
-new linecode.CABBT514_7_1 nPhases=1,r1=0.143,units=km,normamps=612
-new linecode.CABBT514_7_2 nPhases=2,r1=0.143,units=km,normamps=612
-new linecode.CABBT514_7_3 nPhases=3,r1=0.143,units=km,normamps=612
-new linecode.CABBT517 nPhases=3,r1=0.991,units=km,normamps=94
-new linecode.CABBT517_5_3 nPhases=3,r1=0.991,units=km,normamps=94
-new linecode.CABBT517_7_1 nPhases=1,r1=0.991,units=km,normamps=94
-new linecode.CABBT517_7_2 nPhases=2,r1=0.991,units=km,normamps=94
-new linecode.CABBT517_7_3 nPhases=3,r1=0.991,units=km,normamps=94
-new linecode.CABBT518 nPhases=3,r1=0.506,units=km,normamps=138
-new linecode.CABBT518_7_1 nPhases=1,r1=0.506,units=km,normamps=138
-new linecode.CABBT518_7_3 nPhases=3,r1=0.506,units=km,normamps=138
-new linecode.CABBT519 nPhases=3,r1=3.514,units=km,normamps=48
-new linecode.CABBT519_7_1 nPhases=1,r1=3.514,units=km,normamps=48
-new linecode.CABBT520_7_3 nPhases=3,r1=0.188,units=km,normamps=512
-new linecode.CABBT521 nPhases=3,r1=0.732,units=km,normamps=170
-new linecode.CABBT521_5_2 nPhases=2,r1=0.732,units=km,normamps=170
-new linecode.CABBT521_5_3 nPhases=3,r1=0.732,units=km,normamps=170
-new linecode.CABBT521_7_1 nPhases=1,r1=0.732,units=km,normamps=170
-new linecode.CABBT521_7_2 nPhases=2,r1=0.732,units=km,normamps=170
-new linecode.CABBT521_7_3 nPhases=3,r1=0.732,units=km,normamps=170
-new linecode.CABBT801 nPhases=3,r1=0.868104,units=km,normamps=99
-new linecode.CABBT801_4_1 nPhases=1,rMatrix=[1.2825|0.4191],xMatrix=[0.5446|0.4191],units=km,normamps=99
-new linecode.CABBT801_4_2 nPhases=2,rMatrix=[1.2825|0.4191 1.2825],xMatrix=[0.5446|0.4191 0.5446],units=km,normamps=99
-new linecode.CABBT801_4_3 nPhases=3,r1=0.868104,units=km,normamps=99
-new linecode.CABBT8012 nPhases=2,r1=0.9873,units=km,normamps=99
-new linecode.CABBT802 nPhases=3,r1=0.7318,units=km,normamps=123
-new linecode.CABBT802_4_1 nPhases=1,r1=0.7318,units=km,normamps=123
-new linecode.CABBT802_4_2 nPhases=2,r1=0.7318,units=km,normamps=123
-new linecode.CABBT803 nPhases=3,r1=0.4965,x1=0.1377,r0=1.2837,x0=0.6583,c1=37.5993,c0=21.7217,units=km,normamps=147
-new linecode.CABA06_5_1 nPhases=1,rMatrix=[0.9163|0.5679],xMatrix=[0.8644|0.5679],units=km,normamps=229
-new linecode.CABA06_5_3 nPhases=3,r1=0.7178,x1=0.3035,r0=1.3041,x0=2.0219,c1=17.0266,c0=3.7172,units=km,normamps=229
-new linecode.CABA08_3_1 nPhases=1,rMatrix=[0.3935|0.5054],xMatrix=[0.7393|0.5054],units=km,normamps=456
-new linecode.CABBT8032 nPhases=3,r1=0.4965,x1=0.1377,r0=1.2837,x0=0.6583,c1=37.5993,c0=21.7217,units=km,normamps=147
-new linecode.CABBT804_4_2 nPhases=2,r1=0.5059,units=km,normamps=180
-new linecode.CABBT804_4_3 nPhases=3,r1=0.5059,units=km,normamps=180
-new linecode.CABBT805 nPhases=3,r1=0.284,x1=0.117,r0=1.0976,x0=0.6374,c1=46.5944,c0=24.9724,units=km,normamps=201
-new linecode.CABA08_3_2 nPhases=2,rMatrix=[0.3935|0.5054 0.3935],xMatrix=[0.7393|0.5054 0.7393],units=km,normamps=456
-new linecode.CABA08_3_3 nPhases=3,r1=0.2319,x1=0.2409,r0=0.7241,x0=1.7654,c1=19.1315,c0=3.8228,units=km,normamps=456
-new linecode.CABA08_5_3 nPhases=3,r1=0.2319,x1=0.2409,r0=0.7241,x0=1.7654,c1=19.1315,c0=3.8228,units=km,normamps=456
-new linecode.CABBT806_4_1 nPhases=1,r1=0.2156,units=km,normamps=225
-new linecode.CABBT806_4_2 nPhases=2,r1=0.2156,units=km,normamps=225
-new linecode.CABBT806_4_3 nPhases=3,r1=0.2156,units=km,normamps=225
-new linecode.CABBT807 nPhases=3,r1=0.443084,units=km,normamps=200
-new linecode.CABBT807_4_1 nPhases=1,rMatrix=[0.7489|0.2116],xMatrix=[0.3119|0.2116],units=km,normamps=200
-new linecode.CABBT807_4_2 nPhases=2,rMatrix=[0.7489|0.2116 0.7489],xMatrix=[0.3119|0.2116 0.3119],units=km,normamps=200
-new linecode.CABBT807_4_3 nPhases=3,r1=0.443084,units=km,normamps=200
-new linecode.CABBT8072 nPhases=2,r1=0.5047,units=km,normamps=200
-new linecode.CABBT808 nPhases=3,r1=0.869427,units=km,normamps=110
-new linecode.CABBT808_4_1 nPhases=1,rMatrix=[1.1739|0.2108],xMatrix=[0.3386|0.2108],units=km,normamps=110
-new linecode.CABBT808_4_2 nPhases=2,rMatrix=[1.1739|0.2108 1.1739],xMatrix=[0.3386|0.2108 0.3386],units=km,normamps=110
-new linecode.CABBT808_4_3 nPhases=3,r1=0.869427,units=km,normamps=110
-new linecode.CABBT8082 nPhases=2,r1=0.9873,units=km,normamps=110
-new linecode.CABBT809 nPhases=3,r1=0.9719,x1=0.1631,r0=1.949,x0=1.2599,c1=30.168,c0=15.0777,units=km,normamps=110
-new linecode.CABBT809 nPhases=3,r1=0.9719,x1=0.1631,r0=1.949,x0=1.2599,c1=30.168,c0=15.0777,units=km,normamps=110
-new linecode.CABBT803_4_1 nPhases=1,rMatrix=[0.7178|0.1735],xMatrix=[0.3112|0.1735],units=km,normamps=147
-new linecode.CABBT803_4_2 nPhases=2,rMatrix=[0.7178|0.1735 0.7178],xMatrix=[0.3112|0.1735 0.3112],units=km,normamps=147
-new linecode.CABBT803_4_3 nPhases=3,r1=0.4965,x1=0.1377,r0=1.2837,x0=0.6583,c1=37.5993,c0=21.7217,units=km,normamps=147
-new linecode.CABBT810 nPhases=3,r1=0.9719,x1=0.1629,r0=1.7002,x0=0.6834,c1=30.4683,c0=18.8853,units=km,normamps=110
-new linecode.CABBT810 nPhases=3,r1=0.9719,x1=0.1629,r0=1.7002,x0=0.6834,c1=30.4683,c0=18.8853,units=km,normamps=110
-new linecode.CABBT805_4_1 nPhases=1,rMatrix=[0.5317|0.1735],xMatrix=[0.2904|0.1735],units=km,normamps=201
-new linecode.CABBT805_4_2 nPhases=2,rMatrix=[0.5317|0.1735 0.5317],xMatrix=[0.2904|0.1735 0.2904],units=km,normamps=201
-new linecode.CABBT805_4_3 nPhases=3,r1=0.284,x1=0.117,r0=1.0976,x0=0.6374,c1=46.5944,c0=24.9724,units=km,normamps=201
-new linecode.CABBT811 nPhases=3,r1=2.1716,units=km,normamps=95
-new linecode.CABBT811 nPhases=3,r1=2.1716,units=km,normamps=95
-new linecode.CABBT811_4_1 nPhases=1,r1=2.1716,units=km,normamps=95
-new linecode.CABBT811_4_2 nPhases=2,r1=2.1716,units=km,normamps=95
-new linecode.CABBT811_4_3 nPhases=3,r1=2.1716,units=km,normamps=95
-new linecode.CABBT812_4_1 nPhases=1,r1=1.3646,units=km,normamps=108
-new linecode.CABBT812_4_2 nPhases=2,r1=1.3646,units=km,normamps=108
-new linecode.CABBT812_4_3 nPhases=3,r1=1.3646,units=km,normamps=108
-new linecode.CABBT813 nPhases=3,r1=0.7318,units=km,normamps=160
-new linecode.CABBT813_4_1 nPhases=1,r1=0.7318,units=km,normamps=160
-new linecode.CABBT813_4_2 nPhases=2,r1=0.7318,units=km,normamps=160
-new linecode.CABBT813_4_3 nPhases=3,r1=0.7318,units=km,normamps=160
-new linecode.CABBT814 nPhases=3,r1=1.3646,units=km,normamps=125
-new linecode.CABBT814_4_1 nPhases=1,r1=1.3646,units=km,normamps=125
-new linecode.CABBT814_4_2 nPhases=2,r1=1.3646,units=km,normamps=125
-new linecode.CABBT8142 nPhases=2,r1=1.3646,units=km,normamps=125
-new linecode.CABBT815_4_1 nPhases=1,r1=2.1716,units=km,normamps=82
-new linecode.CABBT815_4_2 nPhases=2,r1=2.1716,units=km,normamps=82
-new linecode.CABBT815_4_3 nPhases=3,r1=2.1716,units=km,normamps=82
-new linecode.CABBT816 nPhases=3,r1=1.3643,units=km,normamps=125
-new linecode.CABBT816_4_1 nPhases=1,r1=1.3643,units=km,normamps=125
-new linecode.CABBT8161 nPhases=1,r1=1.62952,units=km,normamps=125
-new linecode.CABBTG01 nPhases=3,r1=3.5016,units=km,normamps=71
-new linecode.CABBTG01_4_1 nPhases=1,r1=3.5016,units=km,normamps=71
-new linecode.CABBTG01_4_2 nPhases=2,r1=3.5016,units=km,normamps=71
-new linecode.CABBTG01_4_3 nPhases=3,r1=3.5016,units=km,normamps=71
-new linecode.CABBTG02 nPhases=3,r1=2.1716,units=km,normamps=95
-new linecode.CABBTG02_4_1 nPhases=1,r1=2.1716,units=km,normamps=95
-new linecode.CABBTG02_4_2 nPhases=2,r1=2.1716,units=km,normamps=95
-new linecode.CABBTG02_4_3 nPhases=3,r1=2.1716,units=km,normamps=95
-new linecode.CABBTG03 nPhases=3,r1=1.3646,units=km,normamps=125
-new linecode.CABBTG03_4_1 nPhases=1,r1=1.3646,units=km,normamps=125
-new linecode.CABBTG03_4_3 nPhases=3,r1=1.3646,units=km,normamps=125
-new linecode.CABBTG04 nPhases=3,r1=3.5016,units=km,normamps=71
-new linecode.CABBTG04_4_1 nPhases=1,r1=3.5016,units=km,normamps=71
-new linecode.CABBTG04_4_2 nPhases=2,r1=3.5016,units=km,normamps=71
-new linecode.CABBTG04_4_3 nPhases=3,r1=3.5016,units=km,normamps=71
-new linecode.CABBTG05 nPhases=3,r1=2.1716,units=km,normamps=95
-new linecode.CABBTG05_4_1 nPhases=1,r1=2.1716,units=km,normamps=95
-new linecode.CABBTG05_4_2 nPhases=2,r1=2.1716,units=km,normamps=95
-new linecode.CABBTG05_4_3 nPhases=3,r1=2.1716,units=km,normamps=95
-new linecode.CABBTG06 nPhases=3,r1=2.1716,units=km,normamps=82
-new linecode.CABBTG06_4_1 nPhases=1,r1=2.1716,units=km,normamps=82
-new linecode.CABBTG06_4_2 nPhases=2,r1=2.1716,units=km,normamps=82
-new linecode.CABBTG06_4_3 nPhases=3,r1=2.1716,units=km,normamps=82
-new linecode.CABBTG07 nPhases=3,r1=0.9873,units=km,normamps=110
-new linecode.CABBTG07_4_1 nPhases=1,r1=0.9873,units=km,normamps=110
-new linecode.CABBTG07_4_2 nPhases=2,r1=0.9873,units=km,normamps=110
-new linecode.CABBTG07_4_3 nPhases=3,r1=0.9873,units=km,normamps=110
-new linecode.CABBTG08 nPhases=3,r1=0.5047,units=km,normamps=147
-new linecode.CABBTG08_4_1 nPhases=1,r1=0.5047,units=km,normamps=147
-new linecode.CABBTG08_4_2 nPhases=2,r1=0.5047,units=km,normamps=147
-new linecode.CABBTG08_4_3 nPhases=3,r1=0.5047,units=km,normamps=147
-new linecode.CABBTG09 nPhases=3,r1=0.2895,units=km,normamps=201
-new linecode.CABBTG09_4_3 nPhases=3,r1=0.2895,units=km,normamps=201
-new linecode.CABBTG10 nPhases=3,r1=1.3643,units=km,normamps=125
-new linecode.CABBTG10_4_1 nPhases=1,r1=1.3643,units=km,normamps=125
-new linecode.CABBTG10_4_2 nPhases=2,r1=1.3643,units=km,normamps=125
-new linecode.CABBTG10_4_3 nPhases=3,r1=1.3643,units=km,normamps=125
-new linecode.CABBTG11 nPhases=3,r1=3.5016,units=km,normamps=71
-new linecode.CABBTG11_4_1 nPhases=1,r1=3.5016,units=km,normamps=71
-new linecode.CABBTG11_4_2 nPhases=2,r1=3.5016,units=km,normamps=71
-new linecode.CABBTG11_4_3 nPhases=3,r1=3.5016,units=km,normamps=71
-new linecode.CABBTG12 nPhases=2,r1=0.9873,units=km,normamps=129
-new linecode.CABBTG12_4_1 nPhases=1,r1=0.9873,units=km,normamps=129
-new linecode.CABBTG12_4_2 nPhases=2,r1=0.9873,units=km,normamps=129
-new linecode.CABBTG12_4_3 nPhases=3,r1=0.9873,units=km,normamps=129
-new linecode.CABBTG13 nPhases=3,r1=1.3646,units=km,normamps=125
-new linecode.CABBTG13_4_1 nPhases=1,r1=1.3646,units=km,normamps=125
-new linecode.CABBTG13_4_2 nPhases=2,r1=1.3646,units=km,normamps=125
-new linecode.CABBTG13_4_3 nPhases=3,r1=1.3646,units=km,normamps=125
-new linecode.CABBTG134_2 nPhases=2,r1=1.3646,units=km,normamps=125
-new linecode.CABC01_3_1 nPhases=1,r1=18.325,units=km,normamps=37
-new linecode.CABD01_3_1 nPhases=1,r1=15.2665,units=km,normamps=1000
-new linecode.CABD01_3_3 nPhases=3,r1=15.2665,units=km,normamps=1000
-new linecode.CABD02_3_1 nPhases=1,r1=15.2665,units=km,normamps=1000
-new linecode.CABD02_3_3 nPhases=3,r1=15.2665,units=km,normamps=1000
-new linecode.CABD03_3_1 nPhases=1,r1=15.2665,units=km,normamps=37
-new linecode.CABI01_3_3 nPhases=3,r1=0.5039,units=km,normamps=270
-new linecode.CABI02_3_3 nPhases=3,r1=0.2347,units=km,normamps=432
-new linecode.CABBT809_4_1 nPhases=1,rMatrix=[1.2172|0.3656],xMatrix=[0.5287|0.3656],units=km,normamps=110
-new linecode.CABBT809_4_2 nPhases=2,rMatrix=[1.2172|0.3656 1.2172],xMatrix=[0.5287|0.3656 0.5287],units=km,normamps=110
-new linecode.CABBT809_4_3 nPhases=3,r1=0.9719,x1=0.1631,r0=1.949,x0=1.2599,c1=30.168,c0=15.0777,units=km,normamps=110
-new linecode.CAB1021 nPhases=1,r1=1.67577,x1=0.882056,r0=1.8754,x0=0.967,units=km,normamps=150
-new linecode.CABBT810_4_1 nPhases=1,rMatrix=[1.1343|0.1735],xMatrix=[0.3364|0.1735],units=km,normamps=110
-new linecode.CAB1031 nPhases=1,r1=1.11497,x1=0.798552,r0=1.2781,x0=0.9495,units=km,normamps=201
-new linecode.CABBT810_4_2 nPhases=2,rMatrix=[1.1343|0.1735 1.1343],xMatrix=[0.3364|0.1735 0.3364],units=km,normamps=110
-new linecode.CABBT810_4_3 nPhases=3,r1=0.9719,x1=0.1629,r0=1.7002,x0=0.6834,c1=30.4683,c0=18.8853,units=km,normamps=110
 new linecode.CAB105_3_1 nPhases=1,r1=0.486,x1=0.427,r0=1.519,x0=1.26,units=km,normamps=313
 new linecode.CAB105_3_3 nPhases=3,r1=0.486,x1=0.427,r0=1.519,x0=1.26,units=km,normamps=313
 new linecode.CAB106_3_1 nPhases=1,r1=0.386,x1=0.388,r0=1.206,x0=1.234,units=km,normamps=366
 new linecode.CAB106_3_3 nPhases=3,r1=0.386,x1=0.388,r0=1.206,x0=1.234,units=km,normamps=366
 new linecode.CAB201_3_1 nPhases=1,r1=2.469,x1=2.176,r0=7.817,x0=1.521,units=km,normamps=113
 new linecode.CAB201_3_3 nPhases=3,r1=2.469,x1=2.176,r0=7.817,x0=1.521,units=km,normamps=113
-new linecode.CAB2021 nPhases=1,r1=1.66389,x1=0.871053,r0=1.827,x0=1.0082,units=km,normamps=152
-new linecode.CAB2031 nPhases=1,r1=1.10685,x1=0.797516,r0=1.2781,x0=0.829,units=km,normamps=204
 new linecode.CAB205_3_1 nPhases=1,r1=0.486,x1=0.427,r0=1.55,x0=1.463,units=km,normamps=317
 new linecode.CAB205_3_3 nPhases=3,r1=0.486,x1=0.427,r0=1.55,x0=1.463,units=km,normamps=317
 new linecode.CAB206_3_3 nPhases=3,r1=0.386,x1=0.338,r0=1.23,x0=1.426,units=km,normamps=371
@@ -1896,7 +1478,6 @@ new linecode.CAB601_5_1 nPhases=1,r1=1.0445,x1=0.166,r0=3.298,x0=0.498,units=km,
 new linecode.CAB601_5_3 nPhases=3,r1=1.0445,x1=0.166,r0=3.298,x0=0.498,units=km,normamps=116
 new linecode.CAB602_3_1 nPhases=1,r1=0.6569,x1=0.151,r0=2.074,x0=0.453,units=km,normamps=151
 new linecode.CAB602_3_3 nPhases=3,r1=0.6569,x1=0.151,r0=2.074,x0=0.453,units=km,normamps=151
-new linecode.CAB602_5_1 nPhases=1,r1=0.6569,x1=0.151,r0=2.074,x0=0.453,units=km,normamps=151
 new linecode.CAB602_5_3 nPhases=3,r1=0.6569,x1=0.151,r0=2.074,x0=0.453,units=km,normamps=151
 new linecode.CAB603_3_3 nPhases=3,r1=0.5212,x1=0.145,r0=1.645,x0=0.435,units=km,normamps=171
 new linecode.CAB603_5_3 nPhases=3,r1=0.5212,x1=0.145,r0=1.645,x0=0.435,units=km,normamps=171
@@ -1908,37 +1489,37 @@ new linecode.CAB606_3_3 nPhases=3,r1=0.3284,x1=0.139,r0=1.036,x0=0.417,units=km,
 new linecode.CAB606_5_3 nPhases=3,r1=0.3284,x1=0.139,r0=1.036,x0=0.417,units=km,normamps=222
 new linecode.CAB607_3_3 nPhases=3,r1=0.1409,x1=0.119,r0=0.442,x0=0.357,units=km,normamps=356
 new linecode.CAB607_5_3 nPhases=3,r1=0.1409,x1=0.119,r0=0.442,x0=0.357,units=km,normamps=356
-new linecode.CAB608_3_1 nPhases=1,r1=0.0958,x1=0.112,r0=0.299,x0=0.336,units=km,normamps=439
 new linecode.CAB608_3_3 nPhases=3,r1=0.0958,x1=0.112,r0=0.299,x0=0.336,units=km,normamps=439
 new linecode.CAB608_5_3 nPhases=3,r1=0.0958,x1=0.112,r0=0.299,x0=0.336,units=km,normamps=439
-new linecode.CAB609 nPhases=3,r1=0.732,x1=0.585,r0=2.416,x0=0.484,units=km,normamps=141
 new linecode.CAB609_3_1 nPhases=1,r1=0.732,x1=0.585,r0=2.416,x0=0.484,units=km,normamps=141
 new linecode.CAB609_3_3 nPhases=3,r1=0.732,x1=0.585,r0=2.416,x0=0.484,units=km,normamps=141
 new linecode.CAB609_5_1 nPhases=1,r1=0.732,x1=0.585,r0=2.416,x0=0.484,units=km,normamps=141
 new linecode.CAB609_5_3 nPhases=3,r1=0.732,x1=0.585,r0=2.416,x0=0.484,units=km,normamps=141
 new linecode.CAB610_3_1 nPhases=1,r1=0.289,x1=0.255,r0=0.956,x0=0.423,units=km,normamps=238
 new linecode.CAB610_3_3 nPhases=3,r1=0.289,x1=0.255,r0=0.956,x0=0.423,units=km,normamps=238
+new linecode.CAB610_5_1 nPhases=1,r1=0.289,x1=0.255,r0=0.956,x0=0.423,units=km,normamps=238
 new linecode.CAB610_5_3 nPhases=3,r1=0.289,x1=0.255,r0=0.956,x0=0.423,units=km,normamps=238
+new linecode.CAB611_3_1 nPhases=1,r1=0.0898,x1=0.1201,r0=0.301,x0=0.36,units=km,normamps=457
 new linecode.CAB611_3_3 nPhases=3,r1=0.0898,x1=0.1201,r0=0.301,x0=0.36,units=km,normamps=457
+new linecode.CAB611_5_1 nPhases=1,r1=0.0898,x1=0.1201,r0=0.301,x0=0.36,units=km,normamps=457
 new linecode.CAB611_5_3 nPhases=3,r1=0.0898,x1=0.1201,r0=0.301,x0=0.36,units=km,normamps=457
 new linecode.CAB901_4_1 nPhases=1,r1=0.991,x1=0.248,r0=3.024,x0=0.51,units=km,normamps=120
 new linecode.CAB901_4_3 nPhases=3,r1=0.991,x1=0.248,r0=3.024,x0=0.51,units=km,normamps=120
 new linecode.CAB901_5_3 nPhases=3,r1=0.991,x1=0.248,r0=3.024,x0=0.51,units=km,normamps=120
-new linecode.CAB902 nPhases=3,r1=0.732,x1=0.585,r0=2.466,x0=0.438,units=km,normamps=175
 new linecode.CAB902_4_1 nPhases=1,r1=0.732,x1=0.585,r0=2.466,x0=0.438,units=km,normamps=175
 new linecode.CAB902_4_3 nPhases=3,r1=0.732,x1=0.585,r0=2.466,x0=0.438,units=km,normamps=175
 new linecode.CAB902_5_3 nPhases=3,r1=0.732,x1=0.585,r0=2.466,x0=0.438,units=km,normamps=175
 new linecode.CAB903_4_1 nPhases=1,r1=0.506,x1=0.443,r0=1.544,x0=0.45,units=km,normamps=180
+new linecode.CAB903_4_2 nPhases=2,r1=0.506,x1=0.443,r0=1.544,x0=0.45,units=km,normamps=180
 new linecode.CAB903_4_3 nPhases=3,r1=0.506,x1=0.443,r0=1.544,x0=0.45,units=km,normamps=180
 new linecode.CAB903_5_3 nPhases=3,r1=0.506,x1=0.443,r0=1.544,x0=0.45,units=km,normamps=180
 new linecode.CAB904_3_3 nPhases=3,r1=0.289,x1=0.255,r0=0.975,x0=0.351,units=km,normamps=295
 new linecode.CAB904_5_3 nPhases=3,r1=0.289,x1=0.255,r0=0.975,x0=0.351,units=km,normamps=295
-new linecode.CAB905 nPhases=3,r1=0.236,x1=0.216,r0=0.72,x0=0.42,units=km,normamps=425
+new linecode.CAB905_4_1 nPhases=1,r1=0.236,x1=0.216,r0=0.72,x0=0.42,units=km,normamps=425
 new linecode.CAB905_4_3 nPhases=3,r1=0.236,x1=0.216,r0=0.72,x0=0.42,units=km,normamps=425
 new linecode.CAB905_5_3 nPhases=3,r1=0.236,x1=0.216,r0=0.72,x0=0.42,units=km,normamps=425
 new linecode.CAB906_4_3 nPhases=3,r1=0.143,x1=0.13,r0=0.439,x0=0.39,units=km,normamps=425
 new linecode.CAB906_5_3 nPhases=3,r1=0.143,x1=0.13,r0=0.439,x0=0.39,units=km,normamps=425
-new linecode.CAB907_4_1 nPhases=1,r1=0.188,x1=0.164,r0=0.633,x0=0.318,units=km,normamps=386
 new linecode.CAB907_4_3 nPhases=3,r1=0.188,x1=0.164,r0=0.633,x0=0.318,units=km,normamps=386
 new linecode.CAB907_5_3 nPhases=3,r1=0.188,x1=0.164,r0=0.633,x0=0.318,units=km,normamps=386
 new linecode.CABA01_3_1 nPhases=1,r1=0.9654,x1=0.4679,r0=3.048,x0=1.404,units=km,normamps=150
@@ -1955,27 +1536,414 @@ new linecode.CABA07_3_1 nPhases=1,r1=0.3641,x1=0.2786,r0=1.168,x0=0.836,units=km
 new linecode.CABA07_3_3 nPhases=3,r1=0.3641,x1=0.2786,r0=1.168,x0=0.836,units=km,normamps=344
 new linecode.CABA09_3_1 nPhases=1,r1=0.5039,x1=0.15,r0=1.544,x0=0.45,units=km,normamps=180
 new linecode.CABA09_3_3 nPhases=3,r1=0.5039,x1=0.15,r0=1.544,x0=0.45,units=km,normamps=180
-new linecode.CABA10_3_1 nPhases=1,r1=0.2801,x1=0.14,r0=0.883,x0=0.42,units=km,normamps=251
 new linecode.CABA10_3_3 nPhases=3,r1=0.2801,x1=0.14,r0=0.883,x0=0.42,units=km,normamps=251
+new linecode.CABA10_5_3 nPhases=3,r1=0.2801,x1=0.14,r0=0.883,x0=0.42,units=km,normamps=251
 new linecode.CABA11_3_3 nPhases=3,r1=0.1871,x1=0.4025,r0=0.955,x0=1.208,units=km,normamps=425
 new linecode.CABA11_5_1 nPhases=1,r1=0.1871,x1=0.4025,r0=0.955,x0=1.208,units=km,normamps=425
 new linecode.CABA11_5_3 nPhases=3,r1=0.1871,x1=0.4025,r0=0.955,x0=1.208,units=km,normamps=425
 new linecode.CABA12_3_3 nPhases=3,r1=0.1399,x1=0.13,r0=0.439,x0=0.39,units=km,normamps=425
 new linecode.CABA12_5_3 nPhases=3,r1=0.1399,x1=0.13,r0=0.439,x0=0.39,units=km,normamps=425
-new linecode.CABBT005 nPhases=3,r1=1.564,x1=1.27,r0=0.932,x0=1.161,units=km,normamps=101
-new linecode.CABBT007 nPhases=3,r1=0.62,x1=1.5,r0=0.909,x0=1.133,units=km,normamps=194
-new linecode.CABBT104 nPhases=3,r1=1.908,x1=0.3791,r0=2.84,x0=2.057,units=km,normamps=82
-new linecode.CABBT106 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
-new linecode.CABBT1062 nPhases=2,r1=1.551743,x1=0.359387,r0=2.293951,x0=2.03334,units=km,normamps=111
-new linecode.CABBT107 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
-new linecode.CABBT1072 nPhases=2,r1=0.975743,x1=0.341788,r0=1.717951,x0=2.015741,units=km,normamps=149
-new linecode.CABBT108 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.CABBT108_CABBT108_7_ nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
-new linecode.CABBT1082 nPhases=2,r1=0.613811,x1=0.324009,r0=1.364689,x0=1.696607,units=km,normamps=201
-new linecode.CABBT207 nPhases=3,r1=0.975,x1=0.857,r0=1.594,x0=1.988,units=km,normamps=151
-new linecode.CABBT208 nPhases=3,r1=0.613,x1=0.537,r0=1.206,x0=1.774,units=km,normamps=203
 new linecode.CABBT301_7_2 nPhases=2,r1=3.7256,x1=0.1578,r0=4.89,x0=3.094,units=km,normamps=61
+new linecode.CABBT302_5_3 nPhases=3,r1=1.1686,x1=0.129,r0=2.682,x0=1.856,units=km,normamps=70
 new linecode.CABBT302_7_1 nPhases=1,r1=1.1686,x1=0.129,r0=2.682,x0=1.856,units=km,normamps=70
 new linecode.CABBT302_7_2 nPhases=2,r1=1.1686,x1=0.129,r0=2.682,x0=1.856,units=km,normamps=70
 new linecode.CABBT302_7_3 nPhases=3,r1=1.1686,x1=0.129,r0=2.682,x0=1.856,units=km,normamps=70
-new linecode.CABBT303 nPhases=3,r1=2.3413,x1=0.1424,r0=3.714,x0=2.728,units=km,normamps=83
+new linecode.CABBT304_7_2 nPhases=2,r1=0.7349,units=km,normamps=93
+new linecode.CABBT304_7_3 nPhases=3,r1=0.7349,units=km,normamps=93
+new linecode.CABBT307_7_2 nPhases=2,r1=0.6361,units=km,normamps=192
+new linecode.CABBT307_7_3 nPhases=3,r1=0.6361,units=km,normamps=192
+new linecode.CABBT308_7_3 nPhases=3,r1=0.3805,units=km,normamps=258
+new linecode.CABBT313_5_3 nPhases=3,r1=0.1747,units=km,normamps=498
+new linecode.CABBT313_7_1 nPhases=1,r1=0.1747,units=km,normamps=498
+new linecode.CABBT313_7_2 nPhases=2,r1=0.1747,units=km,normamps=498
+new linecode.CABBT313_7_3 nPhases=3,r1=0.1747,units=km,normamps=498
+new linecode.CABBT314_5_2 nPhases=2,r1=0.0871,units=km,normamps=789
+new linecode.CABBT314_5_3 nPhases=3,r1=0.0871,units=km,normamps=789
+new linecode.CABBT314_7_2 nPhases=2,r1=0.0871,units=km,normamps=789
+new linecode.CABBT314_7_3 nPhases=3,r1=0.0871,units=km,normamps=789
+new linecode.CABBT316_7_1 nPhases=1,r1=1.9597,units=km,normamps=102
+new linecode.CABBT316_7_2 nPhases=2,r1=1.9597,units=km,normamps=102
+new linecode.CABBT316_7_3 nPhases=3,r1=1.9597,units=km,normamps=102
+new linecode.CABBT317_5_3 nPhases=3,r1=0.2201,units=km,normamps=427
+new linecode.CABBT317_7_1 nPhases=1,r1=0.2201,units=km,normamps=427
+new linecode.CABBT317_7_2 nPhases=2,r1=0.2201,units=km,normamps=427
+new linecode.CABBT317_7_3 nPhases=3,r1=0.2201,units=km,normamps=427
+new linecode.CABBT318_5_3 nPhases=3,r1=0.1138,units=km,normamps=660
+new linecode.CABBT318_7_2 nPhases=2,r1=0.1138,units=km,normamps=660
+new linecode.CABBT318_7_3 nPhases=3,r1=0.1138,units=km,normamps=660
+new linecode.CABBT501_5_1 nPhases=1,r1=6.1079,units=km,normamps=48
+new linecode.CABBT501_7_1 nPhases=1,r1=6.1079,units=km,normamps=48
+new linecode.CABBT503_5_1 nPhases=1,r1=2.179,units=km,normamps=82
+new linecode.CABBT503_5_2 nPhases=2,r1=2.179,units=km,normamps=82
+new linecode.CABBT503_5_3 nPhases=3,r1=2.179,units=km,normamps=82
+new linecode.CABBT503_7_1 nPhases=1,r1=2.179,units=km,normamps=82
+new linecode.CABBT503_7_2 nPhases=2,r1=2.179,units=km,normamps=82
+new linecode.CABBT503_7_3 nPhases=3,r1=2.179,units=km,normamps=82
+new linecode.CABBT504_7_1 nPhases=1,r1=2.4156,units=km,normamps=85
+new linecode.CABBT504_7_2 nPhases=2,r1=2.4156,units=km,normamps=85
+new linecode.CABBT504_7_3 nPhases=3,r1=2.4156,units=km,normamps=85
+new linecode.CABBT505_5_1 nPhases=1,r1=1.369,units=km,normamps=101
+new linecode.CABBT505_5_3 nPhases=3,r1=1.369,units=km,normamps=101
+new linecode.CABBT505_7_2 nPhases=2,r1=1.369,units=km,normamps=101
+new linecode.CABBT505_7_3 nPhases=3,r1=1.369,units=km,normamps=101
+new linecode.CABBT506_7_1 nPhases=1,r1=1.9158,units=km,normamps=113
+new linecode.CABBT506_7_2 nPhases=2,r1=1.9158,units=km,normamps=113
+new linecode.CABBT507_7_3 nPhases=3,r1=1.2047,units=km,normamps=150
+new linecode.CABBT512_7_2 nPhases=2,r1=0.3029,units=km,normamps=390
+new linecode.CABBT513_5_1 nPhases=1,r1=0.289,units=km,normamps=386
+new linecode.CABBT513_5_2 nPhases=2,r1=0.289,units=km,normamps=386
+new linecode.CABBT513_5_3 nPhases=3,r1=0.289,units=km,normamps=386
+new linecode.CABBT513_7_1 nPhases=1,r1=0.289,units=km,normamps=386
+new linecode.CABBT513_7_2 nPhases=2,r1=0.289,units=km,normamps=386
+new linecode.CABBT513_7_3 nPhases=3,r1=0.289,units=km,normamps=386
+new linecode.CABBT514_5_1 nPhases=1,r1=0.143,units=km,normamps=612
+new linecode.CABBT514_5_2 nPhases=2,r1=0.143,units=km,normamps=612
+new linecode.CABBT514_5_3 nPhases=3,r1=0.143,units=km,normamps=612
+new linecode.CABBT514_7_1 nPhases=1,r1=0.143,units=km,normamps=612
+new linecode.CABBT514_7_2 nPhases=2,r1=0.143,units=km,normamps=612
+new linecode.CABBT514_7_3 nPhases=3,r1=0.143,units=km,normamps=612
+new linecode.CABBT517_5_1 nPhases=3,r1=0.991,units=km,normamps=94
+new linecode.CABBT517_5_2 nPhases=2,r1=0.991,units=km,normamps=94
+new linecode.CABBT517_5_3 nPhases=3,r1=0.991,units=km,normamps=94
+new linecode.CABBT517_7_1 nPhases=1,r1=0.991,units=km,normamps=94
+new linecode.CABBT517_7_2 nPhases=2,r1=0.991,units=km,normamps=94
+new linecode.CABBT517_7_3 nPhases=3,r1=0.991,units=km,normamps=94
+new linecode.CABBT518_5_2 nPhases=2,r1=0.506,units=km,normamps=138
+new linecode.CABBT518_5_3 nPhases=3,r1=0.506,units=km,normamps=138
+new linecode.CABBT518_7_1 nPhases=1,r1=0.506,units=km,normamps=138
+new linecode.CABBT518_7_2 nPhases=2,r1=0.506,units=km,normamps=138
+new linecode.CABBT518_7_3 nPhases=3,r1=0.506,units=km,normamps=138
+new linecode.CABBT519_5_2 nPhases=2,r1=3.514,units=km,normamps=48
+new linecode.CABBT519_5_3 nPhases=3,r1=3.514,units=km,normamps=48
+new linecode.CABBT519_7_1 nPhases=1,r1=3.514,units=km,normamps=48
+new linecode.CABBT519_7_2 nPhases=2,r1=3.514,units=km,normamps=48
+new linecode.CABBT519_7_3 nPhases=3,r1=3.514,units=km,normamps=48
+new linecode.CABBT520_7_3 nPhases=3,r1=0.188,units=km,normamps=512
+new linecode.CABBT521_5_2 nPhases=2,r1=0.732,units=km,normamps=170
+new linecode.CABBT521_5_3 nPhases=3,r1=0.732,units=km,normamps=170
+new linecode.CABBT521_7_1 nPhases=1,r1=0.732,units=km,normamps=170
+new linecode.CABBT521_7_2 nPhases=2,r1=0.732,units=km,normamps=170
+new linecode.CABBT521_7_3 nPhases=3,r1=0.732,units=km,normamps=170
+new linecode.CABBT801_4_3 nPhases=3,r1=0.868104,units=km,normamps=99
+new linecode.CABBT802_4_1 nPhases=1,r1=0.7318,units=km,normamps=123
+new linecode.CABBT802_4_2 nPhases=2,r1=0.7318,units=km,normamps=123
+new linecode.CABBT804_4_1 nPhases=1,r1=0.5059,units=km,normamps=180
+new linecode.CABBT804_4_2 nPhases=2,r1=0.5059,units=km,normamps=180
+new linecode.CABBT804_4_3 nPhases=3,r1=0.5059,units=km,normamps=180
+new linecode.CABBT806_4_1 nPhases=1,r1=0.2156,units=km,normamps=225
+new linecode.CABBT806_4_2 nPhases=2,r1=0.2156,units=km,normamps=225
+new linecode.CABBT806_4_3 nPhases=3,r1=0.2156,units=km,normamps=225
+new linecode.CABBT807_4_3 nPhases=3,r1=0.443084,units=km,normamps=200
+new linecode.CABBT808_4_3 nPhases=3,r1=0.869427,units=km,normamps=110
+new linecode.CABBT811_4_1 nPhases=1,r1=2.1716,units=km,normamps=95
+new linecode.CABBT811_4_2 nPhases=2,r1=2.1716,units=km,normamps=95
+new linecode.CABBT811_4_3 nPhases=3,r1=2.1716,units=km,normamps=95
+new linecode.CABBT812_4_1 nPhases=1,r1=1.3646,units=km,normamps=108
+new linecode.CABBT812_4_2 nPhases=2,r1=1.3646,units=km,normamps=108
+new linecode.CABBT812_4_3 nPhases=3,r1=1.3646,units=km,normamps=108
+new linecode.CABBT813_4_1 nPhases=1,r1=0.7318,units=km,normamps=160
+new linecode.CABBT813_4_2 nPhases=2,r1=0.7318,units=km,normamps=160
+new linecode.CABBT813_4_3 nPhases=3,r1=0.7318,units=km,normamps=160
+new linecode.CABBT814_4_1 nPhases=1,r1=1.3646,units=km,normamps=125
+new linecode.CABBT814_4_2 nPhases=2,r1=1.3646,units=km,normamps=125
+new linecode.CABBT815_4_1 nPhases=1,r1=2.1716,units=km,normamps=82
+new linecode.CABBT815_4_2 nPhases=2,r1=2.1716,units=km,normamps=82
+new linecode.CABBT815_4_3 nPhases=3,r1=2.1716,units=km,normamps=82
+new linecode.CABBT816_4_1 nPhases=1,r1=1.3643,units=km,normamps=125
+new linecode.CABBTG01_4_1 nPhases=1,r1=3.5016,units=km,normamps=71
+new linecode.CABBTG01_4_2 nPhases=2,r1=3.5016,units=km,normamps=71
+new linecode.CABBTG01_4_3 nPhases=3,r1=3.5016,units=km,normamps=71
+new linecode.CABBTG02_4_1 nPhases=1,r1=2.1716,units=km,normamps=95
+new linecode.CABBTG02_4_2 nPhases=2,r1=2.1716,units=km,normamps=95
+new linecode.CABBTG02_4_3 nPhases=3,r1=2.1716,units=km,normamps=95
+new linecode.CABBTG03_4_1 nPhases=1,r1=1.3646,units=km,normamps=125
+new linecode.CABBTG03_4_3 nPhases=3,r1=1.3646,units=km,normamps=125
+new linecode.CABBTG04_4_1 nPhases=1,r1=3.5016,units=km,normamps=71
+new linecode.CABBTG04_4_2 nPhases=2,r1=3.5016,units=km,normamps=71
+new linecode.CABBTG04_4_3 nPhases=3,r1=3.5016,units=km,normamps=71
+new linecode.CABBTG05_4_1 nPhases=1,r1=2.1716,units=km,normamps=95
+new linecode.CABBTG05_4_2 nPhases=2,r1=2.1716,units=km,normamps=95
+new linecode.CABBTG05_4_3 nPhases=3,r1=2.1716,units=km,normamps=95
+new linecode.CABBTG06_4_1 nPhases=1,r1=2.1716,units=km,normamps=82
+new linecode.CABBTG06_4_2 nPhases=2,r1=2.1716,units=km,normamps=82
+new linecode.CABBTG06_4_3 nPhases=3,r1=2.1716,units=km,normamps=82
+new linecode.CABBTG07_4_1 nPhases=1,r1=0.9873,units=km,normamps=110
+new linecode.CABBTG07_4_2 nPhases=2,r1=0.9873,units=km,normamps=110
+new linecode.CABBTG07_4_3 nPhases=3,r1=0.9873,units=km,normamps=110
+new linecode.CABBTG08_4_1 nPhases=1,r1=0.5047,units=km,normamps=147
+new linecode.CABBTG08_4_2 nPhases=2,r1=0.5047,units=km,normamps=147
+new linecode.CABBTG08_4_3 nPhases=3,r1=0.5047,units=km,normamps=147
+new linecode.CABBTG09_4_3 nPhases=3,r1=0.2895,units=km,normamps=201
+new linecode.CABBTG10_4_1 nPhases=1,r1=1.3643,units=km,normamps=125
+new linecode.CABBTG10_4_2 nPhases=2,r1=1.3643,units=km,normamps=125
+new linecode.CABBTG10_4_3 nPhases=3,r1=1.3643,units=km,normamps=125
+new linecode.CABBTG11_4_1 nPhases=1,r1=3.5016,units=km,normamps=71
+new linecode.CABBTG11_4_2 nPhases=2,r1=3.5016,units=km,normamps=71
+new linecode.CABBTG11_4_3 nPhases=3,r1=3.5016,units=km,normamps=71
+new linecode.CABBTG12_4_1 nPhases=1,r1=0.9873,units=km,normamps=129
+new linecode.CABBTG12_4_2 nPhases=2,r1=0.9873,units=km,normamps=129
+new linecode.CABBTG12_4_3 nPhases=3,r1=0.9873,units=km,normamps=129
+new linecode.CABBTG13_4_1 nPhases=1,r1=1.3646,units=km,normamps=125
+new linecode.CABBTG13_4_2 nPhases=2,r1=1.3646,units=km,normamps=125
+new linecode.CABBTG13_4_3 nPhases=3,r1=1.3646,units=km,normamps=125
+new linecode.CABC01_3_1 nPhases=1,r1=18.325,units=km,normamps=37
+new linecode.CABD01_3_1 nPhases=1,r1=15.2665,units=km,normamps=1000
+new linecode.CABD01_3_3 nPhases=3,r1=15.2665,units=km,normamps=1000
+new linecode.CABD02_3_1 nPhases=1,r1=15.2665,units=km,normamps=1000
+new linecode.CABD02_3_3 nPhases=3,r1=15.2665,units=km,normamps=1000
+new linecode.CABD03_3_1 nPhases=1,r1=15.2665,units=km,normamps=37
+new linecode.CABI01_3_3 nPhases=3,r1=0.5039,units=km,normamps=270
+new linecode.CABI02_3_3 nPhases=3,r1=0.2347,units=km,normamps=432
+new linecode.BT106_BT005_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT102_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT103_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT105_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT106_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT107_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT108_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT109_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT111_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT206_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT208_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT306_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT803_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BT810_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT106_BTC02_7_3_1 nPhases=3,r1=1.5215,x1=0.3594,r0=2.1127,x0=1.8277,c1=12.7838,c0=4.7952,units=km,normamps=111
+new linecode.BT107_BT005_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT006_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT007_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT011_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT102_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT103_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT104_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT105_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT106_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT107_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT107_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT108_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT109_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT111_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT206_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT207_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT307_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT308_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT507_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT521_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT803_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT807_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT808_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT809_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT810_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT107_BT816_7_3_1 nPhases=3,r1=0.9568,x1=0.3418,r0=1.5481,x0=1.8101,c1=13.51,c0=4.8953,units=km,normamps=149
+new linecode.BT108_BT006_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT007_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT008_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT102_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT103_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT105_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT106_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT107_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT108_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT109_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT110_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT111_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT201_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT206_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT207_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT208_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT307_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT508_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT514_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT803_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT808_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT809_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BT810_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT108_BTJ01_7_3_1 nPhases=3,r1=0.6021,x1=0.324,r0=1.2143,x0=1.563,c1=14.3405,c0=5.0632,units=km,normamps=201
+new linecode.BT803_BT802_4_3_4 nPhases=3,r1=0.4965,x1=0.1377,r0=1.2837,x0=0.6583,c1=37.5993,c0=21.7217,units=km,normamps=147
+new linecode.BT803_BT803_4_3_4 nPhases=3,r1=0.4965,x1=0.1377,r0=1.2837,x0=0.6583,c1=37.5993,c0=21.7217,units=km,normamps=147
+new linecode.BT803_BT805_4_3_4 nPhases=3,r1=0.4965,x1=0.1377,r0=1.2837,x0=0.6583,c1=37.5993,c0=21.7217,units=km,normamps=147
+new linecode.BT805_BT802_4_3_4 nPhases=3,r1=0.284,x1=0.117,r0=1.0976,x0=0.6374,c1=46.5944,c0=24.9724,units=km,normamps=201
+new linecode.BT805_BT803_4_3_4 nPhases=3,r1=0.284,x1=0.117,r0=1.0976,x0=0.6374,c1=46.5944,c0=24.9724,units=km,normamps=201
+new linecode.BT805_BT805_4_3_4 nPhases=3,r1=0.284,x1=0.117,r0=1.0976,x0=0.6374,c1=46.5944,c0=24.9724,units=km,normamps=201
+new linecode.BT809_BT803_4_3_4 nPhases=3,r1=0.9719,x1=0.1631,r0=1.949,x0=1.2599,c1=30.168,c0=15.0777,units=km,normamps=110
+new linecode.BT809_BT809_4_3_4 nPhases=3,r1=0.9719,x1=0.1631,r0=1.949,x0=1.2599,c1=30.168,c0=15.0777,units=km,normamps=110
+new linecode.BT809_BT810_4_3_4 nPhases=3,r1=0.9719,x1=0.1631,r0=1.949,x0=1.2599,c1=30.168,c0=15.0777,units=km,normamps=110
+new linecode.BT810_BT803_4_3_4 nPhases=3,r1=0.9719,x1=0.1629,r0=1.7002,x0=0.6834,c1=30.4683,c0=18.8853,units=km,normamps=110
+new linecode.BT810_BT808_4_3_4 nPhases=3,r1=0.9719,x1=0.1629,r0=1.7002,x0=0.6834,c1=30.4683,c0=18.8853,units=km,normamps=110
+new linecode.BT810_BT810_4_3_4 nPhases=3,r1=0.9719,x1=0.1629,r0=1.7002,x0=0.6834,c1=30.4683,c0=18.8853,units=km,normamps=110
+new linecode.CAB102_3_3 nPhases=3,r1=1.5208,x1=0.4543,r0=2.1462,x0=2.0127,c1=9.8389,c0=4.4221,units=km,normamps=150
+new linecode.CAB102_5_3 nPhases=3,r1=1.5208,x1=0.4543,r0=2.1462,x0=2.0127,c1=9.8389,c0=4.4221,units=km,normamps=150
+new linecode.CAB103_3_3 nPhases=3,r1=0.9562,x1=0.4367,r0=1.5706,x0=1.9951,c1=10.2616,c0=4.5052,units=km,normamps=201
+new linecode.CAB103_5_3 nPhases=3,r1=0.9562,x1=0.4367,r0=1.5706,x0=1.9951,c1=10.2616,c0=4.5052,units=km,normamps=201
+new linecode.CAB104_3_3 nPhases=3,r1=0.6013,x1=0.4192,r0=1.2068,x0=1.7491,c1=10.7279,c0=4.6133,units=km,normamps=272
+new linecode.CAB104_5_3 nPhases=3,r1=0.6013,x1=0.4192,r0=1.2068,x0=1.7491,c1=10.7279,c0=4.6133,units=km,normamps=272
+new linecode.CAB107_3_3 nPhases=3,r1=0.3055,x1=0.3927,r0=0.8135,x0=1.5195,c1=11.508,c0=4.7751,units=km,normamps=425
+new linecode.CAB107_5_3 nPhases=3,r1=0.3055,x1=0.3927,r0=0.8135,x0=1.5195,c1=11.508,c0=4.7751,units=km,normamps=425
+new linecode.CAB108_3_3 nPhases=3,r1=0.192,x1=0.3565,r0=0.7025,x0=1.4833,c1=12.4178,c0=4.9242,units=km,normamps=576
+new linecode.CAB108_5_3 nPhases=3,r1=0.192,x1=0.3565,r0=0.7025,x0=1.4833,c1=12.4178,c0=4.9242,units=km,normamps=576
+new linecode.CAB202_3_3 nPhases=3,r1=1.5207,x1=0.4746,r0=2.139,x0=1.9372,c1=9.3619,c0=4.7714,units=km,normamps=152
+new linecode.CAB202_5_3 nPhases=3,r1=1.5207,x1=0.4746,r0=2.139,x0=1.9372,c1=9.3619,c0=4.7714,units=km,normamps=152
+new linecode.CAB203_3_3 nPhases=3,r1=0.9561,x1=0.457,r0=1.5651,x0=1.9196,c1=9.7501,c0=4.8694,units=km,normamps=204
+new linecode.CAB203_5_3 nPhases=3,r1=0.9561,x1=0.457,r0=1.5651,x0=1.9196,c1=9.7501,c0=4.8694,units=km,normamps=204
+new linecode.CAB204_3_3 nPhases=3,r1=0.6012,x1=0.4396,r0=1.2121,x0=1.6709,c1=10.1689,c0=4.9959,units=km,normamps=275
+new linecode.CAB204_5_3 nPhases=3,r1=0.6012,x1=0.4396,r0=1.2121,x0=1.6709,c1=10.1689,c0=4.9959,units=km,normamps=275
+new linecode.CAB207_3_3 nPhases=3,r1=0.3005,x1=0.4133,r0=0.8205,x0=1.4417,c1=10.8705,c0=5.1862,units=km,normamps=430
+new linecode.CAB207_5_3 nPhases=3,r1=0.3005,x1=0.4133,r0=0.8205,x0=1.4417,c1=10.8705,c0=5.1862,units=km,normamps=430
+new linecode.CAB208_3_3 nPhases=3,r1=0.1919,x1=0.3871,r0=0.7095,x0=1.4156,c1=11.4983,c0=5.3233,units=km,normamps=586
+new linecode.CAB208_5_3 nPhases=3,r1=0.1919,x1=0.3871,r0=0.7095,x0=1.4156,c1=11.4983,c0=5.3233,units=km,normamps=586
+new linecode.CABA06_3_3 nPhases=3,r1=0.7178,x1=0.3035,r0=1.3041,x0=2.0219,c1=17.0266,c0=3.7172,units=km,normamps=229
+new linecode.CABA06_5_3 nPhases=3,r1=0.7178,x1=0.3035,r0=1.3041,x0=2.0219,c1=17.0266,c0=3.7172,units=km,normamps=229
+new linecode.CABA08_3_3 nPhases=3,r1=0.2319,x1=0.2409,r0=0.7241,x0=1.7654,c1=19.1315,c0=3.8228,units=km,normamps=456
+new linecode.CABA08_5_3 nPhases=3,r1=0.2319,x1=0.2409,r0=0.7241,x0=1.7654,c1=19.1315,c0=3.8228,units=km,normamps=456
+new linecode.CABBT803_4_3 nPhases=3,r1=0.4965,x1=0.1377,r0=1.2837,x0=0.6583,c1=37.5993,c0=21.7217,units=km,normamps=147
+new linecode.CABBT805_4_3 nPhases=3,r1=0.284,x1=0.117,r0=1.0976,x0=0.6374,c1=46.5944,c0=24.9724,units=km,normamps=201
+new linecode.CABBT809_4_3 nPhases=3,r1=0.9719,x1=0.1631,r0=1.949,x0=1.2599,c1=30.168,c0=15.0777,units=km,normamps=110
+new linecode.CABBT810_4_3 nPhases=3,r1=0.9719,x1=0.1629,r0=1.7002,x0=0.6834,c1=30.4683,c0=18.8853,units=km,normamps=110
+new linecode.BT106_BT005_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT006_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT102_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT103_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT104_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT105_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT106_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT107_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT108_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT111_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT206_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT207_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT208_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT506_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT808_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BT814_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BTC01_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BTC02_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BTH01_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BTH02_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT106_BTJ01_7_2_1 nPhases=2,rMatrix=[1.7991|0.2474 1.7991],xMatrix=[0.9174|0.558 0.9174],units=km,normamps=111
+new linecode.BT107_BT005_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT102_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT103_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT105_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT106_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT107_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT108_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT109_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT111_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT112_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT206_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT207_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT208_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT307_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT503_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT518_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT801_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT807_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT808_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT811_7_1_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT811_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BT814_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BTC02_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BTH01_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT107_BTJ01_7_2_1 nPhases=2,rMatrix=[1.2231|0.2474 1.2231],xMatrix=[0.8998|0.558 0.8998],units=km,normamps=149
+new linecode.BT108_BT102_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT103_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT105_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT106_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT107_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT108_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT109_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT111_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT204_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT206_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT207_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT507_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT518_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BT808_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT108_BTJ01_7_2_1 nPhases=2,rMatrix=[0.8641|0.2503 0.8641],xMatrix=[0.7815|0.4575 0.7815],units=km,normamps=201
+new linecode.BT801_BT801_4_2_3 nPhases=2,rMatrix=[1.2825|0.4191 1.2825],xMatrix=[0.5446|0.4191 0.5446],units=km,normamps=99
+new linecode.BT801_BT803_4_2_3 nPhases=2,rMatrix=[1.2825|0.4191 1.2825],xMatrix=[0.5446|0.4191 0.5446],units=km,normamps=99
+new linecode.BT801_BT807_4_2_3 nPhases=2,rMatrix=[1.2825|0.4191 1.2825],xMatrix=[0.5446|0.4191 0.5446],units=km,normamps=99
+new linecode.BT803_BT803_4_2_4 nPhases=2,rMatrix=[0.7178|0.1735 0.7178],xMatrix=[0.3112|0.1735 0.3112],units=km,normamps=147
+new linecode.BT805_BT803_4_2_4 nPhases=2,rMatrix=[0.5317|0.1735 0.5317],xMatrix=[0.2904|0.1735 0.2904],units=km,normamps=201
+new linecode.BT805_BT805_4_2_4 nPhases=2,rMatrix=[0.5317|0.1735 0.5317],xMatrix=[0.2904|0.1735 0.2904],units=km,normamps=201
+new linecode.BT807_BT801_4_2_3 nPhases=2,rMatrix=[0.7489|0.2116 0.7489],xMatrix=[0.3119|0.2116 0.3119],units=km,normamps=200
+new linecode.BT807_BT807_4_2_3 nPhases=2,rMatrix=[0.7489|0.2116 0.7489],xMatrix=[0.3119|0.2116 0.3119],units=km,normamps=200
+new linecode.BT808_BT807_4_2_3 nPhases=2,rMatrix=[1.1739|0.2108 1.1739],xMatrix=[0.3386|0.2108 0.3386],units=km,normamps=110
+new linecode.BT808_BT808_4_2_3 nPhases=2,rMatrix=[1.1739|0.2108 1.1739],xMatrix=[0.3386|0.2108 0.3386],units=km,normamps=110
+new linecode.BT809_BT809_4_2_4 nPhases=2,rMatrix=[1.2172|0.3656 1.2172],xMatrix=[0.5287|0.3656 0.5287],units=km,normamps=110
+new linecode.BT810_BT808_4_2_4 nPhases=2,rMatrix=[1.1343|0.1735 1.1343],xMatrix=[0.3364|0.1735 0.3364],units=km,normamps=110
+new linecode.BT810_BT810_4_2_4 nPhases=2,rMatrix=[1.1343|0.1735 1.1343],xMatrix=[0.3364|0.1735 0.3364],units=km,normamps=110
+new linecode.CAB102_3_2 nPhases=2,rMatrix=[1.742|0.5092 1.742],xMatrix=[0.9634|0.5092 0.9634],units=km,normamps=150
+new linecode.CAB103_3_2 nPhases=2,rMatrix=[1.1663|0.5092 1.1663],xMatrix=[0.9458|0.5092 0.9458],units=km,normamps=201
+new linecode.CAB104_3_2 nPhases=2,rMatrix=[0.8049|0.4363 0.8049],xMatrix=[0.8555|0.4363 0.8555],units=km,normamps=272
+new linecode.CAB108_3_2 nPhases=2,rMatrix=[0.3599|0.3708 0.3599],xMatrix=[0.7272|0.3708 0.7272],units=km,normamps=576
+new linecode.CAB202_3_2 nPhases=2,rMatrix=[1.7313|0.4773 1.7313],xMatrix=[0.9519|0.4773 0.9519],units=km,normamps=152
+new linecode.CAB203_3_2 nPhases=2,rMatrix=[1.1597|0.4773 1.1597],xMatrix=[0.9343|0.4773 0.9343],units=km,normamps=204
+new linecode.CAB204_3_2 nPhases=2,rMatrix=[0.8066|0.4035 0.8066],xMatrix=[0.8431|0.4035 0.8431],units=km,normamps=275
+new linecode.CAB208_3_2 nPhases=2,rMatrix=[0.3621|0.3381 0.3621],xMatrix=[0.7251|0.3381 0.7251],units=km,normamps=586
+new linecode.CABA06_3_2 nPhases=2,rMatrix=[0.9163|0.5679 0.9163],xMatrix=[0.8644|0.5679 0.8644],units=km,normamps=229
+new linecode.CABA08_3_2 nPhases=2,rMatrix=[0.3935|0.5054 0.3935],xMatrix=[0.7393|0.5054 0.7393],units=km,normamps=456
+new linecode.CABBT801_4_2 nPhases=2,rMatrix=[1.2825|0.4191 1.2825],xMatrix=[0.5446|0.4191 0.5446],units=km,normamps=99
+new linecode.CABBT803_4_2 nPhases=2,rMatrix=[0.7178|0.1735 0.7178],xMatrix=[0.3112|0.1735 0.3112],units=km,normamps=147
+new linecode.CABBT805_4_2 nPhases=2,rMatrix=[0.5317|0.1735 0.5317],xMatrix=[0.2904|0.1735 0.2904],units=km,normamps=201
+new linecode.CABBT807_4_2 nPhases=2,rMatrix=[0.7489|0.2116 0.7489],xMatrix=[0.3119|0.2116 0.3119],units=km,normamps=200
+new linecode.CABBT808_4_2 nPhases=2,rMatrix=[1.1739|0.2108 1.1739],xMatrix=[0.3386|0.2108 0.3386],units=km,normamps=110
+new linecode.CABBT809_4_2 nPhases=2,rMatrix=[1.2172|0.3656 1.2172],xMatrix=[0.5287|0.3656 0.5287],units=km,normamps=110
+new linecode.CABBT810_4_2 nPhases=2,rMatrix=[1.1343|0.1735 1.1343],xMatrix=[0.3364|0.1735 0.3364],units=km,normamps=110
+new linecode.BT106_BT103_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
+new linecode.BT106_BT105_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
+new linecode.BT106_BT106_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
+new linecode.BT106_BT107_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
+new linecode.BT106_BT108_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
+new linecode.BT106_BT206_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
+new linecode.BT106_BT207_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
+new linecode.BT106_BTC02_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
+new linecode.BT106_BTH01_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
+new linecode.BT106_BTH02_7_1_1 nPhases=1,rMatrix=[1.7991|0.2474],xMatrix=[0.9174|0.558],units=km,normamps=111
+new linecode.BT107_BT106_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
+new linecode.BT107_BT107_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
+new linecode.BT107_BT108_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
+new linecode.BT107_BT109_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
+new linecode.BT107_BT111_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
+new linecode.BT107_BT201_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
+new linecode.BT107_BT206_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
+new linecode.BT107_BT207_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
+new linecode.BT107_BT208_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
+new linecode.BT107_BTC02_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
+new linecode.BT107_BTH01_7_1_1 nPhases=1,rMatrix=[1.2231|0.2474],xMatrix=[0.8998|0.558],units=km,normamps=149
+new linecode.BT108_BT106_7_1_1 nPhases=1,rMatrix=[0.8641|0.2503],xMatrix=[0.7815|0.4575],units=km,normamps=201
+new linecode.BT108_BT107_7_1_1 nPhases=1,rMatrix=[0.8641|0.2503],xMatrix=[0.7815|0.4575],units=km,normamps=201
+new linecode.BT108_BT108_7_1_1 nPhases=1,rMatrix=[0.8641|0.2503],xMatrix=[0.7815|0.4575],units=km,normamps=201
+new linecode.BT108_BT204_7_1_1 nPhases=1,rMatrix=[0.8641|0.2503],xMatrix=[0.7815|0.4575],units=km,normamps=201
+new linecode.BT108_BT206_7_1_1 nPhases=1,rMatrix=[0.8641|0.2503],xMatrix=[0.7815|0.4575],units=km,normamps=201
+new linecode.BT108_BT207_7_1_1 nPhases=1,rMatrix=[0.8641|0.2503],xMatrix=[0.7815|0.4575],units=km,normamps=201
+new linecode.BT801_BT801_4_1_3 nPhases=1,rMatrix=[1.2825|0.4191],xMatrix=[0.5446|0.4191],units=km,normamps=99
+new linecode.BT803_BT803_4_1_4 nPhases=1,rMatrix=[0.7178|0.1735],xMatrix=[0.3112|0.1735],units=km,normamps=147
+new linecode.BT807_BT807_4_1_3 nPhases=1,rMatrix=[0.7489|0.2116],xMatrix=[0.3119|0.2116],units=km,normamps=200
+new linecode.BT808_BT808_4_1_3 nPhases=1,rMatrix=[1.1739|0.2108],xMatrix=[0.3386|0.2108],units=km,normamps=110
+new linecode.BT809_BT809_4_1_4 nPhases=1,rMatrix=[1.2172|0.3656],xMatrix=[0.5287|0.3656],units=km,normamps=110
+new linecode.BT810_BT810_4_1_4 nPhases=1,rMatrix=[1.1343|0.1735],xMatrix=[0.3364|0.1735],units=km,normamps=110
+new linecode.CAB102_3_1 nPhases=1,rMatrix=[1.742|0.5092],xMatrix=[0.9634|0.5092],units=km,normamps=150
+new linecode.CAB102_5_1 nPhases=1,rMatrix=[1.742|0.5092],xMatrix=[0.9634|0.5092],units=km,normamps=150
+new linecode.CAB103_3_1 nPhases=1,rMatrix=[1.1663|0.5092],xMatrix=[0.9458|0.5092],units=km,normamps=201
+new linecode.CAB103_5_1 nPhases=1,rMatrix=[1.1663|0.5092],xMatrix=[0.9458|0.5092],units=km,normamps=201
+new linecode.CAB104_3_1 nPhases=1,rMatrix=[0.8049|0.4363],xMatrix=[0.8555|0.4363],units=km,normamps=272
+new linecode.CAB107_3_1 nPhases=1,rMatrix=[0.4709|0.3708],xMatrix=[0.7635|0.3708],units=km,normamps=425
+new linecode.CAB108_3_1 nPhases=1,rMatrix=[0.3599|0.3708],xMatrix=[0.7272|0.3708],units=km,normamps=576
+new linecode.CAB202_3_1 nPhases=1,rMatrix=[1.7313|0.4773],xMatrix=[0.9519|0.4773],units=km,normamps=152
+new linecode.CAB202_5_1 nPhases=1,rMatrix=[1.7313|0.4773],xMatrix=[0.9519|0.4773],units=km,normamps=152
+new linecode.CAB203_3_1 nPhases=1,rMatrix=[1.1597|0.4773],xMatrix=[0.9343|0.4773],units=km,normamps=204
+new linecode.CAB203_5_1 nPhases=1,rMatrix=[1.1597|0.4773],xMatrix=[0.9343|0.4773],units=km,normamps=204
+new linecode.CAB204_3_1 nPhases=1,rMatrix=[0.8066|0.4035],xMatrix=[0.8431|0.4035],units=km,normamps=275
+new linecode.CAB207_3_1 nPhases=1,rMatrix=[0.4731|0.3381],xMatrix=[0.7513|0.3381],units=km,normamps=430
+new linecode.CAB208_3_1 nPhases=1,rMatrix=[0.3621|0.3381],xMatrix=[0.7251|0.3381],units=km,normamps=586
+new linecode.CABA06_3_1 nPhases=1,rMatrix=[0.9163|0.5679],xMatrix=[0.8644|0.5679],units=km,normamps=229
+new linecode.CABA06_5_1 nPhases=1,rMatrix=[0.9163|0.5679],xMatrix=[0.8644|0.5679],units=km,normamps=229
+new linecode.CABA08_3_1 nPhases=1,rMatrix=[0.3935|0.5054],xMatrix=[0.7393|0.5054],units=km,normamps=456
+new linecode.CABBT801_4_1 nPhases=1,rMatrix=[1.2825|0.4191],xMatrix=[0.5446|0.4191],units=km,normamps=99
+new linecode.CABBT803_4_1 nPhases=1,rMatrix=[0.7178|0.1735],xMatrix=[0.3112|0.1735],units=km,normamps=147
+new linecode.CABBT805_4_1 nPhases=1,rMatrix=[0.5317|0.1735],xMatrix=[0.2904|0.1735],units=km,normamps=201
+new linecode.CABBT807_4_1 nPhases=1,rMatrix=[0.7489|0.2116],xMatrix=[0.3119|0.2116],units=km,normamps=200
+new linecode.CABBT808_4_1 nPhases=1,rMatrix=[1.1739|0.2108],xMatrix=[0.3386|0.2108],units=km,normamps=110
+new linecode.CABBT809_4_1 nPhases=1,rMatrix=[1.2172|0.3656],xMatrix=[0.5287|0.3656],units=km,normamps=110
+new linecode.CABBT810_4_1 nPhases=1,rMatrix=[1.1343|0.1735],xMatrix=[0.3364|0.1735],units=km,normamps=110
