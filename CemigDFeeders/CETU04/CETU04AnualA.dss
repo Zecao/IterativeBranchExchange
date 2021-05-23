@@ -1,0 +1,66 @@
+clear
+new circuit.alimCETU04 bus1=BMTFIC.1.2.3,basekv=13.800000000,pu=1.040000000
+
+Redirect ..\..\0PermRes\NovasCurvasTxt\CurvasDeCargaDU.dss
+Redirect ..\..\0PermRes\Condutores.dss
+Redirect CETU04SegmentosMT.dss
+Redirect CETU04ChavesMT.dss
+Redirect CETU04Reguladores.dss
+Redirect CETU04Transformadores.dss
+Redirect CETU04SegmentosBT.dss
+Redirect CETU04Ramais.dss
+Redirect CETU04CargaMT_Dez.dss
+Redirect CETU04CargaBT_Dez.dss
+Redirect CETU04CapacitorMT.dss
+
+!close line.CTR349105 term=1!302068
+!open line.CTRR42278  term=1 !257107
+
+new energymeter.carga element=line.TRfic4,terminal=2
+
+Set voltagebases=[13.800000000 0.24 0.22]
+CalcVoltageBases
+
+Solve mode=daily,hour=18,number=1,stepsize=1h
+
+ClearBusMarkers
+
+BusCoords CETU04CoordMT.csv
+
+
+AddBusMarker Bus=BMT155574371 code=12 color=Green size=5 !substation
+
+! NC switch color=Green
+AddBusMarker bus=BMT171159550 code=27 color=Green size=3 !numEQ 257107
+
+! Yellow circle = NO switch to be closed.
+AddBusMarker bus=BMT169073470 code=27 color=Yellow size=3 !numEQ 302068
+
+AddBusMarker bus=BMT103767043 code=27 color=Red size=3 !numEQ 194242
+AddBusMarker bus=BMT168168710 code=27 color=Red size=3 !numEQ 7000
+AddBusMarker bus=BMT157033034 code=27 color=Red size=1 !numEQ 90777
+AddBusMarker bus=BMT138322333 code=27 color=Red size=3 !numEQ 199723
+AddBusMarker bus=BMT157033032 code=27 color=Red size=3 !numEQ 90775
+AddBusMarker bus=BMT150353100 code=27 color=Red size=3 !numEQ 8781
+AddBusMarker bus=BMT160755411 code=27 color=Red size=3 !numEQ 199740
+AddBusMarker bus=BMT99456870 code=27 color=Red size=3 !numEQ 197160
+AddBusMarker bus=BMT166006335 code=27 color=Red size=3 !numEQ 199744
+AddBusMarker bus=BMT155632385 code=27 color=Red size=3 !numEQ 199731
+AddBusMarker bus=BMT169073476 code=27 color=Red size=3 !numEQ 377282
+AddBusMarker bus=BMT169167362 code=27 color=Red size=3 !numEQ 276561
+AddBusMarker bus=BMT157033212 code=27 color=Red size=1 !numEQ 315802
+AddBusMarker bus=BMT168905627 code=27 color=Red size=3 !numEQ 303173
+AddBusMarker bus=BMT160809058 code=27 color=Red size=3 !numEQ 376658
+AddBusMarker bus=BMT169073477 code=27 color=Red size=3 !numEQ 265354
+! AddBusMarker bus=BMT167919813 code=27 color=Red size=3 !numEQ 241792 !other feeder
+AddBusMarker bus=BMT99448428 code=27 color=Red size=3 !numEQ 135798
+! AddBusMarker bus=BMT169457257 code=27 color=Red size=3 !numEQ 384404 !other feeder
+AddBusMarker bus=BMT170162872 code=27 color=Red size=3 !numEQ 272723
+AddBusMarker bus=BMT150353242 code=27 color=Red size=3 !numEQ 9092
+AddBusMarker bus=BMT156673456 code=27 color=Red size=3 !numEQ 90776
+AddBusMarker bus=BMT169406963 code=27 color=Red size=3 !numEQ 377271
+! AddBusMarker bus=BMT167595934 code=27 color=Red size=3 !numEQ 402568 !other feeder
+AddBusMarker bus=BMT170939233 code=27 color=Red size=3 !numEQ 377133
+
+!-- Gerar Gráficos
+plot circuit quantity=power dots=n labels=n subs=y showloops=n C1=Blue C2=Blue C3=Red R2=0.95 R3=0.90
