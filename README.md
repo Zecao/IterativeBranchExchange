@@ -1,5 +1,5 @@
 # DijkstraBranchExchange
-Repository for the article "Reconfiguration of Real Distribution Networks using Branch Exchange and Differential Evolution Algorithm".
+Repository for the article "Reconfiguration of Real Distribution Networks using Branch Exchange and Differential Evolution Algorithm to Reduce Power Losses".
 This repository is subdivided in the following subdirectories: 
 
 ## 1. Article Matlab code
@@ -19,7 +19,7 @@ The project also uses 2 dll files: EEPlus.dll to read Excel files and Auxiliares
 
 ## 3. Cemig-D Distribution feeders
 [**"CemigFeeders"**](https://github.com/Zecao/2020Dijkstra/tree/master/CemigDFeeders)
-Directory with the OpenDSS files (.dss) from 4 Cemig distribution feeders and 1 substation. These files are public as they were generated from a geographic distribution data base BDGD from Brazilian Regulatory Agency ANEEL.
+Directory with the OpenDSS files (.dss) from 3 Cemig distribution feeders and 2 substations. These files are public as they were generated from a geographic distribution data base BDGD from Brazilian Regulatory Agency ANEEL.
 
 ## 4. Initial population of evolutionary metaheuristics for the Distribution Network Reconfiguration problem
 [**"MSTInitialPopulation"**](https://github.com/Zecao/2020Dijkstra/tree/master/MSTInitialPopulation)
