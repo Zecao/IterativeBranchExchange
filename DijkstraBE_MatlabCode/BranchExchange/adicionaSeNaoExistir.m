@@ -1,5 +1,5 @@
 % filtra novos individuos
-function [populacao, fxi] = adicionaSeNaoExistir(e,f_e,populacao,fxi,indAnalisado,alim)
+function [populacao, fxi] = adicionaSeNaoExistir(e,f_e,populacao,fxi,alim)
 
 % OBS: SE filtrar por fitness (e nao por individuo), poss estar excluindo
 % individuos diferentes  e importantes que tem mapeada a mesma fitness
