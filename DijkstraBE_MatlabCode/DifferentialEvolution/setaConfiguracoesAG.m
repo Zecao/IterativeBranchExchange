@@ -65,8 +65,7 @@ switch sistema
 
     case 2 % 'Sistema_Zhu2002.txt'; 
 
-%         paramAG.maxPop = 10; % artigo
-        paramAG.maxPop = 1; 
+        paramAG.maxPop = 5; % artigo
         paramAG.numGeracoes = 5;
         paramAG.tamPopulacao = 1; 
         paramAG.tipoOrdCiclos = 'tamCiclo'; % melhor desempenho
@@ -74,8 +73,7 @@ switch sistema
                 
     case 3 % Sistema_Huang2002.txt';
 
-%         paramAG.maxPop = 10; % artigo
-        paramAG.maxPop = 5;
+        paramAG.maxPop = 5; % artigo
         paramAG.numGeracoes = 5; 
         paramAG.tamPopulacao = 1;
         paramAG.tipoOrdCiclos = 'tamCiclo'; % melhor desempenho
@@ -93,28 +91,30 @@ switch sistema
         paramAG.indTSred = 1;
         Crm = 0.15;
         paramAG.numGeracoes = 30;
-        paramAG.maxPop = 50; % com 35 tenho 9 sucessos
+        paramAG.maxPop = 50; % artigo % com 35 tenho 9 sucessos
         paramAG.tamPopulacao = 10;
         paramAG.tipoOrdCiclos = 'aleatorio';
 
     case 5 % Sistema_TPC2003.txt';
 
         paramAG.tamPopulacao = 1; 
-        paramAG.maxPop = 10;
+        paramAG.maxPop = 10; % artigo
         paramAG.numGeracoes = 5;
         paramAG.tipoOrdCiclos = 'aleatorio'; % melhor desempenho
-%         paramAG.tipoOrdCiclos = 'tamCiclo'; % default
+%         paramAG.tipoOrdCiclos = 'tamCiclo'; 
 
     case 6 % rede 417barras 
         
-        paramAG.tipoOrdCiclos = 'aleatorio';
+%         paramAG.tipoOrdCiclos = 'aleatorio';
+        
+        paramAG.tipoOrdCiclos = 'tamCiclo'; 
         paramAG.indTSred = 0;
-        paramAG.tamPopulacao = 10;
-        paramAG.maxPop = 50;
-        paramAG.numGeracoes = 40;
+        paramAG.tamPopulacao = 5;
+        paramAG.maxPop = 10;
+        paramAG.numGeracoes = 20;
         Crm = 0.15; 
         
-    case 7 % rede 119barras 
+    case 7 % rede 119 barras 
         
         paramAG.tipoOrdCiclos = 'tamCiclo';
 %         paramAG.tipoOrdCiclos = 'aleatorio'; % nao da bons resultados
