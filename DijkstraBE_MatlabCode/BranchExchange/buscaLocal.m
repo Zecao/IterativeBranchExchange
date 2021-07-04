@@ -8,24 +8,23 @@ global paramAG;
 oldVAr = paramAG.indTSred;
 paramAG.indTSred =0;
 
-% fitness Inicial
-fit1 = fxi(1);
-
 sis = getSistema(alim.Fnome);
 
-% resumo dos testes
-
-% se rede 4 ou 6, executa 2 Buscas locais em serie  sis == 6) 
-if ( (sis==6) || (sis==4) ) %
-     
-    %[populacao, fxi] = bestSetup(populacao, fxi,alim);
-
-     [populacao, fxi] = setup2(populacao, fxi,alim,geracao);
+switch (sis)
     
-else
+    case 4
+        
+        % 302.1 (OLD 269.0)
+        [populacao, fxi] = setup136barras(populacao,fxi,alim,geracao);
+             
+    case 6
+
+        % 
+        [populacao, fxi] = setup417barras(populacao,fxi,alim,geracao);
     
-    % busca local
-    [populacao, fxi] = buscaLocalElite(populacao,fxi,alim);
+    otherwise  % busca local
+        
+        [populacao, fxi] = buscaLocalElite(populacao,fxi,alim);
     
 end
 
@@ -34,115 +33,97 @@ paramAG.indTSred = oldVAr;
 
 end
 
-function [populacao, fxi] = setup2(populacao, fxi,alim,geracao)
+% BL tamCiclo ou aleatorio. Se nao otimizou, tenta por Cluster.
+function [populacao, fxi] = setup136barras(populacao,fxi,alim,geracao)
 
 global paramAG;
+
+if (geracao==1)
+    paramAG.tipoOrdCiclos = 'tamCiclo';
+else
+    paramAG.tipoOrdCiclos = 'aleatorio';
+end
 
 % fitness Inicial
 fitOld = fxi(1);
 
-    paramAG.tipoOrdCiclos = 'tamCiclo';
-
-    % busca local
-    [populacao, fxi] = buscaLocalElite(populacao,fxi,alim);
-       
-    paramAG.tipoOrdCiclos = 'aleatorio';
-
-    % busca local
-    [populacao, fxi] = buscaLocalElite(populacao,fxi,alim); 
+% busca local
+[populacao, fxi] = buscaLocalElite(populacao,fxi,alim);
 
 % OBS: testar se nao otimizou a BL testa individuo aleatorio.
 if (fitOld == fxi(1))
     
     % busca local por ciclos
     [populacao, fxi] = buscaLocalClusterCiclos(populacao,fxi,alim); 
-
-    % OBS: se desligar ocorre piora na rede4 (otimo sai da 10geracao p/19)
-    paramAG.tipoOrdCiclos = 'aleatorio';
-
-    % busca local
-    [populacao, fxi] = buscaLocalIndAleatorio(populacao,fxi,alim);    
+ 
 end
 
 end
 
-function [populacao, fxi] = bestSetup(populacao, fxi,alim)
+% evita a BE classico, porque o mesmo leva a sub otimo local
+function [populacao, fxi] = setup417barras(populacao,fxi,alim,geracao)
 
 global paramAG;
 
-% fitness Inicial
-fit1 = fxi(1);
+% if (mod(geracao,2)==1)
+if (geracao==1)
+    paramAG.tipoOrdCiclos = 'tamCiclo';
+    
+    % busca local
+    [populacao, fxi] = buscaLocalElite(populacao,fxi,alim);
 
-% OBS: melhores resultados para rede 4 eh executar 2 BL 'tamCiclo' e
-% aleatorio
-paramAG.tipoOrdCiclos = 'tamCiclo';
+else
+    paramAG.tipoOrdCiclos = 'aleatorio';
+end
+
+% busca local por ciclos
+[populacao, fxi] = buscaLocalClusterCiclos(populacao,fxi,alim); 
+
+end
+
+% BL tamCiclo ou aleatorio. Se nao otimizou, tenta por Cluster.
+function [populacao, fxi] = setup417barras_r2(populacao,fxi,alim,geracao)
+
+global paramAG;
+
+% if (mod(geracao,2)==1)
+if (geracao==1)
+    paramAG.tipoOrdCiclos = 'tamCiclo';
+    
+
+
+else
+    paramAG.tipoOrdCiclos = 'aleatorio';
+end
+
+% fitness Inicial
+fitOld = fxi(1);
 
 % busca local
 [populacao, fxi] = buscaLocalElite(populacao,fxi,alim);
 
-paramAG.tipoOrdCiclos = 'aleatorio';
-
-% busca local
-[populacao, fxi] = buscaLocalElite(populacao,fxi,alim);  
+% TODO testar
+if (geracao==1)
+[novosIndividuos, newFxi] = buscaLocalBranchExchangeClusterCiclos(populacao(1,:), alim);
+end
 
 % OBS: testar se nao otimizou a BL testa individuo aleatorio.
-if (fit1 == fxi(1))
-
+if (fitOld == fxi(1))
+    
     % busca local por ciclos
     [populacao, fxi] = buscaLocalClusterCiclos(populacao,fxi,alim); 
-
-    % OBS: se desligar ocorre piora na rede4 (otimo sai da 10geracao p/19)
-    paramAG.tipoOrdCiclos = 'aleatorio';
-
-    % busca local
-    [populacao, fxi] = buscaLocalIndAleatorio(populacao,fxi,alim); 
-
+ 
 end
 
 end
 
-% busca loca ciclo a ciclo
-function [populacao, fxi] = buscaLocalClusterCiclos(populacao,fxi,alim)
-
-global paramAG;
-paramAG.tipoOrdCiclos = 'cluster';
-
-% seleciona UM individuos p/ realizar busca local
-[individuo, indFxi] = selecionaIndividuoBuscaLocal(populacao,fxi);
-
-% correcao de lacos da populacao 
-[newPop,newFxi] = buscaLocalBranchExchangeClusterCiclos(individuo, alim);
-
-if (isempty(newPop))
-   return; 
-end
-
-% adiciona na nova populacao os individuos radiais
-[populacao,fxi] = adicionaSeNaoExistir(newPop,newFxi,populacao,fxi,individuo,alim);
-
-% % poda tam populacao
-[populacao, fxi] = podaTamPopulacao(populacao,fxi,alim);
-
-end
-
-function ind = getIndividuoAleatorio(populacao,alim)
-
-sis = getSistema(alim.Fnome);
-global paramAG;
+function ind = getIndividuoAleatorio(populacao)
 
 % retira elite
 populacao = populacao(2:end,:);
 
-% OBS: melhor resultado para rede 4
-if ((sis == 4)||(sis==6))
-    
-    % escolhe individuo do tamanho da populacao inicial
-    vecAle = randperm(paramAG.tamPopulacao);
-
-else
-    % escolhe individuo aleatorio da populacao
-    vecAle = randperm(size(populacao,1));
-end
+% escolhe individuo aleatorio da populacao
+vecAle = randperm(size(populacao,1));
 
 ind = populacao(vecAle(1),:);
 
@@ -152,7 +133,7 @@ end
 function [populacao, fxi] = buscaLocalIndAleatorio(populacao,fxi,alim)
 
 % obtem individuo aleatorio (que nao seja o elite)
-individuo = getIndividuoAleatorio(populacao,alim);
+individuo = getIndividuoAleatorio(populacao);
 
 % busca local PVT 
 [populacao, fxi] = buscaLocalPvt(individuo, populacao,fxi,alim);
@@ -186,7 +167,7 @@ if (isempty(newPop))
 end
 
 % adiciona na nova populacao os individuos radiais
-[populacao,fxi] = adicionaSeNaoExistir(newPop,newFxi,populacao,fxi,individuo,alim);
+[populacao,fxi] = adicionaSeNaoExistir(newPop,newFxi,populacao,fxi,alim);
 
 % % poda tam populacao
 [populacao, fxi] = podaTamPopulacao(populacao,fxi,alim);
