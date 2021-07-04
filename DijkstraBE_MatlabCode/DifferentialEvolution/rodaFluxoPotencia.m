@@ -4,8 +4,6 @@ function [ results, perdas ] = rodaFluxoPotencia(sistemaStr,alim)
 % cria struct Matpower
 mpc = criaStructMatpower(alim);
 
-save('redeCemigCarrano.mat','mpc');
-
 global param;
 
 % armazena vetor opcoes do Matpower %help mpoption
