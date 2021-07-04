@@ -5,11 +5,11 @@ function [ populacao, fxi ] = evolucaoDiferencialElite521(alim, populacao, fxi, 
 if (geracao == 1)
    
     % minimizacao local na primeira geracao
-    [populacao, fxi] = buscaLocal(populacao,fxi,alim);
+    [populacao, fxi] = buscaLocal(populacao,fxi,alim,geracao);
 
 end
 
 % busca local
-[populacao, fxi] = buscaLocal(populacao,fxi,alim);
+[populacao, fxi] = buscaLocal(populacao,fxi,alim,geracao);
 
 end
