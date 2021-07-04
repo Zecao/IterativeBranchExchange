@@ -3,7 +3,7 @@
 function chaveMenorPerda = obtemChaveMenorPerdaDescCoord( tieSwitch, alimOriginal, indArestasDoCiclo)
 
 % % DEBUG
-% if (tieSwitch==158)
+% if (tieSwitch==195)
 %   DEBUG=0;  
 % end
 
@@ -14,19 +14,13 @@ alimCiclo = sparse2alim(indArestasDoCiclo,alimOriginal);
 % cria matriz sparsa do Ciclo
 sparseCiclo = criaSparseMBranch(alimCiclo);
 
-% % obtem chave de menor perda para o ciclo
-% chaveMenorPerda = obtemChaveMenorPerdaCaminhaRede(sparseCiclo, tieSwitch,alimOriginal);
-
-% TODO
-% % % obtem chave de menor perda para o ciclo
+% obtem chave de menor perda para o ciclo
 chaveMenorPerda = obtemChaveMenorPerdaCaminhaRede1direcao(sparseCiclo, tieSwitch,alimOriginal);
 
-% DEBUG
-% if (tieSwitch==94)
-% debug=0;
-% end
+% OLD CODE nao testa a tensao
+% chaveMenorPerda = obtemChaveMenorPerdaCaminhaRede(sparseCiclo, tieSwitch,alimOriginal);
 
-% TODO
+% TODO Nao da bons resultados
 % obtem chave demenor perda por menor corrente
 % chaveMenorPerda = obtemChaveMenorPerdaPorMenorCorrente(indArestasDoCiclo, tieSwitch,alimOriginal);
 
@@ -117,13 +111,14 @@ v2 = getTensaoNo(noEsquerdo,results);
 
 % caminha no sentido da menor tensao
 if (v1<v2)
+    
     % caminha em direcao ao Pai, enquanto fitness estiver diminuindo
     novaTieSwitch = caminhaEnquantoFitnessDiminuir(noDireito,sparseCiclo,tieSwitch,fitRef,alimOriginal);
     
     if ( novaTieSwitch == tieSwitch )
 
-    % caminha em direcao ao Pai, enquanto fitness estiver diminuindo
-    novaTieSwitch = caminhaEnquantoFitnessDiminuir(noEsquerdo,sparseCiclo,tieSwitch,fitRef,alimOriginal);
+        % caminha em direcao ao Pai, enquanto fitness estiver diminuindo
+        novaTieSwitch = caminhaEnquantoFitnessDiminuir(noEsquerdo,sparseCiclo,tieSwitch,fitRef,alimOriginal);
 
     end
     
@@ -133,8 +128,8 @@ else
     
     if ( novaTieSwitch == tieSwitch )
 
-    % caminha em direcao ao Pai, enquanto fitness estiver diminuindo
-    novaTieSwitch = caminhaEnquantoFitnessDiminuir(noDireito,sparseCiclo,tieSwitch,fitRef,alimOriginal);
+        % caminha em direcao ao Pai, enquanto fitness estiver diminuindo
+        novaTieSwitch = caminhaEnquantoFitnessDiminuir(noDireito,sparseCiclo,tieSwitch,fitRef,alimOriginal);
 
     end
 end
