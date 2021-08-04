@@ -14,7 +14,7 @@ switch (sis)
     
     case 4
         
-        % 302.1 (OLD 269.0)
+        % 300.1 
         [populacao, fxi] = setup136barras(populacao,fxi,alim,geracao);
              
     case 6
@@ -36,13 +36,32 @@ end
 % BL tamCiclo ou aleatorio. Se nao otimizou, tenta por Cluster.
 function [populacao, fxi] = setup136barras(populacao,fxi,alim,geracao)
 
+% fitness Inicial
+fitOld = fxi(1);
+
+% busca local
+[populacao, fxi] = buscaLocalElite(populacao,fxi,alim);
+
+% OBS: testar se nao otimizou a BL testa individuo aleatorio.
+if (fitOld == fxi(1))
+    
+    % busca local por ciclos
+    [populacao, fxi] = buscaLocalClusterCiclos(populacao,fxi,alim); 
+ 
+end
+
+end
+
+% BL tamCiclo ou aleatorio. Se nao otimizou, tenta por Cluster.
+function [populacao, fxi] = setup136barras_r1(populacao,fxi,alim,geracao)
+
 global paramAG;
 
-if (geracao==1)
-    paramAG.tipoOrdCiclos = 'tamCiclo';
-else
-    paramAG.tipoOrdCiclos = 'aleatorio';
-end
+% if (geracao==1)
+%     paramAG.tipoOrdCiclos = 'tamCiclo';
+% else
+%     paramAG.tipoOrdCiclos = 'aleatorio';
+% end
 
 % fitness Inicial
 fitOld = fxi(1);
