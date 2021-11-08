@@ -1,5 +1,5 @@
-# DijkstraBranchExchange
-Repository for the article "Reconfiguration of Real Distribution Networks using Branch Exchange and Differential Evolution Algorithm to Reduce Power Losses".
+# Iterative Branch Exchange
+Repository for the article "Distribution Networks Reconfiguration using an Iterative Branch Exchange Heuristic to Reduce Power Losses ".
 This repository is subdivided in the following subdirectories: 
 
 ## 1. Article Matlab code
@@ -12,8 +12,8 @@ Things to note:
 3. The code is mainly with portuguese comments, so I apologize for the non-portugues speaking.  
 
 ## 2. Article OpenDSS customization code
-[**"DijkstraBE_OpenDSS"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBE_OpenDSS)
-Directory with the Visual Studio C# OpenDSS customization project. Essencially its a newer version from the project https://github.com/Zecao/ExecutorOpenDssBr
+[**"Executor OpenDSS"**](https://github.com/Zecao/ExportadorGeoPerdasDSS)
+Directory with the Visual Studio C# OpenDSS customization project.
 The project uses the graph data structures and algorithms from [QuickGraph 3.6](https://archive.codeplex.com/?p=quickgraph)
 The project also uses 2 dll files: EEPlus.dll to read Excel files and Auxiliares.dll already included in the project. 
 
