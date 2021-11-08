@@ -20,7 +20,7 @@ sistema = 4;
 % ALGORITMOS 
 % 52 % Differenctial Evolution + Branch Exchange (local search)
 % 521 % Only branch Exchange 
-algoritmo = 52;
+algoritmo = 521;
 
 % seta path do aplicativo
 setPath();
