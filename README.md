@@ -26,6 +26,6 @@ Also, the OpenDSS files (.dss) for these networks and some references works can 
 
 ## 4. Article Matlab code
 [**"DijkstraBEMatlabCode"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBE_MatlabCode)
-I'll publish the Matlab code for replication of all the results from article, as soon ther article be published.
+I'll publish the Matlab code for replication of all the results from article, as soon the article be published.
 
 Ezequiel C. Pereira
