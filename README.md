@@ -10,7 +10,7 @@ The project also uses 2 dll files: EEPlus.dll to read Excel files and Auxiliares
 
 ## 2. Cemig-D Distribution feeders
 [**"CemigFeeders"**](https://github.com/Zecao/2020Dijkstra/tree/master/CemigDFeeders)
-Directory with the OpenDSS files (.dss) from 3 Cemig distribution feeders and 2 substations. These files are public as they were generated from a geographic distribution data base BDGD from Brazilian Regulatory Agency ANEEL.
+Directory with the OpenDSS files (.dss) from 2 Cemig distribution feeders and 2 substations. These files are public as they were generated from a geographic distribution data base BDGD from Brazilian Regulatory Agency ANEEL.
 
 ## 3. Initial population of evolutionary metaheuristics for the Distribution Network Reconfiguration problem
 [**"MSTInitialPopulation"**](https://github.com/Zecao/2020Dijkstra/tree/master/MSTInitialPopulation)
