@@ -1,5 +1,5 @@
 # Iterative Branch Exchange
-Repository for the article "Distribution Networks Reconfiguration using an Iterative Branch Exchange Heuristic to Reduce Power Losses ".
+Repository for the article "Distribution Networks Reconfiguration using an iterative Branch Exchange and metaheuristics".
 This repository is subdivided in the following subdirectories: 
 
 ## 1. Article OpenDSS customization code
