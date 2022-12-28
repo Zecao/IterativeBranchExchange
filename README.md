@@ -2,17 +2,7 @@
 Repository for the article "Distribution Networks Reconfiguration using an iterative Branch Exchange and metaheuristics".
 This repository is subdivided in the following subdirectories: 
 
-## 1. Article OpenDSS customization code
-[**"Executor OpenDSS"**](https://github.com/Zecao/ExportadorGeoPerdasDSS)
-Directory with the Visual Studio C# OpenDSS customization project.
-The project uses the graph data structures and algorithms from [QuickGraph 3.6](https://archive.codeplex.com/?p=quickgraph)
-The project also uses 2 dll files: EEPlus.dll to read Excel files and Auxiliares.dll already included in the project. 
-
-## 2. Cemig-D Distribution feeders
-[**"CemigFeeders"**](https://github.com/Zecao/2020Dijkstra/tree/master/CemigDFeeders)
-Directory with the OpenDSS files (.dss) from 2 Cemig distribution feeders and 2 substations. These files are public as they were generated from a geographic distribution data base BDGD from Brazilian Regulatory Agency ANEEL.
-
-## 3. Initial population of evolutionary metaheuristics for the Distribution Network Reconfiguration problem
+## 1. Initial population of evolutionary metaheuristics for the Distribution Network Reconfiguration problem
 [**"MSTInitialPopulation"**](https://github.com/Zecao/2020Dijkstra/tree/master/MSTInitialPopulation)
 Directory with the initial populations used in the article for the Distribution Network Reconfiguration - DNR problem. These files are in Matlab format (.mat) and uses the binary codification, i.e. they represent the normally closed (NC) switches by 1s and the normally opened (NO) switches by 0s for the following test cases:  
 * (Zhu, 2002) 33 buses system
@@ -24,8 +14,18 @@ Directory with the initial populations used in the article for the Distribution 
 
 Also, the OpenDSS files (.dss) for these networks and some references works can be found here: (https://www.dropbox.com/sh/15fo64kxz7115e2/AAAGgAVzJmnLzA6rVlqfBdGca?dl=0)
 
-## 4. Article Matlab code
+## 2. Article Matlab code
 [**"DijkstraBEMatlabCode"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBE_MatlabCode)
 I'll publish the Matlab code for replication of all the results from article, as soon the article be published.
+
+## 3. Article OpenDSS customization code
+[**"Executor OpenDSS"**](https://github.com/Zecao/ExecutorOpenDssBr)
+Directory with the Visual Studio C# OpenDSS customization project.
+The project uses the graph data structures and algorithms from [QuickGraph 3.6](https://archive.codeplex.com/?p=quickgraph)
+The project also uses 2 dll files: EEPlus.dll to read Excel files already included in the project. 
+
+## 4. Cemig-D Distribution feeders
+[**"CemigFeeders"**](https://github.com/Zecao/2020Dijkstra/tree/master/CemigDFeeders)
+Directory with the OpenDSS files (.dss) from 2 Cemig distribution feeders and 2 substations. These files are public as they were generated from a geographic distribution data base BDGD from Brazilian Regulatory Agency ANEEL.
 
 Ezequiel C. Pereira
