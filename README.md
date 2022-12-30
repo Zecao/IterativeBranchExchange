@@ -23,7 +23,7 @@ The project uses 2 external programs/libraries
 - Matlab_bgl: a Matlab wrapper for the Boost Graph Library (https://github.com/dgleich/matlab-bgl).
 
 I sugest to put the files in same directory of IBE Matlab code. Before start, make sure to edit the file setPath.m. So, the following .m files run the Iterative Branch Exchange for each network described in the item 1.
-- run_16nbuses.m
+- run_16buses.m
 - run_33buses.m
 - run_70buses.m
 - run_84buses.m
