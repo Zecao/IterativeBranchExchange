@@ -18,6 +18,10 @@ Also, the OpenDSS files (.dss) for these networks and some references works can 
 [**"IBE MatlabCode"**](https://github.com/Zecao/IterativeBranchExchange/tree/master/IBE_MatlabCode)
 I'll publish the Matlab code for replication of all the results from article, **as soon the article be published**.
 
+The project uses 2 external libraries
+- Matpower7.0:  
+- Matlab_bgl: an implementation of Boost Graph Libraries in Matlab
+
 ## 3. Article OpenDSS customization code
 [**"Executor OpenDSS"**](https://github.com/Zecao/ExecutorOpenDssBr)
 Separate repository with detailed explanations for the OpenDSS customization C# code. 
