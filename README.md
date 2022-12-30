@@ -16,11 +16,18 @@ Also, the OpenDSS files (.dss) for these networks and some references works can 
 
 ## 2. Article Matlab code
 [**"IBE MatlabCode"**](https://github.com/Zecao/IterativeBranchExchange/tree/master/IBE_MatlabCode)
-I'll publish the Matlab code for replication of all the results from article, **as soon the article be published**.
+(under construction!) I'll publish the Matlab code for replication of all the results from article, **as soon the article be published**.
 
-The project uses 2 external libraries
-- Matpower7.0:  
-- Matlab_bgl: an implementation of Boost Graph Libraries in Matlab
+The project uses 2 external programs/libraries 
+- Matpower7.0: a free, open-source tools for electric power system simulation and optimization (https://matpower.org/) Run install_matpower.m before.
+- Matlab_bgl: a Matlab wrapper for the Boost Graph Library (https://github.com/dgleich/matlab-bgl).
+
+I sugest to put the files in same directory of IBE Matlab code. Before start, make sure to edit the file setPath.m. So, the following .m files run the Iterative Branch Exchange for each network described in the item 1.
+- run_16nbuses.m
+- run_33buses.m
+- run_70buses.m
+- run_84buses.m
+- run_136buses.m
 
 ## 3. Article OpenDSS customization code
 [**"Executor OpenDSS"**](https://github.com/Zecao/ExecutorOpenDssBr)
