@@ -1,0 +1,109 @@
+!Ref. !J.Z. Zhu, Optimal reconfiguration of electrical distribution network using the refined genetic algorithm, Electr. Power Syst. Res. 62 (2002) 37–42.
+!Article results: 202.69 kW / Optimal Conf: 139.55 kW
+!OpenDSS: 201.6 kW / Optimal Conf: 128.8 kW
+Clear
+
+! pu=1.001703 guarantees 12.66 kv at bus1
+new circuit.geradorrefer1 bus1=1,basekv=12.66,pu=1.001703
+
+! Loads
+new load.carga2 bus1=2,kv=12.66,kw=100,kvar=60,model=1,Vminpu=0.85
+new load.carga3 bus1=3,kv=12.66,kw=90,kvar=40,model=1,Vminpu=0.85
+new load.carga4 bus1=4,kv=12.66,kw=120,kvar=80,model=1,Vminpu=0.85
+new load.carga5 bus1=5,kv=12.66,kw=60,kvar=30,model=1,Vminpu=0.85
+new load.carga6 bus1=6,kv=12.66,kw=60,kvar=20,model=1,Vminpu=0.85
+new load.carga7 bus1=7,kv=12.66,kw=200.00,kvar=100.00,model=1,Vminpu=0.85
+new load.carga8 bus1=8,kv=12.66,kw=200,kvar=100,model=1,Vminpu=0.85
+new load.carga9 bus1=9,kv=12.66,kw=60,kvar=20,model=1,Vminpu=0.85
+new load.carga10 bus1=10,kv=12.66,kw=60,kvar=20,model=1,Vminpu=0.85
+new load.carga11 bus1=11,kv=12.66,kw=45,kvar=30,model=1,Vminpu=0.85
+new load.carga12 bus1=12,kv=12.66,kw=60,kvar=35,model=1,Vminpu=0.85
+new load.carga13 bus1=13,kv=12.66,kw=60,kvar=35,model=1,Vminpu=0.85
+new load.carga14 bus1=14,kv=12.66,kw=120,kvar=80,model=1,Vminpu=0.85
+new load.carga15 bus1=15,kv=12.66,kw=60,kvar=10,model=1,Vminpu=0.85
+new load.carga16 bus1=16,kv=12.66,kw=60,kvar=20,model=1,Vminpu=0.85
+new load.carga17 bus1=17,kv=12.66,kw=60,kvar=20,model=1,Vminpu=0.85
+new load.carga18 bus1=18,kv=12.66,kw=90,kvar=40,model=1,Vminpu=0.85
+new load.carga19 bus1=19,kv=12.66,kw=90,kvar=40,model=1,Vminpu=0.85
+new load.carga20 bus1=20,kv=12.66,kw=90,kvar=40,model=1,Vminpu=0.85
+new load.carga21 bus1=21,kv=12.66,kw=90,kvar=40,model=1,Vminpu=0.85
+new load.carga22 bus1=22,kv=12.66,kw=90,kvar=40,model=1,Vminpu=0.85
+new load.carga23 bus1=23,kv=12.66,kw=90,kvar=50,model=1,Vminpu=0.85
+new load.carga24 bus1=24,kv=12.66,kw=420,kvar=200,model=1,Vminpu=0.85
+new load.carga25 bus1=25,kv=12.66,kw=420,kvar=200,model=1,Vminpu=0.85
+new load.carga26 bus1=26,kv=12.66,kw=60,kvar=25,model=1,Vminpu=0.85
+new load.carga27 bus1=27,kv=12.66,kw=60,kvar=25,model=1,Vminpu=0.85
+new load.carga28 bus1=28,kv=12.66,kw=60,kvar=20,model=1,Vminpu=0.85
+new load.carga29 bus1=29,kv=12.66,kw=120,kvar=70,model=1,Vminpu=0.85
+new load.carga30 bus1=30,kv=12.66,kw=200,kvar=600,model=1,Vminpu=0.85
+new load.carga31 bus1=31,kv=12.66,kw=150,kvar=70,model=1,Vminpu=0.85
+new load.carga32 bus1=32,kv=12.66,kw=210,kvar=100,model=1,Vminpu=0.85
+new load.carga33 bus1=33,kv=12.66,kw=60,kvar=40,model=1,Vminpu=0.85
+
+! Lines
+new line.1 bus1=1,bus2=2,phases=3,R1=0.0922,X1=0.047,R0=0,X0=0.001,Units=km,Length=1
+new line.2 bus1=2,bus2=3,phases=3,R1=0.493,X1=0.2512,R0=0,X0=0.001,Units=km,Length=1
+new line.3 bus1=3,bus2=4,phases=3,R1=0.3661,X1=0.1864,R0=0,X0=0.001,Units=km,Length=1
+new line.4 bus1=4,bus2=5,phases=3,R1=0.3811,X1=0.1941,R0=0,X0=0.001,Units=km,Length=1
+new line.5 bus1=5,bus2=6,phases=3,R1=0.819,X1=0.707,R0=0,X0=0.001,Units=km,Length=1
+new line.6 bus1=6,bus2=7,phases=3,R1=0.1872,X1=0.6188,R0=0,X0=0.001,Units=km,Length=1
+new line.7 bus1=7,bus2=8,phases=3,R1=0.7115,X1=0.2351,R0=0,X0=0.001,Units=km,Length=1
+new line.8 bus1=8,bus2=9,phases=3,R1=1.0299,X1=0.74,R0=0,X0=0.001,Units=km,Length=1
+new line.9 bus1=9,bus2=10,phases=3,R1=1.044,X1=0.74,R0=0,X0=0.001,Units=km,Length=1
+new line.10 bus1=10,bus2=11,phases=3,R1=0.1967,X1=0.0651,R0=0,X0=0.001,Units=km,Length=1
+new line.11 bus1=11,bus2=12,phases=3,R1=0.3744,X1=0.1298,R0=0,X0=0.001,Units=km,Length=1
+new line.12 bus1=12,bus2=13,phases=3,R1=1.468,X1=1.1549,R0=0,X0=0.001,Units=km,Length=1
+new line.13 bus1=13,bus2=14,phases=3,R1=0.5416,X1=0.7129,R0=0,X0=0.001,Units=km,Length=1
+new line.14 bus1=14,bus2=15,phases=3,R1=0.5909,X1=0.526,R0=0,X0=0.001,Units=km,Length=1
+new line.15 bus1=15,bus2=16,phases=3,R1=0.7462,X1=0.5449,R0=0,X0=0.001,Units=km,Length=1
+new line.16 bus1=16,bus2=17,phases=3,R1=1.2889,X1=1.721,R0=0,X0=0.001,Units=km,Length=1
+new line.17 bus1=17,bus2=18,phases=3,R1=0.732,X1=0.5739,R0=0,X0=0.001,Units=km,Length=1
+new line.18 bus1=2,bus2=19,phases=3,R1=0.164,X1=0.1565,R0=0,X0=0.001,Units=km,Length=1
+new line.19 bus1=19,bus2=20,phases=3,R1=1.5042,X1=1.3555,R0=0,X0=0.001,Units=km,Length=1
+new line.20 bus1=20,bus2=21,phases=3,R1=0.4095,X1=0.4784,R0=0,X0=0.001,Units=km,Length=1
+new line.21 bus1=21,bus2=22,phases=3,R1=0.7089,X1=0.9373,R0=0,X0=0.001,Units=km,Length=1
+new line.22 bus1=3,bus2=23,phases=3,R1=0.4512,X1=0.3084,R0=0,X0=0.001,Units=km,Length=1
+new line.23 bus1=23,bus2=24,phases=3,R1=0.898,X1=0.7091,R0=0,X0=0.001,Units=km,Length=1
+new line.24 bus1=24,bus2=25,phases=3,R1=0.8959,X1=0.7071,R0=0,X0=0.001,Units=km,Length=1
+new line.25 bus1=6,bus2=26,phases=3,R1=0.2031,X1=0.1034,R0=0,X0=0.001,Units=km,Length=1
+new line.26 bus1=26,bus2=27,phases=3,R1=0.2842,X1=0.1447,R0=0,X0=0.001,Units=km,Length=1
+new line.27 bus1=27,bus2=28,phases=3,R1=1.0589,X1=0.9338,R0=0,X0=0.001,Units=km,Length=1
+new line.28 bus1=28,bus2=29,phases=3,R1=0.8043,X1=0.7006,R0=0,X0=0.001,Units=km,Length=1
+new line.29 bus1=29,bus2=30,phases=3,R1=0.5074,X1=0.2585,R0=0,X0=0.001,Units=km,Length=1
+new line.30 bus1=30,bus2=31,phases=3,R1=0.9745,X1=0.9629,R0=0,X0=0.001,Units=km,Length=1
+new line.31 bus1=31,bus2=32,phases=3,R1=0.3105,X1=0.3619,R0=0,X0=0.001,Units=km,Length=1
+new line.32 bus1=32,bus2=33,phases=3,R1=0.3411,X1=0.5302,R0=0,X0=0.001,Units=km,Length=1
+
+! Normally opened lines
+new line.33 bus1=8,bus2=21,phases=3,R1=2,X1=2,R0=0,X0=0.001,Units=km,Length=1,Switch=T
+open line.33 term=1
+new line.34 bus1=9,bus2=15,phases=3,R1=2,X1=2,R0=0,X0=0.001,Units=km,Length=1,Switch=T
+open line.34  term=1
+new line.35 bus1=12,bus2=22,phases=3,R1=2,X1=2,R0=0,X0=0.001,Units=km,Length=1,Switch=T
+open line.35 term=1
+new line.36 bus1=18,bus2=33,phases=3,R1=0.5,X1=0.5,R0=0,X0=0.001,Units=km,Length=1,Switch=T
+open line.36 term=1
+new line.37 bus1=25,bus2=29,phases=3,R1=0.5,X1=0.5,R0=0,X0=0.001,Units=km,Length=1,Switch=T
+open line.37 term=1
+
+!! optimal configuration
+!close line.33 term=1
+!close line.34 term=1
+!close line.35 term=1
+!close line.36 term=1
+!close line.37 term=1
+!open line.7 term=1
+!open line.9 term=1
+!open line.14 term=1
+!open line.32 term=1
+!open line.37 term=1
+
+
+Set voltagebases=[12.66]
+Calcv
+
+Solve
+
+Show Losses
+!Show Voltages LL
+!Show Powers kVA Elem 

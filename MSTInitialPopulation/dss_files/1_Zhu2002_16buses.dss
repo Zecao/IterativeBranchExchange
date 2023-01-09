@@ -1,0 +1,59 @@
+!Ref. J.Z. Zhu, Optimal reconfiguration of electrical distribution network using the refined genetic algorithm, Electr. Power Syst. Res. 62 (2002) 37–42.
+!Article results: 511.4 kW / Optimal Conf: 466.1 kW
+!OpenDSS: 511.3 kW / Optimal Conf: 465.9 kW
+Clear
+
+new circuit.feeder1 bus1=1,basekv=12.66,pu=1.00685
+
+new line.feeder2 bus1=1,bus2=2,phases=3,R1=0,X1=0.001,Units=km,Length=1
+new line.feeder3 bus1=1,bus2=3,phases=3,R1=0,X1=0.001,Units=km,Length=1
+
+! loads 
+new load.L4 bus1=4,kv=12.66,kw=2000,kvar=1600,Vminpu=0.85
+new load.L5 bus1=5,kv=12.66,kw=3000,kvar=400,Vminpu=0.85
+new load.L6 bus1=6,kv=12.66,kw=2000,kvar=-400,Vminpu=0.85
+new load.L7 bus1=7,kv=12.66,kw=1500,kvar=1200,Vminpu=0.85
+new load.L8 bus1=8,kv=12.66,kw=4000,kvar=2700,Vminpu=0.85
+new load.L9 bus1=9,kv=12.66,kw=5000,kvar=1800,Vminpu=0.85
+new load.L10 bus1=10,kv=12.66,kw=1000,kvar=900,Vminpu=0.85
+new load.L11 bus1=11,kv=12.66,kw=600,kvar=-500,Vminpu=0.85
+new load.L12 bus1=12,kv=12.66,kw=4500,kvar=-1700,Vminpu=0.85
+new load.L13 bus1=13,kv=12.66,kw=1000,kvar=900,Vminpu=0.85
+new load.L14 bus1=14,kv=12.66,kw=1000,kvar=-1100,Vminpu=0.85
+new load.L15 bus1=15,kv=12.66,kw=1000,kvar=900,Vminpu=0.85
+new load.L16 bus1=16,kv=12.66,kw=2100,kvar=-800,Vminpu=0.85
+
+! lines
+new line.1-4 bus1=1,bus2=4,phases=3,R1=0.1202067,X1=0.1602756,R0=0,X0=0.00001,Units=km,Length=1
+new line.4-6 bus1=4,bus2=6,phases=3,R1=0.14424804,X1=0.28849608,R0=0,X0=0.00001,Units=km,Length=1
+new line.4-5 bus1=4,bus2=5,phases=3,R1=0.12822048,X1=0.17630316,R0=0,X0=0.00001,Units=km,Length=1
+new line.5-11 bus1=5,bus2=11,phases=3,R1=0.06411024,X1=0.06411024,R0=0,X0=0.00001,Units=km,Length=1
+open line.5-11 term=1
+new line.6-7 bus1=6,bus2=7,phases=3,R1=0.06411024,X1=0.06411024,R0=0,X0=0.00001,Units=km,Length=1
+new line.9-11 bus1=9,bus2=11,phases=3,R1=0.17630316,X1=0.17630316,R0=0,X0=0.00001,Units=km,Length=1
+new line.2-8 bus1=2,bus2=8,phases=3,R1=0.17630316,X1=0.17630316,R0=0,X0=0.00001,Units=km,Length=1
+new line.8-9 bus1=8,bus2=9,phases=3,R1=0.12822048,X1=0.17630316,R0=0,X0=0.00001,Units=km,Length=1
+new line.8-10 bus1=8,bus2=10,phases=3,R1=0.17630316,X1=0.17630316,R0=0,X0=0.00001,Units=km,Length=1
+new line.9-12 bus1=9,bus2=12,phases=3,R1=0.12822048,X1=0.17630316,R0=0,X0=0.00001,Units=km,Length=1
+new line.7-16 bus1=7,bus2=16,phases=3,R1=0.14424804,X1=0.19233072,R0=0,X0=0.00001,Units=km,Length=1
+open line.7-16 term=1
+new line.15-16 bus1=15,bus2=16,phases=3,R1=0.06411024,X1=0.06411024,R0=0,X0=0.00001,Units=km,Length=1
+new line.10-14 bus1=10,bus2=14,phases=3,R1=0.06411024,X1=0.06411024,R0=0,X0=0.00001,Units=km,Length=1
+open line.10-14 term=1
+new line.13-14 bus1=13,bus2=14,phases=3,R1=0.14424804,X1=0.19233072,R0=0,X0=0.00001,Units=km,Length=1
+new line.3-13 bus1=3,bus2=13,phases=3,R1=0.17630316,X1=0.17630316,R0=0,X0=0.00001,Units=km,Length=1
+new line.13-15 bus1=13,bus2=15,phases=3,R1=0.12822048,X1=0.17630316,R0=0,X0=0.00001,Units=km,Length=1
+
+! Optimal Conf: 
+close line.5-11 term=1
+close line.10-14 term=1
+open line.9-11 term=1
+open line.8-10 term=1
+
+Set voltagebases="12.66"
+Calcv
+
+Solve
+
+Show Losses
+Show Voltages LL

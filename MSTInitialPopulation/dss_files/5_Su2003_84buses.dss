@@ -1,0 +1,235 @@
+! Ref. C.-T. Su, C.-S. Lee, Network reconfiguration of distribution systems using improved mixed-integer hybrid differential evolution, IEEE Trans. Power Deliv. 18 (2003) 1022–1027.
+Clear
+
+! pu=1.01451 guarantees 11.4 kv at bus1
+new circuit.feeder1 bus1=1,basekv=11.4,pu=1.01451
+
+! feeders
+new line.feeder2 bus1=1,bus2=2,phases=3,R1=0,X1=0.001,Units=km,Length=0.001
+new line.feeder3 bus1=1,bus2=3,phases=3,R1=0,X1=0.001,Units=km,Length=0.001
+new line.feeder4 bus1=1,bus2=4,phases=3,R1=0,X1=0.001,Units=km,Length=0.001
+new line.feeder5 bus1=1,bus2=5,phases=3,R1=0,X1=0.001,Units=km,Length=0.001
+new line.feeder6 bus1=1,bus2=6,phases=3,R1=0,X1=0.001,Units=km,Length=0.001
+new line.feeder7 bus1=1,bus2=7,phases=3,R1=0,X1=0.001,Units=km,Length=0.001
+new line.feeder8 bus1=1,bus2=8,phases=3,R1=0,X1=0.001,Units=km,Length=0.001
+new line.feeder9 bus1=1,bus2=9,phases=3,R1=0,X1=0.001,Units=km,Length=0.001
+new line.feeder10 bus1=1,bus2=10,phases=3,R1=0,X1=0.001,Units=km,Length=0.001
+new line.feeder11 bus1=1,bus2=11,phases=3,R1=0,X1=0.001,Units=km,Length=0.001
+
+! Loads
+new load.carga13 bus1=13,kv=11.4,kw=100,kvar=50     Vminpu=0.85
+new load.carga14 bus1=14,kv=11.4,kw=300,kvar=200    Vminpu=0.85
+new load.carga15 bus1=15,kv=11.4,kw=350,kvar=250    Vminpu=0.85
+new load.carga16 bus1=16,kv=11.4,kw=220,kvar=100    Vminpu=0.85
+new load.carga17 bus1=17,kv=11.4,kw=1100,kvar=800   Vminpu=0.85
+new load.carga18 bus1=18,kv=11.4,kw=400,kvar=320    Vminpu=0.85
+new load.carga19 bus1=19,kv=11.4,kw=300,kvar=200    Vminpu=0.85
+new load.carga20 bus1=20,kv=11.4,kw=300,kvar=230    Vminpu=0.85
+new load.carga21 bus1=21,kv=11.4,kw=300,kvar=260    Vminpu=0.85
+new load.carga23 bus1=23,kv=11.4,kw=1200,kvar=800   Vminpu=0.85
+new load.carga24 bus1=24,kv=11.4,kw=800,kvar=600    Vminpu=0.85
+new load.carga25 bus1=25,kv=11.4,kw=700,kvar=500    Vminpu=0.85
+new load.carga27 bus1=27,kv=11.4,kw=300,kvar=150    Vminpu=0.85
+new load.carga28 bus1=28,kv=11.4,kw=500,kvar=350    Vminpu=0.85
+new load.carga29 bus1=29,kv=11.4,kw=700,kvar=400    Vminpu=0.85
+new load.carga30 bus1=30,kv=11.4,kw=1200,kvar=1000  Vminpu=0.85
+new load.carga31 bus1=31,kv=11.4,kw=300,kvar=300    Vminpu=0.85
+new load.carga32 bus1=32,kv=11.4,kw=400,kvar=350    Vminpu=0.85
+new load.carga33 bus1=33,kv=11.4,kw=50,kvar=20      Vminpu=0.85
+new load.carga34 bus1=34,kv=11.4,kw=50,kvar=20      Vminpu=0.85
+new load.carga35 bus1=35,kv=11.4,kw=50,kvar=10      Vminpu=0.85
+new load.carga36 bus1=36,kv=11.4,kw=50,kvar=30      Vminpu=0.85
+new load.carga37 bus1=37,kv=11.4,kw=100,kvar=60     Vminpu=0.85
+new load.carga38 bus1=38,kv=11.4,kw=100,kvar=70     Vminpu=0.85
+new load.carga39 bus1=39,kv=11.4,kw=1800,kvar=1300  Vminpu=0.85
+new load.carga40 bus1=40,kv=11.4,kw=200,kvar=120    Vminpu=0.85
+new load.carga42 bus1=42,kv=11.4,kw=1800,kvar=1600  Vminpu=0.85
+new load.carga43 bus1=43,kv=11.4,kw=200,kvar=150    Vminpu=0.85
+new load.carga44 bus1=44,kv=11.4,kw=200,kvar=100    Vminpu=0.85
+new load.carga45 bus1=45,kv=11.4,kw=800,kvar=600    Vminpu=0.85
+new load.carga46 bus1=46,kv=11.4,kw=100,kvar=60     Vminpu=0.85
+new load.carga47 bus1=47,kv=11.4,kw=100,kvar=60     Vminpu=0.85
+new load.carga48 bus1=48,kv=11.4,kw=20,kvar=10      Vminpu=0.85
+new load.carga49 bus1=49,kv=11.4,kw=20,kvar=10      Vminpu=0.85
+new load.carga50 bus1=50,kv=11.4,kw=20,kvar=10      Vminpu=0.85
+new load.carga51 bus1=51,kv=11.4,kw=20,kvar=10      Vminpu=0.85
+new load.carga52 bus1=52,kv=11.4,kw=200,kvar=160    Vminpu=0.85
+new load.carga53 bus1=53,kv=11.4,kw=50,kvar=30      Vminpu=0.85
+new load.carga55 bus1=55,kv=11.4,kw=30,kvar=20      Vminpu=0.85
+new load.carga56 bus1=56,kv=11.4,kw=800,kvar=700    Vminpu=0.85
+new load.carga57 bus1=57,kv=11.4,kw=200,kvar=150    Vminpu=0.85
+new load.carga61 bus1=61,kv=11.4,kw=200,kvar=160    Vminpu=0.85
+new load.carga62 bus1=62,kv=11.4,kw=800,kvar=600    Vminpu=0.85
+new load.carga63 bus1=63,kv=11.4,kw=500,kvar=300    Vminpu=0.85
+new load.carga64 bus1=64,kv=11.4,kw=500,kvar=350    Vminpu=0.85
+new load.carga65 bus1=65,kv=11.4,kw=500,kvar=300    Vminpu=0.85
+new load.carga66 bus1=66,kv=11.4,kw=200,kvar=80     Vminpu=0.85
+new load.carga68 bus1=68,kv=11.4,kw=30,kvar=20      Vminpu=0.85
+new load.carga69 bus1=69,kv=11.4,kw=600,kvar=420    Vminpu=0.85
+new load.carga71 bus1=71,kv=11.4,kw=20,kvar=10      Vminpu=0.85
+new load.carga72 bus1=72,kv=11.4,kw=20,kvar=10      Vminpu=0.85
+new load.carga73 bus1=73,kv=11.4,kw=200,kvar=130    Vminpu=0.85
+new load.carga74 bus1=74,kv=11.4,kw=300,kvar=240    Vminpu=0.85
+new load.carga75 bus1=75,kv=11.4,kw=300,kvar=200    Vminpu=0.85
+new load.carga77 bus1=77,kv=11.4,kw=50,kvar=30      Vminpu=0.85
+new load.carga79 bus1=79,kv=11.4,kw=400,kvar=360    Vminpu=0.85
+new load.carga82 bus1=82,kv=11.4,kw=2000,kvar=1500  Vminpu=0.85
+new load.carga83 bus1=83,kv=11.4,kw=200,kvar=150    Vminpu=0.85
+new load.carga86 bus1=86,kv=11.4,kw=1200,kvar=950   Vminpu=0.85
+new load.carga87 bus1=87,kv=11.4,kw=300,kvar=180    Vminpu=0.85
+new load.carga89 bus1=89,kv=11.4,kw=400,kvar=360    Vminpu=0.85
+new load.carga90 bus1=90,kv=11.4,kw=2000,kvar=1300  Vminpu=0.85
+new load.carga91 bus1=91,kv=11.4,kw=200,kvar=140    Vminpu=0.85
+new load.carga92 bus1=92,kv=11.4,kw=500,kvar=360    Vminpu=0.85
+new load.carga93 bus1=93,kv=11.4,kw=100,kvar=30     Vminpu=0.85
+new load.carga94 bus1=94,kv=11.4,kw=400,kvar=360    Vminpu=0.85
+
+! Lines
+new line.1 bus1=1,bus2=12,phases=3,R1=0.1944,X1=0.6624,R0=0,X0=0.001,Units=km,Length=1
+new line.2 bus1=12,bus2=13,phases=3,R1=0.2096,X1=0.4304,R0=0,X0=0.001,Units=km,Length=1
+new line.3 bus1=13,bus2=14,phases=3,R1=0.2358,X1=0.4842,R0=0,X0=0.001,Units=km,Length=1
+new line.4 bus1=14,bus2=15,phases=3,R1=0.0917,X1=0.1883,R0=0,X0=0.001,Units=km,Length=1
+new line.5 bus1=15,bus2=16,phases=3,R1=0.2096,X1=0.4304,R0=0,X0=0.001,Units=km,Length=1
+new line.6 bus1=16,bus2=17,phases=3,R1=0.0393,X1=0.0807,R0=0,X0=0.001,Units=km,Length=1
+new line.7 bus1=17,bus2=18,phases=3,R1=0.0405,X1=0.138,R0=0,X0=0.001,Units=km,Length=1
+new line.8 bus1=18,bus2=19,phases=3,R1=0.1048,X1=0.2152,R0=0,X0=0.001,Units=km,Length=1
+new line.9 bus1=18,bus2=20,phases=3,R1=0.2358,X1=0.4842,R0=0,X0=0.001,Units=km,Length=1
+new line.10 bus1=18,bus2=21,phases=3,R1=0.1048,X1=0.2152,R0=0,X0=0.001,Units=km,Length=1
+new line.11 bus1=2,bus2=22,phases=3,R1=0.0786,X1=0.1614,R0=0,X0=0.001,Units=km,Length=1
+new line.12 bus1=22,bus2=23,phases=3,R1=0.3406,X1=0.6944,R0=0,X0=0.001,Units=km,Length=1
+new line.13 bus1=23,bus2=24,phases=3,R1=0.0262,X1=0.0538,R0=0,X0=0.001,Units=km,Length=1
+new line.14 bus1=23,bus2=25,phases=3,R1=0.0786,X1=0.1614,R0=0,X0=0.001,Units=km,Length=1
+new line.15 bus1=3,bus2=26,phases=3,R1=0.1134,X1=0.3864,R0=0,X0=0.001,Units=km,Length=1
+new line.16 bus1=26,bus2=27,phases=3,R1=0.0524,X1=0.1076,R0=0,X0=0.001,Units=km,Length=1
+new line.17 bus1=27,bus2=28,phases=3,R1=0.0524,X1=0.1076,R0=0,X0=0.001,Units=km,Length=1
+new line.18 bus1=28,bus2=29,phases=3,R1=0.1572,X1=0.3228,R0=0,X0=0.001,Units=km,Length=1
+new line.19 bus1=29,bus2=30,phases=3,R1=0.0393,X1=0.0807,R0=0,X0=0.001,Units=km,Length=1
+new line.20 bus1=30,bus2=31,phases=3,R1=0.1703,X1=0.3497,R0=0,X0=0.001,Units=km,Length=1
+new line.21 bus1=31,bus2=32,phases=3,R1=0.2358,X1=0.4842,R0=0,X0=0.001,Units=km,Length=1
+new line.22 bus1=32,bus2=33,phases=3,R1=0.1572,X1=0.3228,R0=0,X0=0.001,Units=km,Length=1
+new line.23 bus1=32,bus2=34,phases=3,R1=0.1965,X1=0.4035,R0=0,X0=0.001,Units=km,Length=1
+new line.24 bus1=34,bus2=35,phases=3,R1=0.131,X1=0.269,R0=0,X0=0.001,Units=km,Length=1
+new line.25 bus1=4,bus2=36,phases=3,R1=0.0567,X1=0.1932,R0=0,X0=0.001,Units=km,Length=1
+new line.26 bus1=36,bus2=37,phases=3,R1=0.1048,X1=0.2152,R0=0,X0=0.001,Units=km,Length=1
+new line.27 bus1=37,bus2=38,phases=3,R1=0.2489,X1=0.5111,R0=0,X0=0.001,Units=km,Length=1
+new line.28 bus1=38,bus2=39,phases=3,R1=0.0489,X1=0.165,R0=0,X0=0.001,Units=km,Length=1
+new line.29 bus1=39,bus2=40,phases=3,R1=0.131,X1=0.269,R0=0,X0=0.001,Units=km,Length=1
+new line.30 bus1=5,bus2=41,phases=3,R1=0.1965,X1=0.396,R0=0,X0=0.001,Units=km,Length=1
+new line.31 bus1=41,bus2=42,phases=3,R1=0.131,X1=0.269,R0=0,X0=0.001,Units=km,Length=1
+new line.32 bus1=42,bus2=43,phases=3,R1=0.131,X1=0.269,R0=0,X0=0.001,Units=km,Length=1
+new line.33 bus1=43,bus2=44,phases=3,R1=0.0262,X1=0.0538,R0=0,X0=0.001,Units=km,Length=1
+new line.34 bus1=44,bus2=45,phases=3,R1=0.1703,X1=0.3497,R0=0,X0=0.001,Units=km,Length=1
+new line.35 bus1=45,bus2=46,phases=3,R1=0.0524,X1=0.1076,R0=0,X0=0.001,Units=km,Length=1
+new line.36 bus1=46,bus2=47,phases=3,R1=0.4978,X1=1.0222,R0=0,X0=0.001,Units=km,Length=1
+new line.37 bus1=47,bus2=48,phases=3,R1=0.0393,X1=0.0807,R0=0,X0=0.001,Units=km,Length=1
+new line.38 bus1=48,bus2=49,phases=3,R1=0.0393,X1=0.0807,R0=0,X0=0.001,Units=km,Length=1
+new line.39 bus1=49,bus2=50,phases=3,R1=0.0786,X1=0.1614,R0=0,X0=0.001,Units=km,Length=1
+new line.40 bus1=50,bus2=51,phases=3,R1=0.2096,X1=0.4304,R0=0,X0=0.001,Units=km,Length=1
+new line.41 bus1=49,bus2=52,phases=3,R1=0.1965,X1=0.4035,R0=0,X0=0.001,Units=km,Length=1
+new line.42 bus1=52,bus2=53,phases=3,R1=0.2096,X1=0.4304,R0=0,X0=0.001,Units=km,Length=1
+new line.43 bus1=6,bus2=54,phases=3,R1=0.0486,X1=0.1656,R0=0,X0=0.001,Units=km,Length=1
+new line.44 bus1=54,bus2=55,phases=3,R1=0.0393,X1=0.0807,R0=0,X0=0.001,Units=km,Length=1
+new line.45 bus1=55,bus2=56,phases=3,R1=0.131,X1=0.269,R0=0,X0=0.001,Units=km,Length=1
+new line.46 bus1=56,bus2=57,phases=3,R1=0.2358,X1=0.4842,R0=0,X0=0.001,Units=km,Length=1
+new line.47 bus1=7,bus2=58,phases=3,R1=0.243,X1=0.828,R0=0,X0=0.001,Units=km,Length=1
+new line.48 bus1=58,bus2=59,phases=3,R1=0.0655,X1=0.1345,R0=0,X0=0.001,Units=km,Length=1
+new line.49 bus1=59,bus2=60,phases=3,R1=0.0655,X1=0.1345,R0=0,X0=0.001,Units=km,Length=1
+new line.50 bus1=60,bus2=61,phases=3,R1=0.0393,X1=0.0807,R0=0,X0=0.001,Units=km,Length=1
+new line.51 bus1=61,bus2=62,phases=3,R1=0.0786,X1=0.1614,R0=0,X0=0.001,Units=km,Length=1
+new line.52 bus1=62,bus2=63,phases=3,R1=0.0393,X1=0.0807,R0=0,X0=0.001,Units=km,Length=1
+new line.53 bus1=63,bus2=64,phases=3,R1=0.0786,X1=0.1614,R0=0,X0=0.001,Units=km,Length=1
+new line.54 bus1=64,bus2=65,phases=3,R1=0.0524,X1=0.1076,R0=0,X0=0.001,Units=km,Length=1
+new line.55 bus1=65,bus2=66,phases=3,R1=0.131,X1=0.269,R0=0,X0=0.001,Units=km,Length=1
+new line.56 bus1=8,bus2=67,phases=3,R1=0.2268,X1=0.7728,R0=0,X0=0.001,Units=km,Length=1
+new line.57 bus1=67,bus2=68,phases=3,R1=0.5371,X1=1.1029,R0=0,X0=0.001,Units=km,Length=1
+new line.58 bus1=68,bus2=69,phases=3,R1=0.0524,X1=0.1076,R0=0,X0=0.001,Units=km,Length=1
+new line.59 bus1=69,bus2=70,phases=3,R1=0.0405,X1=0.138,R0=0,X0=0.001,Units=km,Length=1
+new line.60 bus1=70,bus2=71,phases=3,R1=0.0393,X1=0.0807,R0=0,X0=0.001,Units=km,Length=1
+new line.61 bus1=71,bus2=72,phases=3,R1=0.0262,X1=0.0538,R0=0,X0=0.001,Units=km,Length=1
+new line.62 bus1=72,bus2=73,phases=3,R1=0.1048,X1=0.2152,R0=0,X0=0.001,Units=km,Length=1
+new line.63 bus1=73,bus2=74,phases=3,R1=0.2358,X1=0.4842,R0=0,X0=0.001,Units=km,Length=1
+new line.64 bus1=74,bus2=75,phases=3,R1=0.0243,X1=0.0828,R0=0,X0=0.001,Units=km,Length=1
+new line.65 bus1=9,bus2=76,phases=3,R1=0.0486,X1=0.1656,R0=0,X0=0.001,Units=km,Length=1
+new line.66 bus1=76,bus2=77,phases=3,R1=0.1703,X1=0.3497,R0=0,X0=0.001,Units=km,Length=1
+new line.67 bus1=77,bus2=78,phases=3,R1=0.1215,X1=0.414,R0=0,X0=0.001,Units=km,Length=1
+new line.68 bus1=78,bus2=79,phases=3,R1=0.2187,X1=0.7452,R0=0,X0=0.001,Units=km,Length=1
+new line.69 bus1=79,bus2=80,phases=3,R1=0.0486,X1=0.1656,R0=0,X0=0.001,Units=km,Length=1
+new line.70 bus1=80,bus2=81,phases=3,R1=0.0729,X1=0.2484,R0=0,X0=0.001,Units=km,Length=1
+new line.71 bus1=81,bus2=82,phases=3,R1=0.0567,X1=0.1932,R0=0,X0=0.001,Units=km,Length=1
+new line.72 bus1=82,bus2=83,phases=3,R1=0.0262,X1=0.0528,R0=0,X0=0.001,Units=km,Length=1
+new line.73 bus1=10,bus2=84,phases=3,R1=0.324,X1=1.104,R0=0,X0=0.001,Units=km,Length=1
+new line.74 bus1=84,bus2=85,phases=3,R1=0.0324,X1=0.1104,R0=0,X0=0.001,Units=km,Length=1
+new line.75 bus1=85,bus2=86,phases=3,R1=0.0567,X1=0.1932,R0=0,X0=0.001,Units=km,Length=1
+new line.76 bus1=86,bus2=87,phases=3,R1=0.0486,X1=0.1656,R0=0,X0=0.001,Units=km,Length=1
+new line.77 bus1=11,bus2=88,phases=3,R1=0.2511,X1=0.8556,R0=0,X0=0.001,Units=km,Length=1
+new line.78 bus1=88,bus2=89,phases=3,R1=0.1296,X1=0.4416,R0=0,X0=0.001,Units=km,Length=1
+new line.79 bus1=89,bus2=90,phases=3,R1=0.0486,X1=0.1656,R0=0,X0=0.001,Units=km,Length=1
+new line.80 bus1=90,bus2=91,phases=3,R1=0.131,X1=0.264,R0=0,X0=0.001,Units=km,Length=1
+new line.81 bus1=91,bus2=92,phases=3,R1=0.131,X1=0.264,R0=0,X0=0.001,Units=km,Length=1
+new line.82 bus1=92,bus2=93,phases=3,R1=0.0917,X1=0.1883,R0=0,X0=0.001,Units=km,Length=1
+new line.83 bus1=93,bus2=94,phases=3,R1=0.3144,X1=0.6456,R0=0,X0=0.001,Units=km,Length=1
+
+! Normally opened lines
+new line.84 bus1=16,bus2=66,phases=3,R1=0.131,X1=0.269,R0=0,X0=0.001,Units=km,Length=1
+open line.84 term=1
+new line.85 bus1=18,bus2=71,phases=3,R1=0.131,X1=0.269,R0=0,X0=0.001,Units=km,Length=1
+open line.85 term=1
+new line.86 bus1=22,bus2=54,phases=3,R1=0.131,X1=0.269,R0=0,X0=0.001,Units=km,Length=1
+open line.86 term=1
+new line.87 bus1=23,bus2=83,phases=3,R1=0.3406,X1=0.6994,R0=0,X0=0.001,Units=km,Length=1
+open line.87 term=1
+new line.88 bus1=24,bus2=87,phases=3,R1=0.4585,X1=0.9415,R0=0,X0=0.001,Units=km,Length=1
+open line.88 term=1
+new line.89 bus1=25,bus2=29,phases=3,R1=0.5371,X1=1.0824,R0=0,X0=0.001,Units=km,Length=1
+open line.89 term=1
+new line.90 bus1=27,bus2=37,phases=3,R1=0.0917,X1=0.1883,R0=0,X0=0.001,Units=km,Length=1
+open line.90 term=1
+new line.91 bus1=31,bus2=94,phases=3,R1=0.0786,X1=0.1614,R0=0,X0=0.001,Units=km,Length=1
+open line.91 term=1
+new line.92 bus1=39,bus2=43,phases=3,R1=0.0524,X1=0.1076,R0=0,X0=0.001,Units=km,Length=1
+open line.92 term=1
+new line.93 bus1=40,bus2=50,phases=3,R1=0.0786,X1=0.1614,R0=0,X0=0.001,Units=km,Length=1
+open line.93 term=1
+new line.94 bus1=45,bus2=57,phases=3,R1=0.0262,X1=0.0538,R0=0,X0=0.001,Units=km,Length=1
+open line.94 term=1
+new line.95 bus1=51,bus2=53,phases=3,R1=0.1965,X1=0.4035,R0=0,X0=0.001,Units=km,Length=1
+open line.95 term=1
+new line.96 bus1=64,bus2=75,phases=3,R1=0.0393,X1=0.0807,R0=0,X0=0.001,Units=km,Length=1
+open line.96 term=1
+
+!! optimal configuration -> Losses 468.8 kW (Ref. 469.89 kW)
+! close line.84 term=1
+! close line.85 term=1
+! close line.86 term=1
+! close line.87 term=1
+! close line.88 term=1
+! close line.89 term=1
+! close line.90 term=1
+! close line.91 term=1
+! close line.92 term=1
+! close line.93 term=1
+! close line.94 term=1
+! close line.95 term=1
+! close line.96 term=1
+! open line.7 term=1
+! open line.13 term=1
+! open line.34 term=1
+! open line.39 term=1
+! open line.42 term=1
+! open line.55 term=1
+! open line.62 term=1
+! open line.72 term=1
+! open line.83 term=1
+! open line.86 term=1
+! open line.89 term=1
+! open line.90 term=1
+! open line.92 term=1
+
+Set voltagebases=[11.4]
+
+Calcv
+
+Solve
+
+Show Losses ! Losses in original configuration should be 530.9 kW (Ref 532.01 kW)
+Show Voltages LL
