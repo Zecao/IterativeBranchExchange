@@ -15,17 +15,29 @@ Directory with the initial populations used in the article for the Distribution 
 Also, the OpenDSS files (.dss) for these networks and some references works can be found here: (https://www.dropbox.com/sh/15fo64kxz7115e2/AAAGgAVzJmnLzA6rVlqfBdGca?dl=0)
 
 ## 2. Article Matlab code
-[**"DijkstraBEMatlabCode"**](https://github.com/Zecao/2020Dijkstra/tree/master/DijkstraBE_MatlabCode)
-I'll publish the Matlab code for replication of all the results from article, as soon the article be published.
+[**"IBE MatlabCode"**](https://github.com/Zecao/IterativeBranchExchange/tree/master/IBE_MatlabCode)
+(under construction!) I'll publish the Matlab code for replication of all the results from article, **as soon the article be published**.
+
+The project uses 2 external programs/libraries 
+- Matpower7.0: a free, open-source tools for electric power system simulation and optimization (https://matpower.org/) Run install_matpower.m before.
+- Matlab_bgl: a Matlab wrapper for the Boost Graph Library (https://github.com/dgleich/matlab-bgl).
+
+I sugest to put the files in same directory of IBE Matlab code. Before start, make sure to edit the file setPath.m. So, the following .m files run the Iterative Branch Exchange for each network described in the item 1.
+- run_16buses.m
+- run_33buses.m
+- run_70buses.m
+- run_84buses.m
+- run_136buses.m
 
 ## 3. Article OpenDSS customization code
 [**"Executor OpenDSS"**](https://github.com/Zecao/ExecutorOpenDssBr)
-Directory with the Visual Studio C# OpenDSS customization project.
-The project uses the graph data structures and algorithms from [QuickGraph 3.6](https://archive.codeplex.com/?p=quickgraph)
-The project also uses 2 dll files: EEPlus.dll to read Excel files already included in the project. 
+Separate repository with detailed explanations for the OpenDSS customization C# code. 
 
-## 4. Cemig-D Distribution feeders
+## 4. OpenDSS Cemig-D Distribution feeders
 [**"CemigFeeders"**](https://github.com/Zecao/2020Dijkstra/tree/master/CemigDFeeders)
 Directory with the OpenDSS files (.dss) from 2 Cemig distribution feeders and 2 substations. These files are public as they were generated from a geographic distribution data base BDGD from Brazilian Regulatory Agency ANEEL.
+
+## 5. 
+Spreadsheet detailing all the reconfigurations implemented in [**Cemig-D**](https://www.cemig.com.br/en/) feeders using the Iterative Branch Exchange. 
 
 Ezequiel C. Pereira
