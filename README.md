@@ -15,7 +15,7 @@ Instructions: put the files in same root directory of IBE Matlab code. Before st
 - run_84buses.m
 - run_136buses.m
 
-1.1 The file results.xlsx is an Excel spreadsheet with detailing of the 10 runs of  
+1.1 The **results.xlsx** file presents the results of each of the 10 Iterative Branch Exchange runs for the 33, 70, 84 and 136 bus networks.
 
 ### 2. Article OpenDSS C# customization code
 Essentially, this is a stable version of another repository [**ExecutorOpenDSSBr**](https://github.com/Zecao/ExecutorOpenDssBr). It is a C# (Visual Studio project) OpenDSS customization, which one of the features is to run the power flow from real feeders and substation and also perform the Branch Exchange heuristic in the .dss files. The stable version is in subdirectory (https://github.com/Zecao/IterativeBranchExchange/tree/master/OpenDssCustomization).
@@ -32,7 +32,7 @@ Directory with the OpenDSS files (.dss) from 2 Cemig distribution feeders and 2 
 
 ### 4. Extra material
 ### 4.1 All reconfigurations  
-Spreadsheet detailing all the reconfigurations implemented in [**Cemig-D**](https://www.cemig.com.br/en/) feeders using the Iterative Branch Exchange. 
+Spreadsheet with information on the 81 configurations carried out in [**Cemig-D**](https://www.cemig.com.br/en/) feeders/substations using the Iterative Branch Exchange.
 
 ### 4.2 Initial population for evolutionary meta-heuristics for the Distribution Network Reconfiguration problem
 [**"MSTInitialPopulation"**](https://github.com/Zecao/2020Dijkstra/tree/master/MSTInitialPopulation)
@@ -44,7 +44,7 @@ Directory with the initial populations for population based evolutionary meta-he
 * (Ramirez-rosado & Bernal-Agustín, 1998) 417 (or 415) buses system
 * (Zhang, 2007) 119 buses system.
 
-### 5.2 The OPenDSS files (.dss) for 33,70,84,136 buses network.
-Also, the OpenDSS files (.dss) for these networks in this directory.
+### 4.3 The OpenDSS files (.dss) for the 33, 70, 84, 136 buses network.
+In the subdirectory **dss_reconfiguration** one will find the OpenDSS files (.dss) for the 33, 70, 84, 136 buses networks.
 
 Ezequiel C. Pereira
