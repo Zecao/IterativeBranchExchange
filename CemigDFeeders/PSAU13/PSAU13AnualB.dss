@@ -1,3 +1,5 @@
+!close line.CTR130109 term=1 ! 44055
+!open line.CTR41083 term=1 ! 44169
 
 new energymeter.carga element=line.TR6641928,terminal=1
 
@@ -7,5 +9,4 @@ CalcVoltageBases
 ! Solve mode=daily,hour=0,number=24,stepsize=1h
 
 ! BusCoords PSAU13CoordMT.csv
-!close line.CTR130109 term=1 ! 44055
-!open line.CTR41083 term=1 ! 44169
+

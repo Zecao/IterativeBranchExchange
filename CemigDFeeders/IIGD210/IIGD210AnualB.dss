@@ -1,3 +1,7 @@
+! manobra IIGD220/221
+! IIGD210	ctrr42939	ctrr4978	5200	8165.94	8217.45	0.63
+!close line.CTRR42939 term=1 !numEQ 319112
+!open line.CTRR4978 term=1 !numEQ 139164
 
 new energymeter.carga element=line.TRfic8,terminal=2
 

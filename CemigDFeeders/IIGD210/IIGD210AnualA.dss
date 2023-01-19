@@ -100,9 +100,9 @@ AddBusMarker Bus=BMT166654682 code=27 color=Red size=3 !line.CTR551727 50957
 AddBusMarker Bus=BMT100946372 code=27 color=Red size=3 !line.CTR55231 48467
 
 !-- Gerar Gráficos
-! plot circuit quantity=power dots=n labels=n subs=y showloops=n C1=Blue C2=Blue C3=Red R2=0.95 R3=0.90
+plot circuit quantity=power dots=n labels=n subs=y showloops=n C1=Blue C2=Blue C3=Red R2=0.95 R3=0.90
 
-relcalc !restore=yes !If restore=y automatic restoration of unfaulted downline section is assumed
+!relcalc !restore=yes !If restore=y automatic restoration of unfaulted downline section is assumed
  
-? energymeter.carga.saifi
-? energymeter.carga.saidi
+!? energymeter.carga.saifi
+!? energymeter.carga.saidi

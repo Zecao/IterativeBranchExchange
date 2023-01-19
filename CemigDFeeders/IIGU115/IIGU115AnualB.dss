@@ -1,8 +1,13 @@
+! manobra (nao executada em campo)
+close line.CTR680898 term=1 ! 130817
+open line.CTR430263 term=1 ! 48676
 
 new energymeter.carga element=line.TR12246072,terminal=1
 
 Set voltagebases=[13.800000000 0.24 0.22]
 CalcVoltageBases
+Set MaxIter = 150
+Set MaxControlIter = 40
 
 ! Solve mode=daily,hour=0,number=24,stepsize=1h
 
