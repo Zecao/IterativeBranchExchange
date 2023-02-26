@@ -18,17 +18,16 @@ rng('default');
 sistema = 2;
 
 % ALGORITMOS 
-% 52 % Differenctial Evolution + Branch Exchange (local search)
-% 521 % Only branch Exchange 
+% 521 % Iterative Branch Exchange 
 algoritmo = 521;
 
-% seta path do aplicativo
+% set the subdirectories path
 setPath();
 
-%numero de execucoes
+% number of runs
 numexec = 10;
 
-% inicializa var
+% inicialize var
 matrizResultados =[];
 
 for i=1:numexec
@@ -45,7 +44,6 @@ for i=1:numexec
     % carregaArquivoAlimentador
     alim = carregaAlimentadorDeTxt(sistema);
      
-    % DE Ezequiel 
     [arrayStructElite, populacao, fitness, geracao, migracoes] = algGenDEFluxo( alim, algoritmo, sistema );
 
     % time 1 run

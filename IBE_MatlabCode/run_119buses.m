@@ -18,7 +18,6 @@ rng('default');
 sistema = 7;
 
 % ALGORITMOS 
-% 52 % Differenctial Evolution + Branch Exchange (local search)
 % 521 % Only branch Exchange 
 algoritmo = 521;
 
@@ -45,7 +44,6 @@ for i=1:numexec
     % carregaArquivoAlimentador
     alim = carregaAlimentadorDeTxt(sistema);
      
-    % DE Ezequiel 
     [arrayStructElite, populacao, fitness, geracao, migracoes] = algGenDEFluxo( alim, algoritmo, sistema );
 
     % time 1 run

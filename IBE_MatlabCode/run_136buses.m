@@ -1,6 +1,6 @@
 beep off
 clc; 
-% clear all; 
+clear all; 
 clear global;
 format long;
 warning 'off'; 
@@ -45,7 +45,6 @@ for i=1:numexec
     % carregaArquivoAlimentador
     alim = carregaAlimentadorDeTxt(sistema);
      
-    % DE Ezequiel 
     [arrayStructElite, populacao, fitness, geracao, migracoes] = algGenDEFluxo( alim, algoritmo, sistema );
 
     % time 1 run
