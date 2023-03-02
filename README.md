@@ -1,5 +1,5 @@
 # Iterative Branch Exchange
-Repository for the article "Distribution Networks Reconfiguration using an iterative Branch Exchange and metaheuristics".
+Repository for the article "Distribution Network Reconfiguration using Iterative Branch Exchange and Clustering Techniques".
 This repository is subdivided in the following subdirectories: 
 
 ### 1. Article Matlab code
