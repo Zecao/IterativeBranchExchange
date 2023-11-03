@@ -27,10 +27,6 @@ switch opcao
 
         A = Sistema136barras();
 
-    case 42 % 'alim\Sistema_Brasileiro2008_teste';
-
-        A = Sistema136barras_teste();
-
     case 5 % 'alim\Sistema_TPC2003.txt
 
         A = SistemaTPC2003A();

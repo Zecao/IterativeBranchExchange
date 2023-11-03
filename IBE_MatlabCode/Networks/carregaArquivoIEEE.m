@@ -30,12 +30,7 @@ switch sistema
          alim.Sbase = 100; 
          alim.Vbase = 13.8;
          alim.Fnome = 'alim\Sistema_Brasileiro2008.txt';
-         
-      case 42 
-         alim.Sbase = 100; 
-         alim.Vbase = 13.8;
-         alim.Fnome = 'alim\Sistema_Brasileiro2008_teste';
-         
+
      case 5 
          alim.Sbase = 100; 
          alim.Vbase = 11.4;
