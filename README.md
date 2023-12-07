@@ -1,14 +1,14 @@
 # Iterative Branch Exchange
 Repository for the article [**Distribution Network Reconfiguration using Iterative Branch Exchange and Clustering Techniques**](https://www.mdpi.com/1996-1073/16/5/2395).
-This repository is subdivided into the following subdirectories: 
+As an open-source enthusiast, I decided to publish the source codes for replication of all the results from the article and, as well, future improvements and new methodologies by other researchers. So, this repository is subdivided into the following subdirectories: 
 
 ### 1. Article Matlab code
 [**"IBE MatlabCode"**](https://github.com/Zecao/IterativeBranchExchange/tree/master/IBE_MatlabCode)
-(under construction!) I'll publish the Matlab code for replication of all the results from the article, **as soon the article is published**.
 The project uses 2 external programs/libraries 
 - Matpower7.0: a free, open-source tool for electric power system simulation and optimization (https://matpower.org/) Run install_matpower.m before.
 - Matlab_bgl: a Matlab wrapper for the Boost Graph Library (https://github.com/dgleich/matlab-bgl).
-Instructions: put the files in the same root directory of IBE Matlab code. Before starting, make sure to edit the file setPath.m. So, the following .m files run the Iterative Branch Exchange for each network described in item 1.
+
+Instructions: put the files in the same root directory of the IBE Matlab code. Before starting, make sure to edit the file setPath.m. So, the following .m files run the Iterative Branch Exchange for each network described in item 1.
 - run_16buses.m
 - run_33buses.m
 - run_70buses.m
