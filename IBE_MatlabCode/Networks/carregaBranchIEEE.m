@@ -78,7 +78,7 @@ end
  
 % OBS: todos os sistemas a excecao do 1 e 8 devem ter impedancias
 % trasnformadas p/ pu
-if ( ~ ( (sistema == 1) )) %||(sistema ==8) ) )
+if ( ~ ( (sistema == 1) ||(sistema ==8) ) )
     
      % calculo zBase
      zBase = Vbase^2/Sbase; 

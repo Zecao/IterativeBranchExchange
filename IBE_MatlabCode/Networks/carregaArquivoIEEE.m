@@ -49,7 +49,7 @@ switch sistema
      case 8
          alim.Sbase = 100; % orig. 100000kVA.
          alim.Vbase = 13.8;
-         alim.Fnome = '703busesCemigCarrano';
+         alim.Fnome = '703busesCemig';
          
      otherwise 
         disp('ERRO');
