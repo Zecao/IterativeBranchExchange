@@ -34,17 +34,7 @@ Directory with the OpenDSS files (.dss) from 2 Cemig distribution feeders and 2 
 ### 4.1 All reconfigurations  
 Spreadsheet with information on the 81 configurations carried out in [**Cemig-D**](https://www.cemig.com.br/en/) feeders/substations using the Iterative Branch Exchange.
 
-### 4.2 Initial population for evolutionary meta-heuristics for the Distribution Network Reconfiguration problem
-[**"MSTInitialPopulation"**](https://github.com/Zecao/2020Dijkstra/tree/master/MSTInitialPopulation)
-Directory with the initial populations for population-based evolutionary meta-heuristics representing some configurations for the 33, 70, 84, 136, 417, and 119 buses distribution network. These files are in Matlab format (.mat) and use the binary codification, i.e. they represent the normally closed (NC) switches by 1s and the normally opened (NO) switches by 0s for the following test cases:  
-* (Zhu, 2002) 33 buses system
-* (Huang, 2002) 69 (or 70) buses system
-* (Su & Lee, 2003) 84 buses system
-* (Guimarães & Castro, 2005) 136 buses system
-* (Ramirez-rosado & Bernal-Agustín, 1998) 417 (or 415) buses system
-* (Zhang, 2007) 119 bus system.
-
-### 4.3 The OpenDSS files (.dss) for the 33, 70, 84, 136 buses network.
+### 4.2 The OpenDSS files (.dss) for the 33, 70, 84, 136 buses network.
 In the subdirectory **dss_reconfiguration** one will find the OpenDSS files (.dss) for the 33, 70, 84, 136 bus networks.
 
 Ezequiel C. Pereira
