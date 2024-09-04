@@ -30,11 +30,4 @@ Directory with the OpenDSS files (.dss) from 2 Cemig distribution feeders and 2 
 2. You must configure the GUI TextBox "*Caminho dos recursos permanentes*" with the "*Recursos*" subdirectory and the GUI TextBox "*Caminho dos arquivos dos alimentadores \*.dss*" with the root subdirectory.
 3. The list of feeders to be executed must be in the file *lstAlimentadores.m*.
 
-### 4. Extra material
-### 4.1 All reconfigurations  
-Spreadsheet with information on the 81 configurations carried out in [**Cemig-D**](https://www.cemig.com.br/en/) feeders/substations using the Iterative Branch Exchange.
-
-### 4.2 The OpenDSS files (.dss) for the 33, 70, 84, 136 buses network.
-In the subdirectory **dss_reconfiguration** one will find the OpenDSS files (.dss) for the 33, 70, 84, 136 bus networks.
-
 Ezequiel C. Pereira
